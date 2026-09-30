@@ -19,7 +19,7 @@ export function SwipeBack({ children, onBack, onRelease }: {
   children: ReactNode; onBack: () => void;
   /** Allo scatto del gesto: se restituisce true il ritorno è gestito altrove
    *  (transizione verso la card della Home); altrimenti si torna indietro normalmente. */
-  onRelease?: (x: number) => boolean;
+  onRelease?: () => boolean;
 }) {
   const { width } = useWindowDimensions();
   // +1 = partito dal bordo sinistro, -1 = dal bordo destro, 0 = non dal bordo.
@@ -30,7 +30,7 @@ export function SwipeBack({ children, onBack, onRelease }: {
   const go = () => {
     if (leaving.current) return;
     leaving.current = true;
-    if (onRelease?.(0)) return;
+    if (onRelease?.()) return;
     onBack();
   };
 

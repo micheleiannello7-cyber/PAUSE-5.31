@@ -12,8 +12,6 @@ export const ALL_ID = "all";
 // Modalità "adatta all'altezza": tessera larga più bassa e altezza minima delle tessere.
 const FIT_ALL_H = 68;
 const FIT_TILE_MIN = 66;
-// Quanto l'oggetto 3D di ESPLORA sporge sopra il bordo della tessera larga.
-const ALL_POKE = 14;
 
 // Shared toggle logic: "all" is exclusive with specific categories.
 export function toggleInterest(prev: Set<string>, id: string): Set<string> {
@@ -56,7 +54,7 @@ export function CategoryGrid({
   const fixedExtra = spacing.md + spacing.xs + spacing.sm * (rows - 1);
   // Prima si abbassa la tessera larga (fino a FIT_ALL_H), poi le tessere.
   const allH = fit && tileW ? Math.max(FIT_ALL_H, Math.min(90, maxHeight - rows * naturalTileH - fixedExtra)) : undefined;
-  const allArt = (allH ?? 90) + ALL_POKE - 6;
+  const allArt = (allH ?? 90) - 8;
   const tileH = fit && tileW && allH
     ? Math.max(FIT_TILE_MIN, Math.min(naturalTileH, Math.floor((maxHeight - allH - fixedExtra) / rows)))
     : undefined;
@@ -91,8 +89,8 @@ export function CategoryGrid({
         ]}
       >
         <LinearGradient colors={[palette.top, palette.surface]} style={[styles.glassBg, styles.allBg]} pointerEvents="none" />
-        {/* Oggetto 3D intero: resta dentro la tessera, solo il bordo alto sporge fuori. */}
-        <View pointerEvents="none" style={[styles.allArt, { top: -ALL_POKE, width: allArt, height: allArt }]}>
+        {/* Oggetto 3D intero, tutto dentro la tessera (nessuna sporgenza). */}
+        <View pointerEvents="none" style={[styles.allArt, { top: 4, width: allArt, height: allArt }]}>
           <CategoryArtMark categoryId="all" color={palette.accents.all} size={allArt} plain testID="category-art-all" />
         </View>
         <View style={styles.allText}>

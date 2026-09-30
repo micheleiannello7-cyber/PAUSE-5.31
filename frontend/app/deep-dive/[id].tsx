@@ -77,11 +77,6 @@ export default function DeepDive() {
   // mai dentro l'animazione.
   const morphHost = useMorphHost();
   useEffect(() => {
-    if (morph !== "1") return;
-    const safety = setTimeout(morphHost.dismiss, 1800);
-    return () => clearTimeout(safety);
-  }, [morph, morphHost.dismiss]);
-  useEffect(() => {
     if (morph === "1" && !morphHost.active) navigation.setOptions({ animation: "fade", animationDuration: 260 });
   }, [morph, morphHost.active, navigation]);
   // Arrivo con la transizione: si monta prima solo l'apertura (identica al
@@ -390,7 +385,7 @@ export default function DeepDive() {
 
   // Riprende dalla sezione in cui il lettore aveva lasciato questa storia.
   useEffect(() => {
-    if (!userId || !id || !story) return;
+    if (morph === "1" || !userId || !id || !story) return;
     getReadingProgress(userId).then((p) => {
       if (p && p.story.id === id && p.page > 0 && p.page < lastSection) {
         setSection(p.page);
@@ -398,7 +393,7 @@ export default function DeepDive() {
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [userId, id, !!story]);
+  }, [morph, userId, id, !!story]);
 
   // Mark as completed once: when the reader reaches the end (or taps "next").
   // Nota: "completata" qui vale per crediti e statistiche (scatta dopo 5 s sul
@@ -445,10 +440,10 @@ export default function DeepDive() {
 
   // Tasto indietro di sistema (Android): stesso percorso inverso della card,
   // quando possibile (vedi morphBack più sotto). Hook prima del ritorno anticipato.
-  const morphBackRef = useRef<(x: number) => boolean>(() => false);
+  const morphBackRef = useRef<() => boolean>(() => false);
   useEffect(() => {
     if (Platform.OS !== "android" || morph !== "1") return;
-    const sub = BackHandler.addEventListener("hardwareBackPress", () => morphBackRef.current(0));
+    const sub = BackHandler.addEventListener("hardwareBackPress", () => morphBackRef.current());
     return () => sub.remove();
   }, [morph]);
 
@@ -499,15 +494,16 @@ export default function DeepDive() {
   // inverso: semplice cambio di schermata (dissolvenza breve). Senza cornice:
   // ritorno di sempre.
   const backRect = parseRect(rect);
-  const morphBack = (x: number) => {
-    if (morph !== "1" || !backRect || morphHost.active || !router.canGoBack()) return false;
+  const morphBack = () => {
+    if (morphHost.active) return true;
+    if (morph !== "1" || !backRect || !router.canGoBack()) return false;
     if (section > 0 || scrollY.value > 8) return false;
     navigation.setOptions({ animation: "none" });
-    morphHost.show(<StoryMorph direction="close" story={story} from={backRect} premium={isPremium} offsetX={x} onCommit={() => router.back()} />);
+    morphHost.show(<StoryMorph direction="close" story={story} from={backRect} premium={isPremium} initialReserveCap={reserveCap} onCommit={() => router.back()} />);
     return true;
   };
   morphBackRef.current = morphBack;
-  const onBackPress = () => { if (!morphBack(0)) goBack(); };
+  const onBackPress = () => { if (!morphBack()) goBack(); };
 
   return (
     <Screen style={styles.container} animated={morph !== "1"}>

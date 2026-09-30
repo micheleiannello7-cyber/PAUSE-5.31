@@ -103,6 +103,45 @@
 #====================================================================================================
 user_problem_statement: "PAUSE — Home restyle (carousel categorie, bottom bar glass a tema, sfondo atmosferico, bordi luminosi) + nuova schermata Premium (prezzi €3,99 / €29,99 con claim €2,49/mese / €49,99, confronto Gratis vs Premium con sole funzioni reali) + onboarding snello (genere/età dietro link facoltativo)."
 
+current_request: "Generare Mi piace/Salva/Condividi con lo stesso AI delle altre icone 3D; correggere realmente transizione Home↔Reader (titolo sparisce e card scatta)."
+latest_request: "Condividi = freccia fuori riquadro 3D; bottom bar tutta 3D riusando nuovo bookmark; Esplora Home interamente dentro contenitore."
+navigation_icon_verification:
+  implemented: true
+  working: true
+  needs_retesting: false
+  priority: "high"
+  result: "iteration_8 + follow-up PASS. Explicit aria-selected fixed and verified for all four tabs. Native share sheet remains device-only validation."
+  files: "glass-tab-bar.tsx, tab-icon-3d.tsx, icon-3d-assets.ts, action-icon-3d.tsx, home-controls.tsx"
+  test_plan:
+    - "All four tabs navigate, labels/testIDs unchanged, animated base/active icon states, ≥44pt tap targets."
+    - "Saved bottom bar and Save ending use EXACT same bookmark asset pair."
+    - "Home Explore art wholly contained with margins, no text overlap or horizontal overflow at 320/390/430."
+    - "Ending Share displays new standard arrow out of square, handler unchanged. Native sheet requires physical device."
+    - "No asset white/black rectangular backgrounds; no bundling/runtime errors. Home↔Reader regression."
+current_verification:
+  - task: "3D action icons and persistent like/bookmark/share"
+    implemented: true
+    working: true
+    needs_retesting: false
+    priority: "high"
+    status_history:
+      - agent: "main"
+        comment: "Existing Gemini model verified. 5 bundled RGBA assets archived to managed storage and download hashes checked. Neutral states derived from active silhouettes to eliminate damaged edges/shape jump. ActionIcon3D has complementary fade, bounce, 44pt targets, state testIDs."
+  - task: "Home↔Reader continuous title/cover"
+    implemented: true
+    working: true
+    needs_retesting: false
+    priority: "high"
+    stuck_count: 2
+    status_history:
+      - agent: "user"
+        comment: "Titolo scompare/ricompare, card scatta; animazione deve funzionare bene."
+      - agent: "main"
+        comment: "Matched Home font; title/grid copies now share one geometric track and complementary opacities; text above cover; Premium CTA included in measured intro. Close uses reader's measured cover and fresh Home rect; no premature fade. Removed stale reader dismiss timer. Morph open skips progress auto-resume. Back from chapters/end stays simple. Need frame sampling + screenshots and persistent action tests."
+      - agent: "main"
+        working: true
+        comment: "Final mobile-web follow-up PASS. Fixed initial React/UI-style paint race. 4 open-close cycles across 390x844/375x667: 380 visible frames, zero missing titles, trajectories coincide, zero overlays left. Chapter/end simple back PASS; actions/persistence PASS; backend 5/5. See iteration_7_followup.json; native gesture/share/fluidity still require physical device acceptance."
+
 frontend:
   - task: "Home: carousel orizzontale categorie + indicatore, rimozione Vedi tutte"
     implemented: true

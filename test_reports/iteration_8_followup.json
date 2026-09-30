@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Post-iteration_8 accessibility fix for the new 3D tab bar",
+  "fix": "Explicit aria-selected={focused} alongside native accessibilityState",
+  "verification": {
+    "viewport": "390x844",
+    "navigation": ["Home", "Topics", "Saved", "Profile", "Home"],
+    "selected_tab_count_at_each_stop": 1,
+    "inactive_tabs_aria_selected": "false",
+    "active_tab_aria_selected": "true",
+    "home_real_story_card_loaded": true,
+    "new_3d_icons_visible": true
+  },
+  "prior_tests_preserved": "iteration_8: tab functionality, transparent images, shared bookmark source, Home Explore containment at 320/390/430, new share symbol and action handlers, save persistence and morph regression all passed.",
+  "evidence": "/root/.emergent/automation_output/20260930_223510/console_20260930_223510.log",
+  "limitations": "Native share sheet and final visual acceptance on physical iOS/Android remain device-only checks.",
+  "remaining_bugs_in_scope": []
+}

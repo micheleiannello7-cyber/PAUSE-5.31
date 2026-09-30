@@ -6,7 +6,8 @@
 // nessun tasto grande: si entra nella storia scorrendo.
 // La usa il lettore (deep-dive) e, con la stessa identica geometria, la
 // transizione dalla card della Home (story-morph): lì titolo e riga info sono
-// "fantasmi" invisibili che segnano dove atterrano gli elementi in movimento.
+// "fantasmi" invisibili che segnano dove atterrano le copie in viaggio, e la
+// loro posizione si ricava dalla sola geometria (vedi `introRects`).
 import { ReactNode, useEffect, useRef } from "react";
 import { LayoutChangeEvent, Text, View, ViewStyle } from "react-native";
 import Ionicons from "@react-native-vector-icons/ionicons";
@@ -32,6 +33,8 @@ export type CoverFrame = {
 const COVER_OVERLAP = 96;
 // Altezza minima della copertina quando l'apertura deve fare spazio al testo.
 const COVER_MIN_H = 200;
+// Colonna del testo dell'apertura: padding e spazio tra titolo e riga dati (stessi valori di `styles.column`).
+const COL_PAD_TOP = spacing.lg, COL_PAD_X = spacing.xl, COL_GAP = spacing.md + 2;
 
 // Copertina: a tutta larghezza dall'alto dello schermo (dietro la barra), alta
 // poco più di metà pagina ma mai oltre 1,25 volte la larghezza; in basso sfuma
@@ -45,8 +48,29 @@ export function readerCoverFrame(winW: number, pageH: number, reserveCap?: numbe
   return { top: 0, left: 0, width: winW, height, radius: 0, reserve: height - COVER_OVERLAP };
 }
 
+/** Corpo del titolo grande dell'apertura (ridotto per i titoli lunghi, mai troncato). */
+export function coverTitleFont(title: string): number {
+  const n = title.length;
+  return n > 70 ? 18 : n > 55 ? 20 : n > 40 ? 22 : 24;
+}
+
+/** Cornici (coordinate della pagina, con la pagina che parte dall'alto dello
+ *  schermo) di titolo e riga dati dell'apertura: dalla sola geometria e dalle
+ *  due altezze misurate a layout — nessuna misura "a finestra" che possa
+ *  arrivare in ritardo o includere trasformazioni in corso. */
+export function introRects(winW: number, coverReserve: number, titleH: number, gridH: number): { title: IntroRect; grid: IntroRect } {
+  const colW = Math.min(winW, READER_MAX_W);
+  const x = (winW - colW) / 2 + COL_PAD_X;
+  const width = colW - COL_PAD_X * 2;
+  const titleY = coverReserve + COL_PAD_TOP;
+  return {
+    title: { x, y: titleY, width, height: titleH },
+    grid: { x, y: titleY + titleH + COL_GAP, width, height: gridH },
+  };
+}
+
 export function ReaderIntro({
-  story, coverH, minHeight, bottomInset = 0, reveal, listen, onLayout, onFit, prefix = "deep-dive", ghost = false, partsStyle, onTitleRect, onGridRect, remeasure,
+  story, coverH, minHeight, bottomInset = 0, reveal, listen, onLayout, onFit, prefix = "deep-dive", ghost = false, partsStyle, onTitleHeight, onGridHeight,
 }: {
   story: StoryPreview; coverH: number; minHeight: number; bottomInset?: number; reveal: SharedValue<number>; listen?: ReactNode;
   onLayout?: (height: number) => void; prefix?: string;
@@ -54,32 +78,17 @@ export function ReaderIntro({
   onFit?: (reserveCap: number) => void;
   /** Transizione: titolo e riga info invisibili (solo segnaposto), le altre parti seguono `partsStyle`. */
   ghost?: boolean; partsStyle?: AnimatedStyle<ViewStyle>;
-  /** Posizione (coordinate finestra) di titolo e riga info, riletta a ogni layout. */
-  onTitleRect?: (rect: IntroRect) => void; onGridRect?: (rect: IntroRect) => void;
-  /** Quando cambia, titolo e riga info vengono rimisurati. */
-  remeasure?: unknown;
+  /** Altezze a layout di titolo e riga info (per `introRects`). */
+  onTitleHeight?: (height: number) => void; onGridHeight?: (height: number) => void;
 }) {
   const styles = useStyles();
   const { colors } = useTheme();
   const { t } = useI18n();
   const reader = prefix === "deep-dive";
-  const titleRef = useRef<View>(null);
-  const gridRef = useRef<View>(null);
-  const measureTargets = () => {
-    if (onTitleRect) titleRef.current?.measureInWindow((x, y, width, height) => onTitleRect({ x, y, width, height }));
-    if (onGridRect) gridRef.current?.measureInWindow((x, y, width, height) => onGridRect({ x, y, width, height }));
-  };
   const onBlockLayout = (e: LayoutChangeEvent) => {
     const h = Math.ceil(e.nativeEvent.layout.height);
     if (h > 0) onLayout?.(h);
-    measureTargets();
   };
-  const firstMeasure = useRef(true);
-  useEffect(() => {
-    if (firstMeasure.current) { firstMeasure.current = false; return; }
-    measureTargets();
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- rimisura solo quando cambia la chiave
-  }, [remeasure]);
   // Testo dell'apertura (titolo, dati, introduzione) e invito: quanto resta
   // alla copertina perché stiano tutti nella prima schermata.
   const columnH = useRef(0);
@@ -105,10 +114,10 @@ export function ReaderIntro({
       {/* Spazio della copertina: l'immagine è il livello fisso dietro allo scroll. */}
       <View style={{ height: coverH }} testID={`${prefix}-cover-card`} />
       <View style={styles.column} onLayout={onColumnLayout}>
-        <View ref={titleRef} style={[styles.titleWrap, ghost && styles.ghost]} collapsable={false}>
+        <View style={[styles.titleWrap, ghost && styles.ghost]} onLayout={(e) => onTitleHeight?.(Math.round(e.nativeEvent.layout.height))}>
           <CoverTitle title={story.title} highlight={story.highlight_words} reveal={reveal} testID={`${prefix}-cover-title`} />
         </View>
-        <View ref={gridRef} style={ghost && styles.ghost} collapsable={false}>
+        <View style={ghost && styles.ghost} onLayout={(e) => onGridHeight?.(Math.round(e.nativeEvent.layout.height))}>
           <StoryInfoGrid story={story} minutes={story.deep_dive_time_min} inline testID={reader ? "story-info-grid" : `${prefix}-info-grid`} />
         </View>
         <Animated.View style={[styles.introBlock, partsStyle]}>
@@ -136,9 +145,8 @@ export function ReaderIntro({
 export function CoverTitle({ title, highlight, reveal, testID = "deep-dive-cover-title" }: { title: string; highlight: string[]; reveal: SharedValue<number>; testID?: string }) {
   const styles = useStyles();
   const fade = useAnimatedStyle(() => ({ opacity: 1 - reveal.value * 0.6 }));
-  const n = title.length;
   // Corpo ridotto del 30% rispetto alla prima versione (34/31/28/25).
-  const fontSize = n > 70 ? 18 : n > 55 ? 20 : n > 40 ? 22 : 24;
+  const fontSize = coverTitleFont(title);
   return (
     <Animated.View style={fade}>
       <HighlightedTitle title={title} highlight={highlight} style={[styles.coverTitle, { fontSize, lineHeight: Math.round(fontSize * 1.16) }]} testID={testID} />
@@ -150,7 +158,7 @@ const useStyles = makeStyles((colors: ThemeColors) => ({
   ghost: { opacity: 0 },
   intro: { width: "100%" },
   grow: { flexGrow: 1 },
-  column: { width: "100%", maxWidth: READER_MAX_W, alignSelf: "center", paddingHorizontal: spacing.xl, paddingTop: spacing.lg, gap: spacing.md + 2 },
+  column: { width: "100%", maxWidth: READER_MAX_W, alignSelf: "center", paddingHorizontal: COL_PAD_X, paddingTop: COL_PAD_TOP, gap: COL_GAP },
   titleWrap: { width: "100%" },
   coverTitle: {
     color: colors.textWarm, fontFamily: typography.displayBold, letterSpacing: -0.8,

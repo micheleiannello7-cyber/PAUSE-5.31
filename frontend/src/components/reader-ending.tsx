@@ -1,26 +1,24 @@
 // PAUSE — fine della storia (variante "Prossima scoperta"): conclusione "Da
 // ricordare" editoriale direttamente sullo sfondo cinematico, i tre dati della
-// storia, Mi piace / Salva / Condividi affiancati e, in fondo, la card della
-// prossima scoperta con copertina, titolo e freccia. Il contenuto compare con
-// una dissolvenza morbida quando si arriva in fondo, e il Salva mostra una
-// conferma ampia "Aggiunto ai salvati". Colori tutti dal tema.
+// storia, Mi piace / Salva / Condividi (oggetti 3D, con stato acceso/spento) in
+// un'unica barra e, in fondo, la card della prossima scoperta con copertina,
+// titolo e freccia. Il contenuto compare con una dissolvenza morbida quando si
+// arriva in fondo, e il Salva mostra una conferma ampia "Aggiunto ai salvati".
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import Ionicons from "@react-native-vector-icons/ionicons";
 import { LinearGradient } from "expo-linear-gradient";
-import Animated, {
-  Extrapolation, interpolate, useAnimatedStyle, SharedValue,
-} from "react-native-reanimated";
+import Animated, { Extrapolation, interpolate, useAnimatedStyle, SharedValue } from "react-native-reanimated";
 import * as Haptics from "@/src/haptics";
 
-import { Story } from "@/src/api";
+import { Story, StoryPreview } from "@/src/api";
 import { makeStyles, useTheme, spacing, radius, typography, withAlpha } from "@/src/theme";
 import { useI18n } from "@/src/i18n";
 import { GlowButton, GlowOrb } from "@/src/components/glass";
 import { READER_MAX_W } from "@/src/components/reader-section";
-import { EndActionButton } from "@/src/components/end-action-button";
 import { StoryHero } from "@/src/components/story-hero";
 import { HighlightedTitle } from "@/src/components/highlighted-title";
 import { StoryInfoGrid } from "@/src/components/story-info-grid";
+import { ActionIcon3D } from "@/src/components/action-icon-3d";
 
 type Props = {
   story: Story;
@@ -33,7 +31,7 @@ type Props = {
   /** Torna alla Home (tasto a sinistra della storia consigliata). */
   onHome: () => void;
   /** Prossima storia già precaricata: alimenta la card "Prossima scoperta". */
-  next?: Story | null;
+  next?: StoryPreview | null;
   bottomInset: number;
   /** Notifica un salvataggio/rimozione: il deep-dive mostra un banner ampio. */
   onSaved?: (saved: boolean) => void;
@@ -73,6 +71,15 @@ export function ReaderEnding({ story, liked, onLike, bookmarked, onBookmark, onS
     onSaved?.(willSave);
   };
 
+  const handleLike = () => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    onLike();
+  };
+  const handleShare = () => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    onShare();
+  };
+
   // Dissolvenza morbida: il contenuto sale e compare appena prima di arrivare
   // in fondo (stessa logica dello sfondo finale). Se i valori non ci sono
   // (caso improbabile), resta pienamente visibile.
@@ -97,20 +104,22 @@ export function ReaderEnding({ story, liked, onLike, bookmarked, onBookmark, onS
         <Text style={styles.summary} testID="summary-card" numberOfLines={7}>{story.summary}</Text>
       </View>
 
-      {/* Mi piace / Salva / Condividi affiancati. Mi piace e Condividi mostrano
-          la conferma breve sopra il tasto; il Salva usa il banner ampio sotto. */}
-      <View style={styles.endRow} testID="deep-dive-actions">
-        <EndActionButton
-          icon={liked ? "heart" : "heart-outline"} label={t.i_like} active={liked} tint={colors.error}
-          toastText={liked ? t.toast_unliked : t.toast_liked} onPress={onLike} style={styles.third} testID="like-button"
+      {/* Mi piace / Salva / Condividi uniti in un'unica barra: oggetti 3D nello
+          stile dell'app, con stato acceso/spento — stesso vetro della griglia sotto le card. */}
+      <View style={styles.actionBar} testID="deep-dive-actions">
+        <ActionIcon3D kind="heart" active={liked} glowColor={colors.error} onPress={handleLike} testID="like-button" accessibilityLabel={t.i_like} />
+        <LinearGradient
+          pointerEvents="none"
+          colors={[withAlpha(colors.intro, 0), withAlpha(colors.intro, 0.24), withAlpha(colors.intro, 0)]}
+          style={styles.actionDivider}
         />
-        <EndActionButton
-          icon={bookmarked ? "bookmark" : "bookmark-outline"} label={t.save_verb} active={bookmarked} tint={colors.cyan}
-          onPress={handleBookmark} style={styles.third} testID="bookmark-button"
+        <ActionIcon3D kind="bookmark" active={bookmarked} glowColor={colors.cyan} onPress={handleBookmark} testID="bookmark-button" accessibilityLabel={t.save_verb} />
+        <LinearGradient
+          pointerEvents="none"
+          colors={[withAlpha(colors.intro, 0), withAlpha(colors.intro, 0.24), withAlpha(colors.intro, 0)]}
+          style={styles.actionDivider}
         />
-        <EndActionButton
-          icon="share-outline" label={t.share} onPress={onShare} style={styles.third} testID="share-story"
-        />
+        <ActionIcon3D kind="share" glowColor={colors.brand} onPress={handleShare} testID="share-story" accessibilityLabel={t.share} />
       </View>
 
       {/* Prossima scoperta: card con la copertina della prossima storia. */}
@@ -193,8 +202,15 @@ const useStyles = makeStyles((colors) => ({
   dot: { width: 6, height: 6, borderRadius: 3 },
   pillText: { color: colors.onSurfaceSecondary, fontFamily: typography.bodyBold, fontSize: 12, letterSpacing: 0.2 },
 
-  endRow: { flexDirection: "row", gap: spacing.sm, alignSelf: "stretch", marginTop: spacing.xs },
-  third: { flex: 1 },
+  // Mi piace / Salva / Condividi uniti in un'unica pillola (come la griglia
+  // dati sotto le card): fondo profondo, bordo sottile e separatori luminosi.
+  actionBar: {
+    flexDirection: "row", alignItems: "center", alignSelf: "stretch",
+    minHeight: 58, paddingHorizontal: 6, paddingVertical: 8, borderRadius: 999, overflow: "hidden",
+    backgroundColor: withAlpha(colors.surfaceDeep, 0.78), borderWidth: 1,
+    borderColor: withAlpha(colors.intro, 0.22), marginTop: spacing.xs,
+  },
+  actionDivider: { width: 1, height: 28 },
 
   // La prossima scoperta prende tutto lo spazio rimasto: copertina alta e
   // tasti Home / Leggi in fondo alla schermata.

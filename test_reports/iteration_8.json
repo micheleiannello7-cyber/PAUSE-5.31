@@ -1,0 +1,52 @@
+{
+  "summary": "Frontend-only targeted verification completed for new 3D bottom-bar/share icons, Home Explore tile containment, and Home↔Reader regression. Core flows passed; one accessibility-state gap found on tab buttons.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "Bottom tab buttons",
+        "issue": "Selected accessibility state is not exposed as aria-selected/aria-current on web for tab-home/tab-explore/tab-saved/tab-profile during navigation checks.",
+        "testID": "tab-home, tab-explore, tab-saved, tab-profile",
+        "priority": "HIGH"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": [],
+    "react_native_issues": []
+  },
+  "test_report_links": [
+    "/root/.emergent/automation_output/20260930_223129/test_script.py",
+    "/root/.emergent/automation_output/20260930_223129/console_20260930_223129.log",
+    "/root/.emergent/automation_output/20260930_223129/02_home_with_new_bar.jpeg",
+    "/root/.emergent/automation_output/20260930_223129/03_tab_home.jpeg",
+    "/root/.emergent/automation_output/20260930_223129/03_tab_explore.jpeg",
+    "/root/.emergent/automation_output/20260930_223129/03_tab_saved.jpeg",
+    "/root/.emergent/automation_output/20260930_223129/03_tab_profile.jpeg",
+    "/root/.emergent/automation_output/20260930_223129/04_reader_ending_share.jpeg",
+    "/root/.emergent/automation_output/20260930_223308/console_20260930_223308.log"
+  ],
+  "action_items": [
+    "Expose tab selected accessibility on web (ensure active tab maps to aria-selected=true or aria-current=page for screen readers).",
+    "Keep current icon assets/mappings unchanged: verified tab source paths nav-home/nav-topics/nav-profile + shared act-bookmark pair + ending share act-share-v2."
+  ],
+  "critical_code_review_comments": [
+    "Code wiring is consistent with requirements: Saved tab and Reader Save both use BOOKMARK_3D shared constant.",
+    "Tab icon asset paths and Explore/Share updates are correctly implemented in source; no hardcoded external URLs found.",
+    "Accessibility gap observed at runtime: selected state not surfaced in DOM attributes despite tab role."
+  ],
+  "updated_files": [
+    "/app/test_reports/iteration_8.json"
+  ],
+  "success_rate": {
+    "backend": "NA (frontend-only scope)",
+    "frontend": "93%"
+  },
+  "seed_data_creation": "Guest-only flow used; no seed data created.",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Validated guest onboarding -> Home deck loaded; all four tabs navigate; icon crossfade active/base works; tab tap targets ~93.8x58 (>44pt). Home Explore art is fully inside container with positive margins and no overlap/overflow at 320/390/430; Explore tile opens Topics. Reader ending reached; share icon src is /assets/?unstable_path=.%2Fassets%2Fimages/act-share-v2.png; like/save/share handlers executed without runtime crash in browser; save banner appears; story-morph detached and no stuck overlay after ending-home return; Saved tab showed persisted bookmarked content in same run.",
+  "rca_of_issue": "Repro: navigate tabs and inspect active tab node attributes. role=tab is present, but aria-selected/aria-current remain null for all tabs. Likely RN-web accessibility-state mapping not propagating on this custom Pressable tab implementation. Mitigation: explicitly set accessibilityState + web-focused ARIA prop mapping on active tab in custom tab bar render path."
+}

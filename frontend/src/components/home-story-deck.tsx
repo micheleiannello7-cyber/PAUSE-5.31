@@ -152,7 +152,7 @@ export function HomeStoryDeck({ deck, cursor, width, height, onChange, onOpen, o
           {slots.map((slot) => {
             const story = deck[cursor + slot];
             return <StoryLayer key={`${virtualPage + slot}-${story.id}`} story={story} slot={slot} page={virtualPage + slot}
-              width={cardWidth} left={(width - cardWidth) / 2} stride={stride} position={position} tx={tx} nudge={nudge} travel={travel}
+              width={cardWidth} left={(width - cardWidth) / 2} stride={stride} position={position} tx={tx} nudge={nudge} travel={travel} away={away}
               register={slot === 0 ? registerActive : undefined}
               // Tocco tattile leggerissimo solo quando si sceglie una storia, mai scorrendo il mazzo.
               onOpen={(rect) => { if (dragged.value) return; Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {}); onOpen(story, rect); }}
@@ -168,9 +168,12 @@ export function HomeStoryDeck({ deck, cursor, width, height, onChange, onOpen, o
   );
 }
 
-function StoryLayer({ story, slot, page, width, left, stride, position, tx, nudge, travel, register, onOpen, onListen }: {
+function StoryLayer({ story, slot, page, width, left, stride, position, tx, nudge, travel, away, register, onOpen, onListen }: {
   story: StoryPreview; slot: number; page: number; width: number; left: number; stride: number;
   position: SharedValue<number>; tx: SharedValue<number>; nudge: SharedValue<number>; travel: SharedValue<number>;
+  /** Transizione verso la lettura in corso (0→1): la card attiva si spegne subito
+   *  (sopra c'è la sua copia in movimento, identica al pixel), le vicine sfumano con il fondo. */
+  away?: SharedValue<number>;
   register?: (measure: (() => Promise<CardRect | null>) | null) => void; onOpen: (rect?: CardRect) => void; onListen?: () => void;
 }) {
   const styles = useStyles();
@@ -207,8 +210,9 @@ function StoryLayer({ story, slot, page, width, left, stride, position, tx, nudg
     const preview = progress * (1 - progress);
     // L'anticipo cresce subito, poi si annulla al centro (o tornando indietro).
     // Zoom orizzontale massimo 1.2%: resta nello spazio tra le card.
+    const gone = away ? interpolate(away.value, slot === 0 ? [0, 0.1] : [0, 0.4], [1, 0], Extrapolation.CLAMP) : 1;
     return {
-      opacity: Math.min(1, 1 - side * 0.48 + preview * 0.48),
+      opacity: Math.min(1, 1 - side * 0.48 + preview * 0.48) * gone,
       transform: [
         { translateX: distance * stride },
         { scaleX: 1 + preview * 0.048 },

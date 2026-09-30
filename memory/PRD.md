@@ -515,3 +515,25 @@ Solo presentazione (nessuna modifica backend/contenuti):
 - `story-morph.tsx`: blocchi a contenuto statico (atmosfera con le 6 luci, apertura, corpo card, cornice)
   rasterizzati (`renderToHardwareTextureAndroid` + `shouldRasterizeIOS`) → opacità/traslazioni costano
   come un'unica immagine su Expo Go; la copertina (scala + raggio animati) resta non rasterizzata.
+
+## Continuazione — icone azioni 3D + revisione morph (verificato in anteprima)
+- Richiesta confermata: stesso AI delle altre icone; Mi piace/Salva con stati animati; Home↔Reader senza sparizione titolo/scatti.
+- Modello verificato negli script: `gemini-3.1-flash-image-preview`. Riutilizzati gli output già generati, nessuna nuova chiamata AI.
+- `action-icon-3d.tsx`: cuore/segnalibro base↔attivo, share one-shot, touch target ≥44pt. Neutri ricavati dagli attivi per sagoma identica e bordi puliti.
+- `publish_action_icons.py`: archivio dei cinque PNG su Managed Object Storage, manifest `action_icons_manifest.json`; download verificati SHA256. Copie bundle per rendering offline.
+- `morph-shared-element.tsx` + `story-morph.tsx`: titolo e dati seguono la stessa traiettoria, opacità complementari, font identico alla Home, testo sopra la copertina. Misure intro includono CTA Premium.
+- Chiusura dalla intro usa reserveCap del Reader e misura card Home; nessuna dissolvenza anticipata. Eliminato timer Reader che poteva spegnere un successivo morph; apertura da Home resta sulla intro, ripresa dedicata invariata.
+- Lampo iniziale: copertina visibile prima delle misure/stili del titolo. Intero livello invisibile fino a misure complete + due frame; opacità complementari del titolo inizializzate subito, non dopo un aggiornamento asincrono.
+- Test `iteration_7.json` + follow-up `iteration_7_followup.json`: icone, like/save persistenti, banner e ritorni capitolo/finale PASS. Ultimo campionamento: quattro cicli apertura/chiusura a 390×844 e 375×667; 422 frame, 380 con livello visibile, **zero frame con titolo assente**, traiettorie titolo coincidenti (0px), zero livelli rimasti. Backend 5/5 PASS.
+- Segnalazione iniziale di livello bloccato non riprodotta aspettando la conclusione effettiva della chiusura; ritorni rapidi verificati ripetutamente.
+- P0: nessun blocco nei flussi verificabili in anteprima. P1: conferma percettiva, gesto bordo e share nativo su iOS/Android reale; controllo Premium su dispositivo. P2: eventuali altri ritocchi solo su richiesta. Errori TypeScript globali preesistenti (stats, story-hero typing, chiavi i18n duplicate) fuori dal perimetro.
+
+## Icone bottom bar 3D, Condividi riconoscibile, Esplora Home contenuta (verificate)
+- Richiesta: Condividi non riconoscibile; creare icone bottom bar 3D, riutilizzare il segnalibro appena approvato per Salvati; ridimensionare Esplora dentro il contenitore Home. Confermato simbolo Condividi = freccia verticale che esce da un riquadro.
+- `generate_navigation_icons.py`: quattro nuove generazioni offline con lo stesso modello Gemini `gemini-3.1-flash-image-preview`, riferimenti segnalibro/cuffie. Casa, griglia 2×2 per Argomenti, busto Profilo, share standard. Stati neutri delle tab derivati dalla stessa sagoma; nessun AI a runtime. Sette asset archiviati e hash verificati in Managed Object Storage (`navigation_icons_manifest.json`).
+- `glass-tab-bar.tsx` + `tab-icon-3d.tsx`: immagini 3D 34pt, dissolvenza neutro→colore 220ms e lieve scala, rispetto Riduci movimento; etichette/indicatori seguono il tema. Tab navigation e testID preservati, altezza barra invariata.
+- `icon-3d-assets.ts`: unico `BOOKMARK_3D` importato sia da barra Salvati che da azione Salva; share aggiornato a `act-share-v2.png` per invalidare la vecchia immagine.
+- `home-controls.tsx`: Esplora dentro il vero riquadro, dimensione max76pt (responsive) contro106 precedenti; centrata verticalmente, margine destro12, testo riserva spazio indipendente. Nessuna modifica all'icona Esplora negli altri contesti.
+- Test `iteration_8.json`: quattro tab, stati immagini, target ~94×58pt, contenimento Esplora a 320/390/430pt, share-v2, like/save/banner/persistenza e Home↔Reader PASS. Nessun errore runtime bloccante.
+- Fix accessibilità emerso dal test: `aria-selected={focused}` esplicito oltre a `accessibilityState`. Self-test finale: Home→Argomenti→Salvati→Profilo→Home, sempre una sola scheda annunciata selezionata. Evidenze `iteration_8_followup.json`.
+- P0: nessun blocco nel perimetro richiesto. P1: conferma estetica su dispositivo reale; sheet di condivisione nativa non verificabile nel browser. P2: altri ritocchi solo su richiesta.

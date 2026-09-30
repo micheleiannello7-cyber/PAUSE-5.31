@@ -1,0 +1,25 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "assets": {
+    "act-bookmark-active.png": {
+      "path": "pause/action-icons/ec125230288db971/act-bookmark-active.png",
+      "sha256": "ec125230288db9716c6502d88b25a574527e886fb6d9669953d4378cd69be11a"
+    },
+    "act-bookmark-base.png": {
+      "path": "pause/action-icons/d5e2625ae2703a01/act-bookmark-base.png",
+      "sha256": "d5e2625ae2703a0189949d267b62eff81e8fb6b3cca8e708d16a500d3074aa32"
+    },
+    "act-heart-active.png": {
+      "path": "pause/action-icons/eb9ec857a9a629b7/act-heart-active.png",
+      "sha256": "eb9ec857a9a629b7b4aa302f00987206bfd210f86470e5eaf9b6019016102961"
+    },
+    "act-heart-base.png": {
+      "path": "pause/action-icons/83e4d12c097d4813/act-heart-base.png",
+      "sha256": "83e4d12c097d48136a96f6dd5f428b5f2f48f7c444a9dd440622c38181fb846d"
+    },
+    "act-share.png": {
+      "path": "pause/action-icons/2cb303edba626e51/act-share.png",
+      "sha256": "2cb303edba626e513e7268720994ebc0f7faab30ce1e0e12d15666c4339ada1e"
+    }
+  }
+}

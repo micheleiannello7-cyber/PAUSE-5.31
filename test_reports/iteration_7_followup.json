@@ -1,0 +1,44 @@
+{
+  "verification": "Main-agent mobile-web follow-up after iteration_7 fixes",
+  "status": "PASS for requested browser-verifiable flows; native acceptance pending",
+  "viewports": ["390x844", "375x667"],
+  "final_morph_samples": {
+    "open_close_cycles": 4,
+    "all_frames": 422,
+    "visible_overlay_frames": 380,
+    "blank_title_frames": 0,
+    "minimum_combined_title_opacity": 0.999999,
+    "maximum_title_trajectory_difference_px": 0,
+    "overlays_remaining": 0
+  },
+  "fixed": [
+    "Initial cover appeared before animated title styles had committed. Whole replacement now waits for measured geometry plus two paint frames; complementary title opacity is initialized immediately, not toggled asynchronously.",
+    "Home title font matches actual window width; Home and Reader layouts share a geometric track above the cover.",
+    "Close uses Reader reserveCap and fresh Home card geometry, with no premature overlay fade.",
+    "Removed old Reader dismissal timer that could target a later transition; morph opening stays on intro instead of automatically restoring saved chapter.",
+    "Backend test helper now reads canonical EXPO_PUBLIC_BACKEND_URL; application env was already correct."
+  ],
+  "regressions": {
+    "backend_pytest": "5/5 PASS, pytest/iter7_backend_verified.xml",
+    "icons": "3D transparent assets, 44pt targets, like/bookmark persistence and banner PASS in iteration_7; action clicks and banner reconfirmed in follow-up",
+    "chapter_back": "PASS: simple navigation, observed no morph insertion",
+    "ending_home": "PASS: Home displayed, overlay count 0",
+    "rapid_back": "8 consecutive open/close cycles in preceding self-tests and 4 final cycles PASS with deterministic wait for teardown",
+    "storage": "Five PNG uploads retrieved and SHA256 verified; bundled copies retained for offline first paint",
+    "lint": "Changed frontend components and offline publisher PASS"
+  },
+  "clarifications": [
+    "Original report's overlay-stuck finding did not reproduce when awaiting the actual close completion (rather than Home visibility alone).",
+    "Unsupported easing warning comes from existing WEB layout/entering animation configuration, not withTiming used by morph. Source identified in Reanimated layoutReanimation/web/componentUtils.ts. Unrelated screens left unchanged.",
+    "Global tsc still reports pre-existing issues in stats.tsx, story-hero.tsx style typing and duplicate i18n keys. Changed morph/action files have no type errors."
+  ],
+  "limitations": [
+    "No physical iOS/Android device available. Native edge gesture, native share sheet and perceived native frame rate require device confirmation.",
+    "Premium CTA sizing uses the same component but dedicated Premium-device flow was not exercised."
+  ],
+  "evidence": [
+    "/root/.emergent/automation_output/20260930_221609/console_20260930_221609.log",
+    "/root/.emergent/automation_output/20260930_221836/console_20260930_221836.log",
+    "/root/.emergent/automation_output/20260930_222041/console_20260930_222041.log"
+  ]
+}

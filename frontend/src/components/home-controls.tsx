@@ -36,33 +36,31 @@ export function HomeCategoryTile({ cat, active, onPress, size, iconUri }: {
 }
 
 // Home con ESPLORA attiva: al posto della fila di categorie, una sola tessera
-// larga con l'oggetto 3D di ESPLORA che "esce" dal contenitore (sporge sopra e
-// a destra del vetro). Il tocco porta agli Argomenti.
+// larga con l'oggetto 3D di ESPLORA interamente dentro il vetro.
+// Il tocco porta agli Argomenti.
 export function HomeExploreTile({ onPress, label, sub, width }: { onPress: () => void; label: string; sub: string; width: number }) {
   const styles = useStyles();
   const color = palette.accents.all;
-  // L'oggetto resta quasi tutto dentro il vetro: sporge solo la parte alta (EXPLORE_POKE).
-  const art = 106;
+  const art = Math.min(76, Math.floor(width * 0.25));
   return (
     <Pressable
       testID="home-explore-tile" onPress={onPress}
       accessibilityRole="button" accessibilityLabel={label}
       style={({ pressed }) => [styles.exploreWrap, { width }, pressed && styles.pressed]}
     >
-      <View style={[styles.exploreTile, { width, borderColor: withAlpha(color, 0.5), boxShadow: `0px 8px 28px ${withAlpha(color, 0.22)}` as any }]}>
+      <View testID="home-explore-container" style={[styles.exploreTile, { width, paddingRight: art + 28, borderColor: withAlpha(color, 0.5), boxShadow: `0px 8px 28px ${withAlpha(color, 0.22)}` as any }]}>
         <LinearGradient colors={[palette.top, palette.surface]} style={StyleSheet.absoluteFill} pointerEvents="none" />
         <View style={styles.exploreText}>
           <Text testID="home-explore-label" style={[styles.exploreName, { color }]} numberOfLines={1}>{label}</Text>
           <Text testID="home-explore-sub" style={styles.exploreSub} numberOfLines={2}>{sub}</Text>
         </View>
+        <View pointerEvents="none" style={[styles.exploreArt, { width: art, height: art, top: (92 - art) / 2, right: 12 }]}>
+          <CategoryArtMark categoryId="all" color={color} size={art} plain testID="home-explore-art" />
+        </View>
         <View style={styles.exploreLightWrap} pointerEvents="none">
           <CategorySelectionLight id="home-explore" color={color} active />
         </View>
         <CategoryTileEdge color={color} rounded={radius.lg} active />
-      </View>
-      {/* L'oggetto 3D è intero: solo il bordo alto esce dal vetro, ancorato a destra. */}
-      <View pointerEvents="none" style={[styles.exploreArt, { width: art, height: art, top: 0, right: 8 }]}>
-        <CategoryArtMark categoryId="all" color={color} size={art} plain testID="home-explore-art" />
       </View>
     </Pressable>
   );
@@ -102,10 +100,10 @@ const useStyles = makeStyles((colors) => ({
   },
   pressed: { opacity: 0.75, transform: [{ scale: 0.96 }] },
   disabled: { opacity: 0.3 },
-  exploreWrap: { alignSelf: "center", paddingTop: 16, overflow: "visible" },
+  exploreWrap: { alignSelf: "center", paddingTop: 16 },
   exploreTile: {
     height: 92, borderRadius: radius.lg, borderWidth: 1, backgroundColor: palette.surface, overflow: "hidden",
-    justifyContent: "center", paddingLeft: 18, paddingRight: 120,
+    justifyContent: "center", paddingLeft: 18,
   },
   exploreText: { gap: 3 },
   exploreName: { fontFamily: typography.bodyBold, fontSize: 15, letterSpacing: 2.2 },

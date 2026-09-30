@@ -1,0 +1,34 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "reused_saved": "act-bookmark-base.png / act-bookmark-active.png",
+  "assets": {
+    "nav-home-active.png": {
+      "path": "pause/navigation-icons/8988562ae8e0f99c/nav-home-active.png",
+      "sha256": "8988562ae8e0f99ce9b6b59d0f52a0fc220af4d7db07ba430c7cba4fcdf51be9"
+    },
+    "nav-home-base.png": {
+      "path": "pause/navigation-icons/c6dc7e6f3c775405/nav-home-base.png",
+      "sha256": "c6dc7e6f3c7754050148902b7a0354f59cad959a64e36265ceaf7205b04139a1"
+    },
+    "nav-topics-active.png": {
+      "path": "pause/navigation-icons/947502985b1e8e6f/nav-topics-active.png",
+      "sha256": "947502985b1e8e6f12eab1cda00a401bcfba5baced4bed22a92fd7174ce6af28"
+    },
+    "nav-topics-base.png": {
+      "path": "pause/navigation-icons/245d4999dc999dde/nav-topics-base.png",
+      "sha256": "245d4999dc999dde7f2d85eebbe140f136905814a88107081570cd060f48614f"
+    },
+    "nav-profile-active.png": {
+      "path": "pause/navigation-icons/de2ab4152a6bdfd2/nav-profile-active.png",
+      "sha256": "de2ab4152a6bdfd2b19e508a9a61e203a61e7ee8a668d1633aa65bbe251580db"
+    },
+    "nav-profile-base.png": {
+      "path": "pause/navigation-icons/1f9e5c2ea42de117/nav-profile-base.png",
+      "sha256": "1f9e5c2ea42de117ce3aab0ba9f64ff582e34f470e9facf7a63e84cd61bd56be"
+    },
+    "act-share-v2.png": {
+      "path": "pause/navigation-icons/6823638b9164df38/act-share-v2.png",
+      "sha256": "6823638b9164df3863db897f925768ec110c1aef50e82681e2bbb96e2f5e6afa"
+    }
+  }
+}

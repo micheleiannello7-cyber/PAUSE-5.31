@@ -1,0 +1,90 @@
+{
+  "summary": "Executed backend pytest contract checks plus mobile-web Playwright runs for guest onboarding, Home↔Reader morph, and Reader ending actions. Core flows load and run, but transition still has a visible title handoff gap and overlay-stuck behavior after quick back.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {
+        "endpoint": "ENV/frontend/.env",
+        "issue": "EXPO_BACKEND_URL key was not present; tests required remapping from EXPO_PUBLIC_BACKEND_URL to run",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "Home↔Reader morph title handoff",
+        "issue": "rAF sampling shows frames where both title layers are near-invisible (390x844: 6 frames; 375x667: 5 frames), matching user-reported title disappear/reappear",
+        "testID": "story-morph-title / story-morph-reader-title",
+        "priority": "HIGH"
+      },
+      {
+        "component": "Morph overlay lifecycle",
+        "issue": "After quick back from intro, morph overlay remains mounted on Home (overlay count stayed 1)",
+        "testID": "story-morph",
+        "priority": "CRITICAL"
+      }
+    ],
+    "integration_issues": [
+      {
+        "flow": "Reader reopen immediately after quick back",
+        "issue": "Intermittent failure to re-enter deep-dive in automation; one run also logged Metro disconnect mid-sequence",
+        "affected_testIDs": [
+          "home-story-*-open",
+          "deep-dive-scroll"
+        ]
+      },
+      {
+        "flow": "Ending share action",
+        "issue": "Web click handler exercised without runtime errors; native share sheet itself is not browser-verifiable",
+        "affected_testIDs": [
+          "share-story"
+        ]
+      }
+    ],
+    "design_issues": [
+      {
+        "screen": "Reader ending action bar",
+        "issues": [
+          "Touch targets validated at 104x44 for like/save/share (meets minimum)",
+          "Base icon layers rendered transparent (no white background artifacts detected in web preview)"
+        ]
+      }
+    ],
+    "react_native_issues": [
+      {
+        "component": "Reanimated easing on web preview",
+        "issue": "Console warns selected easing unsupported on web and falls back to linear, so browser frame timing is only a proxy for native smoothness"
+      }
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iter35_home_reader_transition_contract.py",
+    "/app/test_reports/pytest/iter7_backend.xml",
+    "/root/.emergent/automation_output/20260930_220656/console_20260930_220656.log",
+    "/root/.emergent/automation_output/20260930_220949/console_20260930_220949.log"
+  ],
+  "action_items": [
+    "Fix morph title complementary fade so at least one title stays visible every frame.",
+    "Ensure story-morph overlay unmounts reliably after intro quick-back (both 390x844 and 375x667).",
+    "Re-verify rapid back/reopen stability after overlay fix; include chapter-back simple navigation check.",
+    "Keep native performance validation on real device before any 60fps claims."
+  ],
+  "critical_code_review_comments": [
+    "Frontend env naming drift: expected EXPO_BACKEND_URL but file currently exposes EXPO_PUBLIC_BACKEND_URL; align to single canonical key to avoid tooling/test ambiguity.",
+    "Morph host/close path likely has a race where overlay clear is not guaranteed on fast return."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_iter35_home_reader_transition_contract.py",
+    "/app/test_reports/iteration_7.json"
+  ],
+  "success_rate": {
+    "backend": "100% (5/5)",
+    "frontend": "70%"
+  },
+  "seed_data_creation": "Ephemeral guest test users were auto-created via /api/user/{uuid} during tests (no real account mutation).",
+  "retest_needed": true,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Use testIDs directly: onboarding-profile-continue -> chip-all -> onboarding-continue for deterministic guest-to-home. For ending checks, rely on deep-dive-actions boundingClientRect visibility (not just DOM presence) and advance with wheel gestures until y enters viewport.",
+  "rca_of_issue": "Repro: open story from Home, then back quickly from intro. Observed story-morph remains mounted (count=1) and rAF samples show transient dual-title invisibility. Likely close-commit/host-dismiss race around fast intro return where opacity handoff and overlay teardown overlap. Mitigation: enforce single-source state machine for morph phases and guarantee teardown on route settle/back completion."
+}
