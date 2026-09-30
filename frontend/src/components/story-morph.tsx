@@ -35,8 +35,6 @@ export const MORPH_DURATION = 680;
 export const MORPH_EASING = Easing.bezier(0.3, 0, 0.1, 1);
 // Chiusura: il livello si dissolve sopra la card nell'ultimo tratto.
 const CLOSE_FADE_MS = 150;
-// Chiusura da un capitolo: prima l'apertura compare in dissolvenza, poi rientra.
-const FADE_IN_MS = 220;
 // Chiusura con swipe: la schermata torna dritta prima di rientrare.
 const SLIDE_BACK_MS = 200;
 // Ritorno: attesa massima perché la Home abbia il layout definitivo.
@@ -48,7 +46,12 @@ const sameRect = (a: MorphRect, b: MorphRect) =>
 const CLAMP = Extrapolation.CLAMP;
 const lerp = (p: number, a: number, b: number) => { "worklet"; return a + (b - a) * p; };
 
-export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, direction = "open", offsetX = 0, fadeIn = false, leave }: {
+// Android/iOS: i blocchi il cui contenuto non cambia durante la corsa (fondo
+// notte con le luci, apertura, corpo della card, cornice) vengono rasterizzati
+// una volta sola: opacità e traslazioni costano poi come un'unica immagine.
+const RASTER = { renderToHardwareTextureAndroid: true, shouldRasterizeIOS: true } as const;
+
+export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, direction = "open", offsetX = 0, leave }: {
   story: StoryPreview;
   /** Cornice della card nella Home (coordinate finestra). */
   from: MorphRect;
@@ -61,8 +64,6 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
   direction?: "open" | "close";
   /** Chiusura da swipe: spostamento orizzontale al rilascio, riassorbito prima del rientro. */
   offsetX?: number;
-  /** Chiusura da un capitolo: l'apertura compare in dissolvenza prima di rientrare nella card. */
-  fadeIn?: boolean;
   /** Apertura: valore della Home (logo, categorie) che si sposta con lo stesso passo, dallo stesso fotogramma. */
   leave?: SharedValue<number>;
 }) {
@@ -78,7 +79,6 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
   const closing = direction === "close";
   const [from, setFrom] = useState(fromProp);
   const p = useSharedValue(closing ? 1 : 0);
-  const veil = useSharedValue(closing && fadeIn ? 0 : 1);
   const slideX = useSharedValue(offsetX);
   const still = useSharedValue(0);
 
@@ -160,8 +160,6 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
   useEffect(() => {
     if (!closing || !measured || started.current) return;
     started.current = true;
-    const lead = fadeIn ? FADE_IN_MS : 0;
-    if (fadeIn) veil.value = withTiming(1, { duration: FADE_IN_MS, easing: Easing.out(Easing.quad) });
     const slideLead = offsetX !== 0 ? Math.round(SLIDE_BACK_MS * 0.7) : 0;
     let cancelled = false;
     let fadeTimer: ReturnType<typeof setTimeout> | null = null;
@@ -184,13 +182,12 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
       if (cancelled) return;
       if (fresh && fresh.width > 0 && fresh.height > 0 && !sameRect(fresh, fromProp)) setFrom(fresh);
       start();
-    }, lead);
-    const safety = setTimeout(hostClear, lead + SLIDE_BACK_MS + HOME_SETTLE_MAX_MS + MORPH_DURATION + 1500);
+    }, 0);
+    const safety = setTimeout(hostClear, SLIDE_BACK_MS + HOME_SETTLE_MAX_MS + MORPH_DURATION + 1500);
     return () => { cancelled = true; clearTimeout(commit); clearTimeout(safety); if (fadeTimer) clearTimeout(fadeTimer); };
-  }, [closing, measured, fadeIn, offsetX, onCommit, p, veil, slideX, fromProp, armHomeSettle, waitHomeSettled, homeCardRef, homeReturnRef, hostClear, hostDismiss]);
+  }, [closing, measured, offsetX, onCommit, p, slideX, fromProp, armHomeSettle, waitHomeSettled, homeCardRef, homeReturnRef, hostClear, hostDismiss]);
 
   // --- Stili animati: solo trasformazioni e opacità ---
-  const veilStyle = useAnimatedStyle(() => ({ opacity: veil.value }));
   const slide = useAnimatedStyle(() => ({ transform: [{ translateX: slideX.value }] }));
   // Fondo notte + cornice del lettore: salgono nella prima metà della corsa.
   const bgStyle = useAnimatedStyle(() => ({ opacity: interpolate(p.value, [0, 0.55], [0, 1], CLAMP) }));
@@ -225,17 +222,17 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
   }));
 
   return (
-    <Animated.View style={[StyleSheet.absoluteFill, veilStyle]} testID="story-morph"
+    <View style={StyleSheet.absoluteFill} testID="story-morph"
       onLayout={(e) => { const h = Math.round(e.nativeEvent.layout.height); if (h > 0 && h !== layerH && !started.current) setLayerH(h); }}>
       {layerH == null ? null : <>
-      <Animated.View style={[StyleSheet.absoluteFill, bgStyle]} pointerEvents="none">
+      <Animated.View style={[StyleSheet.absoluteFill, bgStyle]} pointerEvents="none" {...RASTER}>
         <ReaderAtmosphere animated={false} />
       </Animated.View>
       <Animated.View style={[StyleSheet.absoluteFill, readerSkin]} pointerEvents="none"><CoverSeam top={cover.height} /></Animated.View>
 
       <Animated.View style={[StyleSheet.absoluteFill, slide]}>
         {/* Apertura identica al lettore: un solo blocco che compare in dissolvenza. */}
-        <Animated.View style={[styles.page, { width: winW, height: winH, paddingTop: cover.top }, pageStyle]} pointerEvents="none">
+        <Animated.View style={[styles.page, { width: winW, height: winH, paddingTop: cover.top }, pageStyle]} pointerEvents="none" {...RASTER}>
           <ReaderIntro story={story} coverH={cover.reserve} minHeight={winH - cover.top} bottomInset={insets.bottom} reveal={still} prefix="story-morph"
             onLayout={() => setPageMeasured(true)} onFit={setReserveCap} />
         </Animated.View>
@@ -254,7 +251,7 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
         </Animated.View>
 
         {/* Corpo della card Home (titolo in fondo alla card, tre dati sotto): svanisce con la partenza. */}
-        <Animated.View style={[styles.floating, { left: from.x, top: from.y, width: from.width }, cardBody]} pointerEvents="none" testID="story-morph-title">
+        <Animated.View style={[styles.floating, { left: from.x, top: from.y, width: from.width }, cardBody]} pointerEvents="none" testID="story-morph-title" {...RASTER}>
           <View style={[styles.cardBody, { height: from.height, padding: inset }]}>
             <View style={{ flex: 1, marginRight: premium ? LISTEN_W : 0 }}>
               <HighlightedTitle title={story.title} highlight={story.highlight_words} style={[styles.cardTitle, { fontSize: cardFont, lineHeight: cardFont * 1.14 }]}
@@ -269,9 +266,9 @@ export function StoryMorph({ story, from: fromProp, premium, ready, onCommit, di
           </View>
         </Animated.View>
       </Animated.View>
-      <Animated.View style={[StyleSheet.absoluteFill, bgStyle]} pointerEvents="none"><ReaderFrame /></Animated.View>
+      <Animated.View style={[StyleSheet.absoluteFill, bgStyle]} pointerEvents="none" {...RASTER}><ReaderFrame /></Animated.View>
       </>}
-    </Animated.View>
+    </View>
   );
 }
 

@@ -493,15 +493,17 @@ export default function DeepDive() {
   };
 
   const goBack = () => (router.canGoBack() ? router.back() : router.replace("/(tabs)/discover"));
-  // Ritorno dal lettore (arrivati con la transizione dalla card): la schermata
-  // "rientra" nella card della Home con il percorso inverso. Se si è già
-  // scorso (anche di poco), il livello (apertura) compare prima in dissolvenza
-  // sopra la pagina, poi rientra. Senza cornice: ritorno di sempre.
+  // Ritorno dal lettore (arrivati con la transizione dalla card): solo
+  // dall'apertura la schermata "rientra" nella card della Home con il percorso
+  // inverso. Da un capitolo o dalla fine (si è già scorso) niente percorso
+  // inverso: semplice cambio di schermata (dissolvenza breve). Senza cornice:
+  // ritorno di sempre.
   const backRect = parseRect(rect);
   const morphBack = (x: number) => {
     if (morph !== "1" || !backRect || morphHost.active || !router.canGoBack()) return false;
+    if (section > 0 || scrollY.value > 8) return false;
     navigation.setOptions({ animation: "none" });
-    morphHost.show(<StoryMorph direction="close" story={story} from={backRect} premium={isPremium} offsetX={x} fadeIn={scrollY.value > 8} onCommit={() => router.back()} />);
+    morphHost.show(<StoryMorph direction="close" story={story} from={backRect} premium={isPremium} offsetX={x} onCommit={() => router.back()} />);
     return true;
   };
   morphBackRef.current = morphBack;

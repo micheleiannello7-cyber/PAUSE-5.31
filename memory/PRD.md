@@ -506,3 +506,12 @@ Solo presentazione (nessuna modifica backend/contenuti):
 - **Avviso ricarica**: toast in Home (`credit-back-toast`) quando i crediti salgono rispetto all'ultimo valore visto (AsyncStorage `pause.credits_seen.<uid>`).
 - Cronologia: header solo titolo (sottotitolo rimosso); ricerca Premium solo per titolo.
 - **Regole crediti aggiornate**: base 4 crediti / +1 ogni 2 h; Premium 5 crediti / +1 ogni ora (`FREE_CAPACITY`, `PREMIUM_CAPACITY`, `FREE_RECHARGE_SECONDS`, `PREMIUM_RECHARGE_SECONDS`, `_recharge_for`). Calcolo su orario server (immune al cambio ora del dispositivo), continua con app chiusa, clamp automatico per dati esistenti. UI: ultimo slot Premium dorato, Premium screen con righe Storie 4→5, Ricarica 2h→1h, Argomenti 4→illimitati. Test pytest aggiornati (10/10).
+
+## Transizione Home ↔ lettura — ritorno semplificato e resa su Expo Go (giugno 2026)
+- `deep-dive/[id].tsx` `morphBack`: il percorso inverso (copertina che rientra nella card) si usa
+  **solo dall'apertura** (`section === 0 && scrollY ≤ 8`). Da un capitolo o dalla fine, "Home"/back/swipe
+  fanno un semplice cambio schermata (dissolvenza `fade` 260ms del navigatore). Prop `fadeIn` di
+  `StoryMorph` rimossa (non più necessaria).
+- `story-morph.tsx`: blocchi a contenuto statico (atmosfera con le 6 luci, apertura, corpo card, cornice)
+  rasterizzati (`renderToHardwareTextureAndroid` + `shouldRasterizeIOS`) → opacità/traslazioni costano
+  come un'unica immagine su Expo Go; la copertina (scala + raggio animati) resta non rasterizzata.
