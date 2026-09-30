@@ -1,0 +1,34 @@
+{
+  "summary": "Full frontend regression on the restyled Home, custom glass tab bar, onboarding step 1 (slim), and new Premium screen. All 5 features requested by main agent PASS. Onboarding hides gender/age by default and the 'onboarding-profile-more' toggle correctly reveals 'onboarding-profile-gender-card' and 'onboarding-profile-age-card' while flipping the label from 'Add details (optional)' to 'Hide details'. Continue-as-guest → topic picker → Home works end-to-end. Home shows 'home-categories-title', 'home-category-carousel' with 'home-category-list' and 5 'home-cat-<id>' tiles, 'home-category-indicator' visible (>4 cats), and NO 'home-see-all' element. Tapping a tile toggles aria-label on/off on 'category-light-home-<id>' (NOTE: the aria-label lives on category-light-home-<id>, NOT on category-selected-home-<id> as stated in the review request; the visual selection indicator testID has no accessibilityLabel). Deactivating all but the last category and then tapping the last shows 'home-min-one-toast'. Story-card tap opens '/deep-dive/<id>?morph=1&rect=...' (deep-dive reader renders correctly). Custom 'glass-tab-bar' navigates to /explore, /bookmarks, /profile and back to /discover with no errors. Premium screen (/premium): paywall-hero renders three fanned covers, paywall-claim shows €2,49 /mo, paywall-claim-note references €29,99/yr, plan-monthly €3,99, plan-yearly €29,99 preselected with 'SAVE 37%', plan-lifetime €49,99 with 'BEST VALUE'; selecting monthly/lifetime updates plan-hint and CTA label ('Start 7 days free' → 'Get Monthly' → 'Get Lifetime'); paywall-compare has exactly 9 rows (compare-layers-outline … compare-color-palette-outline); premium-activate activates entitlement (mocked placeholder unlock via backend), premium-active-chip appears on re-open, premium-cancel deactivates and 'Start 7 days free' CTA reappears. No React Native red-screen errors on any screen tested. Deprecated packages detected: none. SafeAreaView issues detected: none.",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "premium.tsx - onActivate", "issue": "onActivate() calls router.back() unconditionally; when /premium is opened directly (no back stack) this triggers console warning 'The action GO_BACK was not handled by any navigator'. The file already has a proper goBack() helper with fallback to /(tabs)/discover — use it in onActivate instead of router.back(). Reference: /app/frontend/app/premium.tsx:72-75", "testID": "premium-activate", "priority": "LOW"},
+      {"component": "category-tile-effects.tsx", "issue": "accessibilityLabel 'on'/'off' is applied to the parent 'category-light-<id>' View, not to the 'category-selected-<id>' testID mentioned in the review request. Toggle state IS reflected correctly; the mismatch is only about which testID exposes the label. Consider moving accessibilityLabel to the 'category-selected-<id>' element or updating the review spec. Reference: /app/frontend/src/components/category-tile-effects.tsx:57-70", "testID": "category-selected-home-<id>", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "global (all)", "issues": ["Many 'Failed to load resource: 404' console errors across screens (image asset resolution during dev). Non-blocking for functionality but visible in console.", "React Native web deprecation warnings: 'textShadow*' style props and 'props.pointerEvents' — non-blocking, worth cleaning up in a later pass.", "Reanimated 'Selected easing is not currently supported on web. Using linear easing instead.' — cosmetic web-only warning."]}
+    ],
+    "react_native_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "In /app/frontend/app/premium.tsx replace `router.back()` inside `onActivate` with `goBack()` (already defined) so activation from a direct /premium URL doesn't warn about missing back stack.",
+    "(Optional) In /app/frontend/src/components/category-tile-effects.tsx move accessibilityLabel={active ? 'on' : 'off'} from the wrapper 'category-light-<id>' onto the 'category-selected-<id>' bar to match the review-request spec.",
+    "(Optional / low priority) Migrate style props to non-deprecated 'textShadow' shorthand and move pointerEvents from props to style to silence RN-web deprecation warnings.",
+    "(Optional) Investigate the recurring 'Failed to load resource: 404' console errors — likely a missing asset URL in Home/Explore image resolution."
+  ],
+  "critical_code_review_comments": [
+    "premium.tsx: onActivate should reuse goBack() so the screen works when opened via deep link / direct URL (currently only when opened from a route with back stack).",
+    "discover.tsx (Home): well-structured; carousel indicator + toast + morph transitions all wired with proper testIDs.",
+    "onboarding-profile.tsx: gender/age hidden-by-default logic (showDetails state, initialized to gender!=null||age!=null) is correct and preserves the fields when returning from the topic step."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (not tested per request)", "frontend": "100% (5/5 feature areas)"},
+  "seed_data_creation": "None. Onboarding was executed fresh in a clean browser context (AsyncStorage / localStorage empty).",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Web preview URL: https://hello-world-14657.preview.emergentagent.com. Viewport 390x844. Each fresh browser context restarts onboarding. Path to reach Home: fill onboarding-profile-name → onboarding-profile-continue → click at least one chip-<id> on topics screen → onboarding-continue. Premium can be opened directly via /premium.",
+  "rca_of_issue": "N/A — no functional bugs. The two LOW-priority items are cosmetic / spec-alignment issues, not defects."
+}

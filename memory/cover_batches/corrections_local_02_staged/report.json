@@ -1,0 +1,233 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-25T00:39:12.066831+00:00",
+  "candidates": {
+    "v4-lez-catena-alimentare": {
+      "before": {
+        "id": "v4-lez-catena-alimentare",
+        "hero_image": "",
+        "title": "La catena alimentare: perché i predatori sono sempre pochi",
+        "hero_bytes": {
+          "hero": 83678,
+          "thumb": 28922,
+          "source": 83678
+        },
+        "hero_image_generated": "pause/hero/v4-lez-catena-alimentare-21892171187d.webp",
+        "hero_image_thumb": "pause/hero/v4-lez-catena-alimentare-21892171187d-thumb.webp",
+        "hero_source_digest": "21892171187d"
+      },
+      "reason": "#026: testata PAUSE e didascalia LESSON. Ritaglio locale (64,220,832,1010), falco interamente preservato; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove magazine header/footer by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/v4-lez-catena-alimentare.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v4-lez-catena-alimentare-cdd26adace6b.webp",
+        "hero_image_thumb": "pause/hero/v4-lez-catena-alimentare-cdd26adace6b-thumb.webp",
+        "hero_source_digest": "cdd26adace6b",
+        "hero_bytes": {
+          "hero": 47448,
+          "thumb": 30614,
+          "source": 47448
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:31.445799+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:31.447509+00:00"
+    },
+    "arte-why-modern-art": {
+      "before": {
+        "id": "arte-why-modern-art",
+        "hero_image": "https://images.unsplash.com/photo-1583223904441-a5cdec5c1cef?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché l'arte moderna a volte sembra 'roba che potrei fare anch'io'?",
+        "hero_bytes": {
+          "hero": 46422,
+          "thumb": 17234,
+          "source": 46422
+        },
+        "hero_image_generated": "pause/hero/arte-why-modern-art-24a0ffa30c13.webp",
+        "hero_image_thumb": "pause/hero/arte-why-modern-art-24a0ffa30c13-thumb.webp",
+        "hero_source_digest": "24a0ffa30c13"
+      },
+      "reason": "#060: grande testata EDITORIAL. Ritaglio locale (64,180,832,1200), soggetto e opera conservati; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove editorial header by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/arte-why-modern-art.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/arte-why-modern-art-fe3ec692105f.webp",
+        "hero_image_thumb": "pause/hero/arte-why-modern-art-fe3ec692105f-thumb.webp",
+        "hero_source_digest": "fe3ec692105f",
+        "hero_bytes": {
+          "hero": 29312,
+          "thumb": 13662,
+          "source": 29312
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:31.876056+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:31.877719+00:00"
+    },
+    "why-we-cry": {
+      "before": {
+        "id": "why-we-cry",
+        "hero_image": "https://images.unsplash.com/photo-1583223904441-a5cdec5c1cef?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché piangiamo?",
+        "hero_bytes": {
+          "hero": 85722,
+          "thumb": 25846,
+          "source": 85722
+        },
+        "hero_image_generated": "pause/hero/why-we-cry-aed9ff2a0bb5.webp",
+        "hero_image_thumb": "pause/hero/why-we-cry-aed9ff2a0bb5-thumb.webp",
+        "hero_source_digest": "aed9ff2a0bb5"
+      },
+      "reason": "#122: piccolo marchio PAUSE in alto. Ritaglio locale (0,90,896,1200), volto intatto; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove top logo by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/why-we-cry.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/why-we-cry-e37ecd81ceea.webp",
+        "hero_image_thumb": "pause/hero/why-we-cry-e37ecd81ceea-thumb.webp",
+        "hero_source_digest": "e37ecd81ceea",
+        "hero_bytes": {
+          "hero": 76106,
+          "thumb": 27468,
+          "source": 76106
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:32.406219+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:32.407896+00:00"
+    },
+    "v5-lez-distorsioni": {
+      "before": {
+        "id": "v5-lez-distorsioni",
+        "hero_image": "",
+        "title": "Le 4 distorsioni del pensiero che ti fanno stare peggio",
+        "hero_bytes": {
+          "hero": 71018,
+          "thumb": 24858,
+          "source": 71018
+        },
+        "hero_image_generated": "pause/hero/v5-lez-distorsioni-438b6eeec337.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-distorsioni-438b6eeec337-thumb.webp",
+        "hero_source_digest": "438b6eeec337"
+      },
+      "reason": "#234: testata Mentiali, EDITORIAL MAGAZINE e metadati stampati. Ritaglio locale (64,185,832,1200), metafora originale preservata; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove magazine header by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/v5-lez-distorsioni.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-lez-distorsioni-82b735fa3992.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-distorsioni-82b735fa3992-thumb.webp",
+        "hero_source_digest": "82b735fa3992",
+        "hero_bytes": {
+          "hero": 53924,
+          "thumb": 24862,
+          "source": 53924
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:32.797274+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:32.799155+00:00"
+    },
+    "v5-lez-hotel-hilbert": {
+      "before": {
+        "id": "v5-lez-hotel-hilbert",
+        "hero_image": "",
+        "title": "L'albergo con infinite stanze: capire l'infinito con Hilbert",
+        "hero_bytes": {
+          "hero": 87502,
+          "thumb": 31408,
+          "source": 87502
+        },
+        "hero_image_generated": "pause/hero/v5-lez-hotel-hilbert-f4e21a8568e6.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-hotel-hilbert-f4e21a8568e6-thumb.webp",
+        "hero_source_digest": "f4e21a8568e6"
+      },
+      "reason": "#280: grande testata 3:4 EDITORIAL/MAGAZINE COVER. Ritaglio locale (64,195,832,1200); nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove magazine header by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/v5-lez-hotel-hilbert.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-lez-hotel-hilbert-3a88acb03842.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-hotel-hilbert-3a88acb03842-thumb.webp",
+        "hero_source_digest": "3a88acb03842",
+        "hero_bytes": {
+          "hero": 64678,
+          "thumb": 30402,
+          "source": 64678
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:33.200647+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:33.202370+00:00"
+    },
+    "cur-why-mirrors-reverse": {
+      "before": {
+        "id": "cur-why-mirrors-reverse",
+        "hero_image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché lo specchio inverte destra e sinistra ma non sopra e sotto?",
+        "hero_bytes": {
+          "hero": 52890,
+          "thumb": 19366,
+          "source": 52890
+        },
+        "hero_image_generated": "pause/hero/cur-why-mirrors-reverse-50340a382024.webp",
+        "hero_image_thumb": "pause/hero/cur-why-mirrors-reverse-50340a382024-thumb.webp",
+        "hero_source_digest": "50340a382024"
+      },
+      "reason": "#306: testata VITORIAL MAGAZINE. Ritaglio locale (64,250,832,1200), persona e specchio conservati; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove magazine header by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/cur-why-mirrors-reverse.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/cur-why-mirrors-reverse-ca62fa2faf96.webp",
+        "hero_image_thumb": "pause/hero/cur-why-mirrors-reverse-ca62fa2faf96-thumb.webp",
+        "hero_source_digest": "ca62fa2faf96",
+        "hero_bytes": {
+          "hero": 35008,
+          "thumb": 18208,
+          "source": 35008
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:35.266524+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:35.268204+00:00"
+    },
+    "v5-lez-datare-reperti": {
+      "before": {
+        "id": "v5-lez-datare-reperti",
+        "hero_image": "",
+        "title": "Come si dà una data a un reperto: 4 metodi",
+        "hero_bytes": {
+          "hero": 72030,
+          "thumb": 20998,
+          "source": 72030
+        },
+        "hero_image_generated": "pause/hero/v5-lez-datare-reperti-6be062d68cd9.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-datare-reperti-6be062d68cd9-thumb.webp",
+        "hero_source_digest": "6be062d68cd9"
+      },
+      "reason": "#358: marchio PAUSE in alto. Ritaglio locale (64,145,832,1200), reperto preservato; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: remove top logo by reviewed crop; no AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_02_staged/v5-lez-datare-reperti.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-lez-datare-reperti-9d188c0f337e.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-datare-reperti-9d188c0f337e-thumb.webp",
+        "hero_source_digest": "9d188c0f337e",
+        "hero_bytes": {
+          "hero": 58536,
+          "thumb": 22386,
+          "source": 58536
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:40:46.967510+00:00"
+      },
+      "approved_at": "2026-09-25T00:40:46.969240+00:00"
+    }
+  },
+  "errors": [],
+  "status": "staged"
+}

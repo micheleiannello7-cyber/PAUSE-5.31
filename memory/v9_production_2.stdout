@@ -1,0 +1,148 @@
+21:40:28 [start] todo=63 testi_presenti=12
+[92m21:40:29 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:40:29,236 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:40:55 TEXT  cultura/v9-why-do-brides-wear-white-a-fashion-less-than-200-years-o (2942 it / 2878 en chars)
+21:40:55 DB    v9-why-do-brides-wear-white-a-fashion-less-than-200-years-o: inserito ({'it': 5, 'en': 5})
+[92m21:40:55 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:40:55,276 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:41:04 COVER v9-why-do-brides-wear-white-a-fashion-less-than-200-years-o: ok (pause/hero/v9-why-do-brides-wear-white-a-fashion-less-than-200-years-o-ba8a4a46f69e.webp)
+21:41:04 [1/63] DONE cultura/v9-why-do-brides-wear-white-a-fashion-less-than-200-years-o
+[92m21:41:04 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:41:04,412 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:41:27 TEXT  economia/v9-how-does-a-free-app-make-billions (2912 it / 2779 en chars)
+21:41:27 DB    v9-how-does-a-free-app-make-billions: inserito ({'it': 5, 'en': 4})
+[92m21:41:27 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:41:27,862 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:41:51 COVER v9-how-does-a-free-app-make-billions: ok (pause/hero/v9-how-does-a-free-app-make-billions-c85a1f13f807.webp)
+21:41:51 [2/63] DONE economia/v9-how-does-a-free-app-make-billions
+[92m21:41:51 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:41:51,666 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:42:18 TEXT  arte/v9-why-does-a-pop-song-last-three-minutes-blame-a-shellac-r (2787 it / 2712 en chars)
+21:42:18 DB    v9-why-does-a-pop-song-last-three-minutes-blame-a-shellac-r: inserito ({'it': 4, 'en': 4})
+[92m21:42:18 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:42:18,555 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:42:28 COVER v9-why-does-a-pop-song-last-three-minutes-blame-a-shellac-r: ok (pause/hero/v9-why-does-a-pop-song-last-three-minutes-blame-a-shellac-r-c2cad8fe3372.webp)
+21:42:28 [3/63] DONE arte/v9-why-does-a-pop-song-last-three-minutes-blame-a-shellac-r
+21:42:28 DB    v9-how-is-an-island-born: inserito ({'it': 4, 'en': 4})
+[92m21:42:28 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:42:28,485 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:42:38 COVER v9-how-is-an-island-born: ok (pause/hero/v9-how-is-an-island-born-5e172f89df88.webp)
+21:42:38 [4/63] DONE geografia/v9-how-is-an-island-born
+[92m21:42:38 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:42:38,380 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:43:03 TEXT  geografia/v9-why-are-there-countries-inside-other-countries-enclaves- (2910 it / 2945 en chars)
+21:43:03 DB    v9-why-are-there-countries-inside-other-countries-enclaves-: inserito ({'it': 5, 'en': 5})
+[92m21:43:03 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:43:03,859 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:43:14 COVER v9-why-are-there-countries-inside-other-countries-enclaves-: ok (pause/hero/v9-why-are-there-countries-inside-other-countries-enclaves--299d59b886c2.webp)
+21:43:14 [5/63] DONE geografia/v9-why-are-there-countries-inside-other-countries-enclaves-
+[92m21:43:14 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:43:14,031 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:43:42 TEXT  arte/v9-how-do-experts-tell-if-a-painting-is-a-fake (2934 it / 2935 en chars)
+21:43:42 DB    v9-how-do-experts-tell-if-a-painting-is-a-fake: inserito ({'it': 5, 'en': 5})
+[92m21:43:42 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:43:42,850 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:43:53 COVER v9-how-do-experts-tell-if-a-painting-is-a-fake: ok (pause/hero/v9-how-do-experts-tell-if-a-painting-is-a-fake-0f0e6921662e.webp)
+21:43:53 [6/63] DONE arte/v9-how-do-experts-tell-if-a-painting-is-a-fake
+[92m21:43:53 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:43:53,330 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:44:21 TEXT  economia/v9-what-is-public-debt-and-why-is-it-never-fully-repaid (2958 it / 2845 en chars)
+21:44:21 DB    v9-what-is-public-debt-and-why-is-it-never-fully-repaid: inserito ({'it': 5, 'en': 4})
+[92m21:44:21 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:44:21,890 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:44:30 COVER v9-what-is-public-debt-and-why-is-it-never-fully-repaid: ok (pause/hero/v9-what-is-public-debt-and-why-is-it-never-fully-repaid-63964d20b5cf.webp)
+21:44:30 [7/63] DONE economia/v9-what-is-public-debt-and-why-is-it-never-fully-repaid
+[92m21:44:30 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:44:30,351 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:44:57 TEXT  cultura/v9-why-do-we-eat-three-meals-a-day-it-wasn-t-always-like-th (2777 it / 2688 en chars)
+21:44:57 DB    v9-why-do-we-eat-three-meals-a-day-it-wasn-t-always-like-th: inserito ({'it': 4, 'en': 4})
+[92m21:44:57 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:44:57,782 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:45:08 COVER v9-why-do-we-eat-three-meals-a-day-it-wasn-t-always-like-th: ok (pause/hero/v9-why-do-we-eat-three-meals-a-day-it-wasn-t-always-like-th-f024a8ab80be.webp)
+21:45:08 [8/63] DONE cultura/v9-why-do-we-eat-three-meals-a-day-it-wasn-t-always-like-th
+[92m21:45:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:45:08,041 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:45:37 TEXT  corpo-umano/v9-why-can-t-the-brain-feel-pain-but-headaches-hurt (2998 it / 2928 en chars)
+21:45:37 DB    v9-why-can-t-the-brain-feel-pain-but-headaches-hurt: inserito ({'it': 5, 'en': 5})
+[92m21:45:37 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:45:37,328 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:45:46 COVER v9-why-can-t-the-brain-feel-pain-but-headaches-hurt: ok (pause/hero/v9-why-can-t-the-brain-feel-pain-but-headaches-hurt-bafbebc97721.webp)
+21:45:46 [9/63] DONE corpo-umano/v9-why-can-t-the-brain-feel-pain-but-headaches-hurt
+[92m21:45:46 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:45:46,905 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:46:15 TEXT  corpo-umano/v9-why-do-bones-heal-themselves-but-teeth-don-t (2883 it / 2833 en chars)
+21:46:15 DB    v9-why-do-bones-heal-themselves-but-teeth-don-t: inserito ({'it': 5, 'en': 4})
+[92m21:46:15 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:46:15,256 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:46:24 COVER v9-why-do-bones-heal-themselves-but-teeth-don-t: ok (pause/hero/v9-why-do-bones-heal-themselves-but-teeth-don-t-aeea77aac2af.webp)
+21:46:24 [10/63] DONE corpo-umano/v9-why-do-bones-heal-themselves-but-teeth-don-t
+[92m21:46:24 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:46:24,255 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:46:52 TEXT  cultura/v9-why-is-tea-english-if-it-comes-from-china (2757 it / 2658 en chars)
+21:46:52 DB    v9-why-is-tea-english-if-it-comes-from-china: inserito ({'it': 4, 'en': 4})
+[92m21:46:52 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:46:52,460 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+21:47:02 COVER v9-why-is-tea-english-if-it-comes-from-china: ok (pause/hero/v9-why-is-tea-english-if-it-comes-from-china-4ced06c33059.webp)
+21:47:02 [11/63] DONE cultura/v9-why-is-tea-english-if-it-comes-from-china
+[92m21:47:02 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 21:47:02,483 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+21:47:30 TEXT  economia/v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe (2728 it / 2645 en chars)
+21:47:30 DB    v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe: inserito ({'it': 4, 'en': 4})
+[92m21:47:30 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:47:30,031 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 21:47:30,530 - openai._base_client - INFO - Retrying request to /chat/completions in 0.390290 seconds
+2026-09-29 21:47:31,078 - openai._base_client - INFO - Retrying request to /chat/completions in 0.989432 seconds
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+21:47:32 DB    v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe: rimosso in attesa della copertina
+21:47:32 [12/63] FAIL economia/v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe: Failed to generate multimodal completion: litellm.RateLimitError: RateLimitError: OpenAIException - Budget has been exceeded! Key=dau1h34avsas738fd0t0 (sk-...pz2w) Current cost: 1.0521945, Max budget:
+21:47:32 !! budget/quota esaurita: mi fermo (riprendere con lo stesso comando)
+21:47:32 [done] ok=11 fail=1

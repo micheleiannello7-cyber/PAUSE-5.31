@@ -1,0 +1,22 @@
+@font-face { font-family: Sora; src: url(fonts/Sora-Bold.ttf); font-weight: 700; }
+@font-face { font-family: Sora; src: url(fonts/Sora-SemiBold.ttf); font-weight: 600; }
+@font-face { font-family: Manrope; src: url(fonts/Manrope-Regular.ttf); font-weight: 400; }
+@font-face { font-family: Manrope; src: url(fonts/Manrope-Medium.ttf); font-weight: 500; }
+@font-face { font-family: Manrope; src: url(fonts/Manrope-SemiBold.ttf); font-weight: 600; }
+@font-face { font-family: Serif; src: url(fonts/DMSerifDisplay-Regular.ttf); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 390px; height: 844px; overflow: hidden; background: #05070C; color: #F7F3EB; font-family: Manrope, sans-serif; -webkit-font-smoothing: antialiased; }
+.phone { position: relative; width: 390px; height: 844px; overflow: hidden; }
+.frame { position: absolute; inset: 0; border-radius: 28px; border: 1.5px solid rgba(63,224,255,0.55); box-shadow: inset 0 0 22px rgba(63,224,255,0.25); pointer-events: none; z-index: 20; }
+.header { position: absolute; top: 0; left: 0; right: 0; height: 74px; z-index: 10; padding: 14px 18px 0; display: flex; align-items: center; gap: 12px; }
+.header .back { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+.header .title { flex: 1; text-align: center; font: 500 13px/17px Manrope; color: #E0E2E8; }
+.header .title b { color: #3FE0FF; font-weight: 600; }
+.header .count { font: 600 12px Manrope; letter-spacing: 1px; color: #C3C6D1; }
+.segs { position: absolute; top: 60px; left: 18px; right: 18px; display: flex; gap: 6px; z-index: 10; }
+.segs i { flex: 1; height: 3px; border-radius: 2px; background: #3FE0FF; box-shadow: 0 0 8px rgba(63,224,255,0.7); }
+.eyebrow { font: 700 11px Manrope; letter-spacing: 2px; text-transform: uppercase; }
+.glass { background: rgba(20,26,40,0.55); border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.orbBtn { display: flex; align-items: center; justify-content: center; border-radius: 999px; }
+.grad { background: linear-gradient(135deg, #9B4DFF, #3FE0FF); }
+svg { display: block; }

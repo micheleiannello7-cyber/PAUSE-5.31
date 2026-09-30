@@ -1,0 +1,29 @@
+{
+  "summary": "Full frontend regression on the new Home changes (card takes vertical space, StoryInfoGrid inline moved below the card as deck-badges/home-story-meta, DeckProgress asymmetric indicator, morph transition). All 7 scenarios from the review request PASS. Onboarding via 'Continue as guest' + 6 topic chips + onboarding-continue reaches Home. On Home the active card (deck-layer-active) is tall (box y=62 h=455 at 390x844), deck-badges is placed BELOW the card (y=527 h=54) INSIDE home-story-deck and contains home-story-meta (StoryInfoGrid inline) showing kind / category / minutes matching the active title (e.g. 'MINI LESSON · TECHNOLOGY · 6 min' with title 'Spotting a deepfake…'). DeckProgress renders discover-deck-dots container, with NO discover-deck-dot-0 at cursor 0, and both discover-deck-dot-active and discover-deck-continue present; the '1 / N' text is NOT visible anywhere (only accessibilityLabel). After 3 left swipes on discover-swipe-area, discover-deck-dot-0/1/2 all appear, meta text changes (e.g. 'CURIOSITY · SCIENCE · 4 min') and active title changes accordingly; one right swipe removes the last past dot (dot-2), confirming symmetric growth/shrink. Tap on active card opens '/deep-dive/<id>?morph=1&rect=...' with cover, title and info sheet; no console errors; back button returns to Home with card, deck-badges and indicator all visible. Regression: home-category-list, tab-explore, tab-saved, tab-profile, tab-home all navigate correctly; /premium opens (paywall-hero) and paywall-close returns to Home. At 360x740 viewport the deck-badges box sits at y=431 h=54 and discover-deck-dots at y=485 h=20 → both fully within the viewport, nothing clipped. Deprecated packages detected: none. SafeAreaView issues detected: none. Console noise identical to iteration_1 (textShadow* deprecation, props.pointerEvents deprecation, Reanimated easing on web) — cosmetic, non-blocking, already flagged.",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "global (all)", "issues": ["Repeating web console warnings: 'textShadow*' props deprecated, 'props.pointerEvents' deprecated, Reanimated easing not supported on web (uses linear). Same as iteration_1, non-blocking."]}
+    ],
+    "react_native_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "No new action items from this iteration. All 7 requested feature checks passed. Optional/carried-over items from iteration_1 are still valid (premium.tsx onActivate→goBack, category-tile-effects accessibilityLabel placement, deprecated textShadow*/pointerEvents style props)."
+  ],
+  "critical_code_review_comments": [
+    "home-story-deck.tsx: DECK_BELOW_CARD_H is composed from badges + progress and used by discover.tsx to derive cardHeight = deckAreaH - DECK_BELOW_CARD_H - 8 → correct, card actually fills the remaining vertical space above the categories.",
+    "deck-badges.tsx: uses withTiming(0, {duration:110}) fade-out then setShown+lift/fade-in(240) → matches the requested 110ms/240ms cross-fade timing on card change.",
+    "deck-progress.tsx: past dots use testID discover-deck-dot-<i> up to MAX_PAST=6, active dot uses discover-deck-dot-active with brand-color glow, gradient bar uses discover-deck-continue; accessibilityLabel `${cursor+1} / ${total}` is on the container only (screen reader), no visible numeric string.",
+    "story-morph.tsx: chipsFrom now uses `from.y + from.height + DECK_BADGES_GAP` and DECK_BADGES_H → the data pill starts below the card (matches new home layout) and morphs into the reader StoryInfoGrid; Home applies `away` shared value to fade badges+progress out during morph — verified visually on tap."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (frontend only per request)", "frontend": "100% (7/7 scenarios)"},
+  "seed_data_creation": "None. Fresh browser context; onboarding executed inline as part of the flow.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Web preview URL: https://hello-world-14657.preview.emergentagent.com. Viewport 390x844 primary, 360x740 also verified. Path to Home: onboarding-profile-continue → chips (scienza/spazio/tecnologia/natura/animali/storia) → onboarding-continue. On Home, deck-badges + home-story-meta live INSIDE home-story-deck (below the card), not inside home-story-card. DeckProgress: no visible text; past-dot testIDs are discover-deck-dot-0..5 (max 6), active is discover-deck-dot-active, tail gradient is discover-deck-continue. Swipe left on discover-swipe-area advances cursor; expect ~250px drag with mouse (down→move steps→up).",
+  "rca_of_issue": "N/A — no bugs found in the requested Home/deck/badges/indicator/morph changes."
+}

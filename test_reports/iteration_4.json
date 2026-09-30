@@ -1,0 +1,30 @@
+{
+  "summary": "Frontend-only regression on the deep-dive reader + ending screen. Guest onboarding (chip-scienza + chip-spazio → onboarding-continue) reached the Home (data-testid=home-screen). Opening the active deck card (data-testid=deck-layer-active) navigated to /deep-dive/v5-natale-25 and data-testid=deep-dive-scroll was mounted. Wheel-scrolling advanced the reader without getting stuck on empty screens: after a single wheel tick the ChapterHeading morphed from the intro teaser into 'Chapter 01 · Una festa che non esisteva' with the next chapter's teaser at the bottom (screenshot confirms 01/06). The deep-dive-ending element is rendered in the ScrollView and became fully visible on the last section (screenshot shows 06/06 with Like/Save/Share and NEXT DISCOVERY). Ending contents verified: (a) NO 3-pill category/min/chapters row exists between data-testid=summary-card and data-testid=deep-dive-actions — DOM range between them contained only one wrapper div with no text nodes. (b) All three action buttons show their full labels — like-button='Like', bookmark-button='Save', share-story='Share' (no ellipsis, adjustsFontSizeToFit is present but not triggered at 390px). (c) Tapping data-testid=bookmark-button showed the wide banner data-testid=save-confirm with text 'Added to saved'. (d) The chip row below the NEXT DISCOVERY card contains three chips including data-testid=next-category-icon; kind chip ('CURIOSITY'/'MINI LESSON'), category chip with icon, and time chip. (e) Bottom CTA row exposes data-testid=ending-home-btn (Back to Home) and data-testid=ending-read-btn (Read); tapping ending-read-btn navigated from /deep-dive/v5-natale-25 to /deep-dive/v5-samoa-giorno (a new deep-dive). Console warnings unchanged from prior iterations (textShadow*, props.pointerEvents, Reanimated easing on web, one 'scrollTo() with uninitialized ref' warning at navigation). One minor UX observation captured below. Deprecated packages detected: none. SafeAreaView issues detected: none.",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "deep-dive-ending", "issues": ["The wide save-confirm banner is anchored at bottomInset + spacing.xxl and horizontally centered; on a 390x844 viewport it overlaps the ending-home-btn / ending-read-btn row for its ~2s lifetime (see /tmp/save_confirm.png). Auto-dismisses after 2000ms so it does not permanently block interaction, but consider lifting it higher (e.g. above the CTA row) or briefly dimming the CTAs so users are not tempted to tap through the toast."]}
+    ],
+    "react_native_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "(Optional, cosmetic) Move SaveConfirmToast slightly higher so it doesn't overlap the ending-home-btn / ending-read-btn pair on small viewports, or reduce its lifetime to ~1200ms.",
+    "(Optional) Investigate the one-off Reanimated warning 'Called scrollTo() with an uninitialized ref' emitted right after ending-read-btn navigation; likely benign (stale animY reaction fires between screens) but worth guarding with a null-check on scrollRef.current."
+  ],
+  "critical_code_review_comments": [
+    "reader-ending.tsx: only EyebrowLine + summary + line + endRow + nextWrap live between the summary and the actions — no styles.pills usage remains, so the 3-pill row the spec forbids is truly gone. The obsolete styles.pills / styles.pill / styles.dot / styles.pillText entries are still present in the StyleSheet block but unused; safe to delete.",
+    "reader-ending.tsx: EndActionButton receives label={t.i_like|t.save_verb|t.share} and is rendered inside styles.third (flex:1) inside a row with gap=spacing.sm — plenty of room at 390px, labels render in full. adjustsFontSizeToFit + minimumFontScale=0.75 in end-action-button.tsx provides a safety net for narrower viewports.",
+    "deep-dive/[id].tsx: wheel handler (lines 315-340) accumulates deltaY and calls stepRef.current once per lockUntil=760ms window with acc>=40 threshold — matches the spec's 'one gesture = one chapter' contract and the ~800ms pause guidance.",
+    "reader-section.tsx: ChapterHeading morph from teaser → heading using interpolated shared values is correct; TeaserSpace is absolute with height 0 so it does not add layout height, keeping single-chapter-per-screen behavior."
+  ],
+  "updated_files": [],
+  "success_rate": { "backend": "n/a (frontend-only run)", "frontend": "100% on all six acceptance items in the review request" },
+  "seed_data_creation": "None. Ephemeral guest user via localStorage clear + onboarding-guest flow.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Web preview: https://pause-preview-3.preview.emergentagent.com. Guest flow does NOT require clicking 'onboarding-guest' from a first-load state — the app boots straight into onboarding-profile; just click onboarding-profile-continue then pick two chips (chip-scienza + chip-spazio) and onboarding-continue. On Home, testID for the active deck card is 'deck-layer-active'. In the reader, one page.mouse.wheel(0, 1000) with ~800ms pause = one chapter step. Note: Playwright's element.is_visible() returns true for elements inside a ScrollView even when they are outside the visible viewport — so gating on is_visible for [data-testid=deep-dive-ending] can false-positive; prefer checking the reader header text ('06/06' style) or that the [data-testid=deep-dive-ending]'s opacity computed style is > 0.5. page.click on ending elements auto-scrolls them into view, which is what makes save-confirm work even if you didn't hand-scroll all the way. First discovered story in this seed is v5-natale-25 (6 chapters); ending-read-btn hops to v5-samoa-giorno.",
+  "rca_of_issue": "N/A — no regressions found. All six acceptance items from the review request are behaving as specified."
+}

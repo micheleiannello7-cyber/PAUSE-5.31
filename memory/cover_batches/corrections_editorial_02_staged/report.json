@@ -1,0 +1,15 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-25T00:39:12.780280+00:00",
+  "candidates": {},
+  "errors": [
+    {
+      "id": "bird-migration",
+      "type": "ChatError",
+      "budget": true
+    }
+  ],
+  "status": "stopped",
+  "stop_reason": "budget_or_quota"
+}

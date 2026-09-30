@@ -1,0 +1,13 @@
+{
+  "version": "recognizable-2026-09-v2",
+  "base_url": "https://static.prod-images.emergentagent.com/jobs/52555a81-2975-4e93-b6d9-486eee38ffaf/images/",
+  "sources": {
+    "scienza": "86ae68768ce17fd276d9bed9c3a254e88374e0ffd799e56476d43fbed26bc2c5.jpeg",
+    "natura": "4d563ca16e0dae1d7b72867cfefa6d0c4a5ce9cdbc6f7d5f3ec55037fd2ab7ee.jpeg",
+    "animali": "9bf18f432ba95bec33bbb8eaaf7d30ec03f7077c3e2d8665c03cb6d250f30f0a.jpeg",
+    "cultura": "d239fb1ec302e0fb14ef6c978cbc27c208caa0e50b7a291d93f4af8d90ddb8e6.jpeg",
+    "economia": "7d3365bce66019a5dd8038ecf50560eb2244c125aecd400c3030f70bb6156831.jpeg",
+    "arte": "2b349a332f3923dd79c83eed495a59586a258fee3b4ce243a406a221a1cd3851.jpeg",
+    "geografia": "2ca207087af8c74f74e897a660fde0b3a87a2d46f049f2cbb2c289ba6f769a40.jpeg"
+  }
+}

@@ -1,0 +1,704 @@
+{
+  "why-we-yawn": {
+    "source": "https://images.unsplash.com/photo-1580281657527-47f249e8f4df?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra una farmacista in una farmacia, che non ha alcun legame con il tema dello sbadiglio trattato nell'articolo.",
+    "observed_subject": "Una farmacista che preleva scatole di medicinali da uno scaffale."
+  },
+  "black-holes-basics": {
+    "source": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine ritrae una nebulosa, oggetto distinto da un buco nero.",
+    "observed_subject": "Una nebulosa a emissione con una struttura a bolla blu circondata da gas e stelle."
+  },
+  "how-many-galaxies": {
+    "source": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Mostra un ammasso di gas interstellare, non galassie o ammassi galattici.",
+    "observed_subject": "Una nebulosa a emissione con una struttura a bolla blu circondata da gas e stelle."
+  },
+  "nat-lightning": {
+    "source": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto astronomico del tutto estraneo ai fulmini atmosferici.",
+    "observed_subject": "Una nebulosa a emissione con una struttura a bolla blu circondata da gas e stelle."
+  },
+  "mars-red": {
+    "source": "https://images.unsplash.com/photo-1630839437035-dac17da580d0?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura chiaramente il pianeta Giove, non Marte che è l'oggetto dell'articolo.",
+    "observed_subject": "Il pianeta Giove, riconoscibile dalle sue caratteristiche bande atmosferiche e dalla Grande Macchia Rossa."
+  },
+  "eco-compound-interest": {
+    "source": "https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Un'interfaccia di streaming TV non ha alcuna attinenza con il concetto economico di interesse composto.",
+    "observed_subject": "Un televisore a schermo piatto che mostra l'interfaccia di Netflix con diverse serie TV."
+  },
+  "eco-gdp": {
+    "source": "https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine di una TV con Netflix non rappresenta né metaforicamente né letteralmente il Prodotto Interno Lordo.",
+    "observed_subject": "Un televisore a schermo piatto che mostra l'interfaccia di Netflix con diverse serie TV."
+  },
+  "how-wifi-works": {
+    "source": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra esplicitamente cavi di rete fisici e cablaggi, mentre l'articolo tratta del Wi-Fi, che è una tecnologia wireless (senza fili).",
+    "observed_subject": "Dettaglio di un pannello patch di rete con numerosi cavi Ethernet (RJ45) grigi e blu inseriti in porte numerate."
+  },
+  "octopus-brains": {
+    "source": "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra chiaramente un pesce, mentre l'articolo riguarda specificamente l'anatomia e l'intelligenza di un polpo (un cefalopode).",
+    "observed_subject": "Un pesce tropicale dai colori vivaci (rosa e viola) che nuota in un ambiente marino scuro."
+  },
+  "v8-who-invented-the-weekend": {
+    "source": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine non ha legami con la storia del lavoro o del tempo libero.",
+    "observed_subject": "L'Anfiteatro Flavio (Colosseo) a Roma al crepuscolo."
+  },
+  "v8-why-do-we-drive-on-the-right-and-the-british-on-the-left": {
+    "source": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Non pertinente alla storia della circolazione stradale.",
+    "observed_subject": "L'Anfiteatro Flavio (Colosseo) a Roma al crepuscolo."
+  },
+  "v8-how-did-people-know-the-time-before-clocks": {
+    "source": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'edificio non illustra strumenti o metodi di misurazione cronometrica.",
+    "observed_subject": "L'Anfiteatro Flavio (Colosseo) a Roma al crepuscolo."
+  },
+  "v8-the-silk-road-wasn-t-a-road": {
+    "source": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il monumento romano è estraneo al contesto delle rotte commerciali asiatiche.",
+    "observed_subject": "L'Anfiteatro Flavio (Colosseo) a Roma al crepuscolo."
+  },
+  "arte-perspective": {
+    "source": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine di un caffè non è correlata ai concetti di prospettiva e profondità nella pittura trattati nell'articolo.",
+    "observed_subject": "Un bicchiere di vetro contenente caffè espresso con una densa crema in superficie, posizionato su un piattino scuro con un cucchiaino d'argento, su uno sfondo bianco neutro."
+  },
+  "arte-why-photos-good": {
+    "source": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Sebbene sia una fotografia, il soggetto specifico (caffè) non illustra i criteri generali di estetica fotografica menzionati nel testo.",
+    "observed_subject": "Un bicchiere di vetro contenente caffè espresso con una densa crema in superficie, posizionato su un piattino scuro con un cucchiaino d'argento, su uno sfondo bianco neutro."
+  },
+  "cul-why-music-universal": {
+    "source": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Non c'è alcun legame logico o tematico tra il caffè espresso e l'universalità della musica nelle culture umane.",
+    "observed_subject": "Un bicchiere di vetro contenente caffè espresso con una densa crema in superficie, posizionato su un piattino scuro con un cucchiaino d'argento, su uno sfondo bianco neutro."
+  },
+  "cor-why-fingerprints": {
+    "source": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Nessuna correlazione visiva tra un animale che dorme e le impronte digitali.",
+    "observed_subject": "Un gatto domestico che dorme sotto delle lenzuola bianche."
+  },
+  "v8-how-does-a-double-rainbow-form": {
+    "source": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un'aurora polare, non un arcobaleno causato dalla pioggia.",
+    "observed_subject": "Un'aurora boreale con striature verdi e viola che illumina un cielo stellato sopra un paesaggio innevato notturno."
+  },
+  "v8-why-does-moss-grow-on-only-one-side-of-trees-maybe": {
+    "source": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il focus è sul cielo notturno e non sulla crescita di muschi sui tronchi.",
+    "observed_subject": "Un'aurora boreale con striature verdi e viola che illumina un cielo stellato sopra un paesaggio innevato notturno."
+  },
+  "v8-why-are-some-beaches-black-and-others-white": {
+    "source": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'ambiente mostrato è montano e innevato, non una costa sabbiosa.",
+    "observed_subject": "Un'aurora boreale con striature verdi e viola che illumina un cielo stellato sopra un paesaggio innevato notturno."
+  },
+  "v8-why-does-desert-sand-sing": {
+    "source": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il paesaggio artico raffigurato è l'opposto climatico di un deserto di sabbia.",
+    "observed_subject": "Un'aurora boreale con striature verdi e viola che illumina un cielo stellato sopra un paesaggio innevato notturno."
+  },
+  "v8-how-do-rivers-draw-their-curves": {
+    "source": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Non sono presenti fiumi o corsi d'acqua visibili nel panorama montuoso.",
+    "observed_subject": "Un'aurora boreale con striature verdi e viola che illumina un cielo stellato sopra un paesaggio innevato notturno."
+  },
+  "cur-why-yawn-contagious-fun": {
+    "source": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il gatto non ha attinenza con lo zucchero filato o la fisica del cibo.",
+    "observed_subject": "Un gatto bianco e nero che guarda l'obiettivo posizionato dietro una superficie di legno."
+  },
+  "quantum-basics": {
+    "source": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "La scala planetaria macroscopica è l'opposto dei fenomeni microscopici della fisica quantistica.",
+    "observed_subject": "Veduta notturna del pianeta Terra dallo spazio con luci cittadine e stelle."
+  },
+  "how-dna-works": {
+    "source": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura organi specifici anziché la struttura molecolare del DNA.",
+    "observed_subject": "Modello anatomico di un cuore umano e sezioni di cervello."
+  },
+  "why-evolution": {
+    "source": "https://images.unsplash.com/photo-1471520201477-47a62a269a87?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine rappresenta un fenomeno di fluidodinamica (una goccia d'acqua) che non ha alcuna correlazione tematica o metaforica con il concetto biologico di evoluzione o con l'albero della vita citato nel testo.",
+    "observed_subject": "Una goccia d'acqua che cade su una superficie liquida creando onde concentriche."
+  },
+  "why-magnets": {
+    "source": "https://images.unsplash.com/photo-1614729375293-74e5cf67ebc3?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "moon-tides": {
+    "source": "https://images.unsplash.com/photo-1522434860430-f1cef8b9ea60?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "v8-how-much-does-earth-weigh-and-how-did-we-measure-it": {
+    "source": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'articolo riguarda specificamente il pianeta Terra e la sua misurazione, mentre l'immagine mostra una galassia lontana senza alcun nesso con la geofisica.",
+    "observed_subject": "Una galassia a spirale (probabilmente Andromeda) circondata da un fitto campo di stelle nello spazio profondo."
+  },
+  "v8-why-do-rockets-almost-always-launch-toward-the-east": {
+    "source": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'articolo tratta di lanci di razzi dalla Terra e meccanica orbitale terrestre; una galassia nello spazio profondo è un soggetto non correlato.",
+    "observed_subject": "Una galassia a spirale (probabilmente Andromeda) circondata da un fitto campo di stelle nello spazio profondo."
+  },
+  "why-sun-shines": {
+    "source": "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra una nebulosa, che è un oggetto astronomico distinto e visivamente diverso dal Sole.",
+    "observed_subject": "Una vasta nebulosa con nubi di gas colorate e numerose stelle nello spazio profondo."
+  },
+  "why-comets-tails": {
+    "source": "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura una nebulosa; non è presente alcuna cometa o scia cometaria.",
+    "observed_subject": "Una vasta nebulosa con nubi di gas colorate e numerose stelle nello spazio profondo."
+  },
+  "how-iss-works": {
+    "source": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra il lancio di un razzo, mentre l'articolo riguarda specificamente la struttura e il funzionamento della Stazione Spaziale Internazionale (ISS).",
+    "observed_subject": "Il lancio di un razzo Falcon Heavy di SpaceX da una piattaforma terrestre, con un edificio che riporta il logo SpaceX."
+  },
+  "exoplanets-basics": {
+    "source": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Raffigura un gigante gassoso del sistema solare, incoerente con la ricerca di esopianeti simili alla Terra.",
+    "observed_subject": "Il pianeta Saturno con i suoi anelli su sfondo nero."
+  },
+  "eco-why-money-value": {
+    "source": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Non sono presenti elementi visivi legati a valuta, banconote o sistemi di scambio monetario.",
+    "observed_subject": "Una mappa del mondo con numerose puntine colorate inserite in varie località geografiche."
+  },
+  "eco-stock-market": {
+    "source": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Sebbene suggerisca una portata globale, mancano grafici azionari o simboli finanziari specifici.",
+    "observed_subject": "Una mappa del mondo con numerose puntine colorate inserite in varie località geografiche."
+  },
+  "how-batteries-work": {
+    "source": "https://images.unsplash.com/photo-1494212088344-91b18d9d4c11?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "eco-why-taxes": {
+    "source": "https://images.unsplash.com/photo-1494212088344-91b18d9d4c11?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "eco-why-things-cost": {
+    "source": "https://images.unsplash.com/photo-1494212088344-91b18d9d4c11?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "eco-inflation": {
+    "source": "https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine riguarda la sicurezza informatica e i pagamenti protetti, non l'inflazione o la perdita di valore del denaro.",
+    "observed_subject": "Un lucchetto a combinazione appoggiato su una tastiera bianca di un computer, accanto a delle carte di credito dorate con chip."
+  },
+  "eco-brands-value": {
+    "source": "https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine si concentra sulla sicurezza dei dati e delle carte, non sul valore dei brand o dei loghi commerciali.",
+    "observed_subject": "Un lucchetto a combinazione appoggiato su una tastiera bianca di un computer, accanto a delle carte di credito dorate con chip."
+  },
+  "how-ai-learns": {
+    "source": "https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "eco-supply-demand": {
+    "source": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'uso di uno smartphone non rappresenta visivamente o metaforicamente i concetti economici di domanda e offerta.",
+    "observed_subject": "Una persona che tiene e utilizza uno smartphone bianco."
+  },
+  "eco-scarcity-choices": {
+    "source": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura un'azione tecnologica specifica che non ha attinenza con il tema astratto della scarsità e della scienza delle scelte.",
+    "observed_subject": "Una persona che tiene e utilizza uno smartphone bianco."
+  },
+  "how-3d-printing": {
+    "source": "https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un'attività di programmazione software, che non ha nulla a che fare con il funzionamento fisico di una stampante 3D descritto nell'articolo.",
+    "observed_subject": "Una persona che scrive codice su un computer con due monitor."
+  },
+  "volcanoes-basics": {
+    "source": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto spaziale privo di legami con la struttura dei vulcani terrestri.",
+    "observed_subject": "Una nebulosa astronomica con nubi di gas interstellare e stelle brillanti."
+  },
+  "geo-borders": {
+    "source": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine astronomica non rappresenta confini politici o geografia di stato.",
+    "observed_subject": "Una nebulosa astronomica con nubi di gas interstellare e stelle brillanti."
+  },
+  "geo-plate-tectonics": {
+    "source": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Una nebulosa non è correlata alla deriva dei continenti o alla tettonica.",
+    "observed_subject": "Una nebulosa astronomica con nubi di gas interstellare e stelle brillanti."
+  },
+  "why-seasons": {
+    "source": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Mostra solo un clima estivo senza riferimenti all'inclinazione terrestre.",
+    "observed_subject": "Spiaggia tropicale al tramonto con mare calmo, sabbia e palme distanti."
+  },
+  "nat-why-leaves-fall": {
+    "source": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Ambiente tropicale privo di alberi decidui e dei tipici colori autunnali.",
+    "observed_subject": "Spiaggia tropicale al tramonto con mare calmo, sabbia e palme distanti."
+  },
+  "geo-why-timezones": {
+    "source": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine di un albero non è correlata al concetto geografico e astronomico dei fusi orari.",
+    "observed_subject": "Un grande albero solitario con fitta chioma verde situato in un campo d'erba sotto un cielo azzurro."
+  },
+  "geo-population": {
+    "source": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un paesaggio naturale e solitario, l'opposto del tema della densità di popolazione umana.",
+    "observed_subject": "Un grande albero solitario con fitta chioma verde situato in un campo d'erba sotto un cielo azzurro."
+  },
+  "nat-tides": {
+    "source": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura un albero in un prato e non ha alcun legame visivo con il mare o le maree.",
+    "observed_subject": "Un grande albero solitario con fitta chioma verde situato in un campo d'erba sotto un cielo azzurro."
+  },
+  "geo-highest-mountain": {
+    "source": "https://images.unsplash.com/photo-1439405326854-014607f694d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Ambiente marino non pertinente a vette montuose.",
+    "observed_subject": "Onde dell'oceano in primo piano con sole all'orizzonte e nuvole."
+  },
+  "geo-map-lies": {
+    "source": "https://images.unsplash.com/photo-1439405326854-014607f694d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Assenza di elementi cartografici o rappresentazioni terrestri.",
+    "observed_subject": "Onde dell'oceano in primo piano con sole all'orizzonte e nuvole."
+  },
+  "how-glaciers-move": {
+    "source": "https://images.unsplash.com/photo-1520681279154-51b3fb4ea0f8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "geo-why-oceans-salty": {
+    "source": "https://images.unsplash.com/photo-1520681279154-51b3fb4ea0f8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "geo-rivers-civilization": {
+    "source": "https://images.unsplash.com/photo-1520681279154-51b3fb4ea0f8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "nat-mushrooms-network": {
+    "source": "https://images.unsplash.com/photo-1520681279154-51b3fb4ea0f8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "shark-facts": {
+    "source": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Mancano squali; presenti solo piccoli pesci e sub.",
+    "observed_subject": "Subacquei accanto a un folto banco di pesci gialli striati."
+  },
+  "ani-octopus-intelligence": {
+    "source": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Assenza di polpi; visibili solo subacquei e pesci gregari.",
+    "observed_subject": "Subacquei accanto a un folto banco di pesci gialli striati."
+  },
+  "elephants-memory": {
+    "source": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra una giraffa, mentre il testo tratta di elefanti.",
+    "observed_subject": "Primo piano di una giraffa su sfondo naturale."
+  },
+  "ani-tardigrade": {
+    "source": "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra dei pinguini, mentre l'articolo tratta del tardigrado, un organismo microscopico del tutto differente.",
+    "observed_subject": "Due pinguini reali in primo piano su una spiaggia sassosa con il mare e altri pinguini sullo sfondo."
+  },
+  "sto-rosetta": {
+    "source": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'articolo riguarda specificamente la Stele di Rosetta e la decifrazione della scrittura, mentre l'immagine mostra un monumento architettonico (una piramide) che non illustra il tema dei geroglifici o del reperto archeologico citato.",
+    "observed_subject": "Una grande piramide di pietra in un paesaggio desertico, con persone, cavalli e cammelli visibili alla base."
+  },
+  "printing-press": {
+    "source": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine naturale non è pertinente alla storia della stampa meccanica.",
+    "observed_subject": "Paesaggio montano notturno con cielo stellato e Via Lattea."
+  },
+  "sto-printing-press": {
+    "source": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto astronomico privo di legami con l'invenzione dei libri stampati.",
+    "observed_subject": "Paesaggio montano notturno con cielo stellato e Via Lattea."
+  },
+  "french-revolution": {
+    "source": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'opera astratta non presenta alcun legame visivo o storico con la Rivoluzione Francese.",
+    "observed_subject": "Pittura astratta con pennellate materiche nei toni del giallo, rosso, arancione e verde."
+  },
+  "world-war-1": {
+    "source": "https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un contesto urbano moderno, del tutto privo di attinenza storica con il conflitto del 1914.",
+    "observed_subject": "Un uomo in abbigliamento moderno che salta in una strada cittadina contemporanea con automobili e architettura attuale."
+  },
+  "vikings-truth": {
+    "source": "https://images.unsplash.com/photo-1531074057936-6afa10dd7d16?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "cor-why-dreams": {
+    "source": "https://images.unsplash.com/photo-1541199249251-f713e6145474?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "L'aspetto affaticato richiama il sonno, ma non illustra direttamente l'attività onirica.",
+    "observed_subject": "Uomo con felpa che si copre il volto con le mani, seduto tra scatole di cartone aperte."
+  },
+  "psi-dunning-kruger": {
+    "source": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un lavoro di analisi o pianificazione dettagliata che non richiama il concetto di incompetenza o della percezione errata delle proprie capacità.",
+    "observed_subject": "Una mano che interagisce con una bacheca su cui sono appesi fogli, mappe e appunti collegati tra loro da fili neri e puntine colorate, formando una rete di connessioni."
+  },
+  "psi-why-procrastinate": {
+    "source": "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il pianto e la tristezza non rappresentano il tema della procrastinazione.",
+    "observed_subject": "Ritratto ravvicinato in bianco e nero di un bambino che piange con lacrime visibili."
+  },
+  "immune-system": {
+    "source": "https://images.unsplash.com/photo-1583912267550-d64c1f43fa89?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "cor-why-hiccup": {
+    "source": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'attività estetica non ha correlazione con il riflesso del singhiozzo.",
+    "observed_subject": "Mani umane che applicano smalto rosa glitterato sulle unghie."
+  },
+  "arte-golden-ratio": {
+    "source": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra solo libri e non ha alcun riferimento visivo alla sezione aurea, alla natura o alle opere d'arte citate.",
+    "observed_subject": "Una pila di libri appoggiati su una superficie piana."
+  },
+  "arte-design-everyday": {
+    "source": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'articolo riguarda l'usabilità di oggetti quotidiani come porte e telecomandi; i libri sono troppo generici e non attinenti al tema del design industriale.",
+    "observed_subject": "Una pila di libri appoggiati su una superficie piana."
+  },
+  "origin-alphabet": {
+    "source": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Libri di business moderni non attinenti alla storia dell'alfabeto antico.",
+    "observed_subject": "Una pila di libri di saggistica moderna e business su un tavolo."
+  },
+  "arte-mona-lisa": {
+    "source": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Testi aziendali contemporanei privi di legami con l'arte rinascimentale.",
+    "observed_subject": "Una pila di libri di saggistica moderna e business su un tavolo."
+  },
+  "arte-why-statues-white": {
+    "source": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra manuali moderni, non sculture greche o archeologia.",
+    "observed_subject": "Una pila di libri di saggistica moderna e business su un tavolo."
+  },
+  "cul-superstitions": {
+    "source": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Temi di management e startup non correlati a superstizioni o folklore.",
+    "observed_subject": "Una pila di libri di saggistica moderna e business su un tavolo."
+  },
+  "arte-color-psychology": {
+    "source": "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "La foto monocromatica non è adatta a un articolo sulla psicologia del colore.",
+    "observed_subject": "Pezzi di scacchi, tra cui un cavallo e un re, disposti su una scacchiera in bianco e nero."
+  },
+  "arte-street-art": {
+    "source": "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Gli scacchi non presentano legami iconografici con l'arte urbana o i graffiti.",
+    "observed_subject": "Pezzi di scacchi, tra cui un cavallo e un re, disposti su una scacchiera in bianco e nero."
+  },
+  "cul-handshake": {
+    "source": "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Non sono visibili interazioni umane o gesti di saluto nell'immagine.",
+    "observed_subject": "Pezzi di scacchi, tra cui un cavallo e un re, disposti su una scacchiera in bianco e nero."
+  },
+  "why-we-cry": {
+    "source": "https://images.unsplash.com/photo-1583223904441-a5cdec5c1cef?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "arte-why-modern-art": {
+    "source": "https://images.unsplash.com/photo-1583223904441-a5cdec5c1cef?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "arte-music-emotion": {
+    "source": "https://images.unsplash.com/photo-1583223904441-a5cdec5c1cef?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "why-lefties": {
+    "source": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Scena lavorativa generica non pertinente alla ricerca biologica sul mancinismo.",
+    "observed_subject": "Dettaglio di mani che gesticolano in un ufficio con laptop e taccuino."
+  },
+  "colors-cant-see": {
+    "source": "https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Paesaggio generico non pertinente alla percezione cromatica invisibile o alla visione animale.",
+    "observed_subject": "Paesaggio di savana al tramonto con alberi di acacia e un veicolo in lontananza."
+  },
+  "cur-why-popcorn-pops": {
+    "source": "https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Scena naturale priva di legami con la fisica del mais o la produzione di popcorn.",
+    "observed_subject": "Paesaggio di savana al tramonto con alberi di acacia e un veicolo in lontananza."
+  },
+  "time-zones": {
+    "source": "https://images.unsplash.com/photo-1509909756405-be0199881695?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Assenza di riferimenti a geografia, orologi o ferrovie.",
+    "observed_subject": "Palloncini colorati (rosa e gialli) con faccine sorridenti e tristi nel cielo."
+  },
+  "cur-why-time-flies": {
+    "source": "https://images.unsplash.com/photo-1509909756405-be0199881695?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto non pertinente alla percezione psicologica dello scorrere del tempo.",
+    "observed_subject": "Palloncini colorati (rosa e gialli) con faccine sorridenti e tristi nel cielo."
+  },
+  "why-mirror-flip": {
+    "source": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra un uomo in una posa riflessiva generica, ma manca completamente il riferimento visivo allo specchio o al fenomeno fisico della riflessione trattato nell'articolo.",
+    "observed_subject": "Un uomo barbuto in posa pensierosa con la mano sul mento su sfondo scuro."
+  },
+  "cur-why-mirrors-reverse": {
+    "source": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine non raffigura né uno specchio né un riflesso, elementi centrali della spiegazione scientifica proposta; è un'immagine generica di una persona che pensa.",
+    "observed_subject": "Un uomo barbuto in posa pensierosa con la mano sul mento su sfondo scuro."
+  },
+  "cur-why-onions-cry": {
+    "source": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine mostra patate, non attinenti alle cipolle descritte nel testo.",
+    "observed_subject": "Un gruppo di patate crude."
+  },
+  "v4-giorno-venere": {
+    "source": "pause/hero/v4-giorno-venere-9e1eae94043d.webp",
+    "verdict": "mismatch",
+    "reason": "L'immagine raffigura chiaramente un gigante gassoso, non compatibile con l'aspetto di Venere.",
+    "observed_subject": "Pianeta gassoso con evidenti bande e vortici atmosferici simili a Giove, accanto a una stella."
+  },
+  "v8-why-is-glass-transparent-if-it-s-made-of-sand": {
+    "source": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Nessun riferimento visivo a vetro o sabbia.",
+    "observed_subject": "Paesaggio collinare al tramonto con alberi e nebbia diffusa."
+  },
+  "v8-why-is-fire-hot-and-what-is-a-flame-made-of": {
+    "source": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Il sole non rappresenta fiamme o combustione.",
+    "observed_subject": "Paesaggio collinare al tramonto con alberi e nebbia diffusa."
+  },
+  "v8-why-does-bread-rise-the-chemistry-of-bubbles": {
+    "source": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Manca ogni legame con pane o processi chimici.",
+    "observed_subject": "Paesaggio collinare al tramonto con alberi e nebbia diffusa."
+  },
+  "v8-why-does-helium-give-you-a-cartoon-voice": {
+    "source": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto naturale non pertinente al gas elio.",
+    "observed_subject": "Paesaggio collinare al tramonto con alberi e nebbia diffusa."
+  },
+  "v8-why-does-hot-water-freeze-faster-than-cold-water": {
+    "source": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Assenza di acqua, ghiaccio o dinamiche termiche.",
+    "observed_subject": "Paesaggio collinare al tramonto con alberi e nebbia diffusa."
+  },
+  "v8-why-does-the-progress-bar-never-tell-the-truth": {
+    "source": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Un PC da gaming non raffigura una barra di caricamento né il problema della stima del progresso.",
+    "observed_subject": "Un computer desktop con componenti interni e ventole illuminati da LED blu."
+  },
+  "v8-how-does-shazam-recognise-a-song-in-three-seconds": {
+    "source": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "PC fisso non correlato ad app mobili o audio.",
+    "observed_subject": "Un computer desktop con componenti interni e ventole illuminati da LED blu."
+  },
+  "v8-how-does-your-phone-know-you-ve-rotated-it": {
+    "source": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto desktop estraneo alla tecnologia degli smartphone.",
+    "observed_subject": "Un computer desktop con componenti interni e ventole illuminati da LED blu."
+  },
+  "v8-why-do-jpeg-photos-lose-quality-every-time-you-save-them": {
+    "source": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Un PC da gaming non rappresenta immagini JPEG né gli artefatti della compressione.",
+    "observed_subject": "Un computer desktop con componenti interni e ventole illuminati da LED blu."
+  },
+  "v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not": {
+    "source": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Mostra un computer completo, non un caricabatterie.",
+    "observed_subject": "Un computer desktop con componenti interni e ventole illuminati da LED blu."
+  },
+  "v8-why-do-dogs-tilt-their-heads-when-you-talk-to-them": {
+    "source": "https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Soggetto tecnologico privo di riferimenti ai cani.",
+    "observed_subject": "Una persona vista dall'alto seduta a una scrivania con tre monitor e accessori tecnologici."
+  },
+  "v8-how-do-fireflies-make-light-without-heat": {
+    "source": "https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Postazione PC non pertinente al tema delle lucciole.",
+    "observed_subject": "Una persona vista dall'alto seduta a una scrivania con tre monitor e accessori tecnologici."
+  },
+  "v8-why-are-flamingos-pink": {
+    "source": "https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Contesto digitale estraneo alla biologia dei fenicotteri.",
+    "observed_subject": "Una persona vista dall'alto seduta a una scrivania con tre monitor e accessori tecnologici."
+  },
+  "v8-crows-remember-human-faces": {
+    "source": "https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "L'immagine non mostra corvi o elementi naturali.",
+    "observed_subject": "Una persona vista dall'alto seduta a una scrivania con tre monitor e accessori tecnologici."
+  },
+  "v8-how-do-whales-sleep-without-drowning": {
+    "source": "https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "mismatch",
+    "reason": "Ambiente d'ufficio non correlato alla vita marina.",
+    "observed_subject": "Una persona vista dall'alto seduta a una scrivania con tre monitor e accessori tecnologici."
+  },
+  "v8-why-do-songs-get-stuck-in-your-head": {
+    "source": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Connessione astratta non chiaramente definibile come musicale.",
+    "observed_subject": "Forme fluide astratte in colori viola e rosa."
+  },
+  "v8-why-do-we-feel-embarrassed-for-other-people": {
+    "source": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "L'astrazione non permette di identificare l'emozione specifica.",
+    "observed_subject": "Forme fluide astratte in colori viola e rosa."
+  },
+  "v8-why-does-a-stranger-s-face-instantly-seem-likeable-or-no": {
+    "source": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Immagine priva di elementi figurativi legati ai volti.",
+    "observed_subject": "Forme fluide astratte in colori viola e rosa."
+  },
+  "v8-why-do-we-talk-to-ourselves-and-why-it-s-good": {
+    "source": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Il soggetto non richiama esplicitamente il dialogo interiore.",
+    "observed_subject": "Forme fluide astratte in colori viola e rosa."
+  },
+  "v8-the-brain-hates-losing-more-than-it-loves-winning": {
+    "source": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "uncertain",
+    "reason": "Mancano riferimenti visivi ai meccanismi della perdita.",
+    "observed_subject": "Forme fluide astratte in colori viola e rosa."
+  },
+  "v8-why-do-we-shiver-when-we-have-a-fever": {
+    "source": "https://images.unsplash.com/photo-1552057426-c4dbcae005b9?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  },
+  "v8-why-does-coffee-make-some-people-sleepy": {
+    "source": "https://images.unsplash.com/photo-1552057426-c4dbcae005b9?w=1200&q=80&auto=format&fit=crop",
+    "verdict": "unavailable",
+    "reason": "HTTP 404",
+    "observed_subject": "Immagine non disponibile"
+  }
+}

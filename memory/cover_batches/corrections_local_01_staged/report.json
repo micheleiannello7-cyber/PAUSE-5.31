@@ -1,0 +1,105 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-25T00:34:59.109268+00:00",
+  "candidates": {
+    "why-lefties": {
+      "before": {
+        "id": "why-lefties",
+        "hero_image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché il 10% delle persone è mancino?",
+        "hero_bytes": {
+          "hero": 73996,
+          "thumb": 23598,
+          "source": 73996
+        },
+        "hero_image_generated": "pause/hero/why-lefties-17b096c71622.webp",
+        "hero_image_thumb": "pause/hero/why-lefties-17b096c71622-thumb.webp",
+        "hero_source_digest": "17b096c71622"
+      },
+      "reason": "Copertina #087: la donna scrive con la destra in una storia sul mancinismo. Correzione locale mediante specchiatura orizzontale; nessuna generazione AI.",
+      "prompt": "LOCAL ONLY: approved horizontal mirror of existing photo, preserving the scene and making the writing hand the left hand. No AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_01_staged/why-lefties.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/why-lefties-f90ce86340fd.webp",
+        "hero_image_thumb": "pause/hero/why-lefties-f90ce86340fd-thumb.webp",
+        "hero_source_digest": "f90ce86340fd",
+        "hero_bytes": {
+          "hero": 66618,
+          "thumb": 22950,
+          "source": 66618
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:56.756393+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:56.758018+00:00"
+    },
+    "time-zones": {
+      "before": {
+        "id": "time-zones",
+        "hero_image": "https://images.unsplash.com/photo-1509909756405-be0199881695?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché ci sono i fusi orari?",
+        "hero_bytes": {
+          "hero": 102660,
+          "thumb": 35542,
+          "source": 102660
+        },
+        "hero_image_generated": "pause/hero/time-zones-26ec4139aea5.webp",
+        "hero_image_thumb": "pause/hero/time-zones-26ec4139aea5-thumb.webp",
+        "hero_source_digest": "26ec4139aea5"
+      },
+      "reason": "Copertina #169: testata EDITORIAL in alto. Ritaglio locale (64,195,832,1200) del master 896x1200 per mantenere orologio e bussola ed eliminare la scritta, senza AI.",
+      "prompt": "LOCAL ONLY: approved crop of existing photograph to remove editorial header, preserving clock and compass. No AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_01_staged/time-zones.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/time-zones-ca3b638e9491.webp",
+        "hero_image_thumb": "pause/hero/time-zones-ca3b638e9491-thumb.webp",
+        "hero_source_digest": "ca3b638e9491",
+        "hero_bytes": {
+          "hero": 77786,
+          "thumb": 35240,
+          "source": 77786
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:57.145142+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:57.146819+00:00"
+    },
+    "v5-lez-telescopio": {
+      "before": {
+        "id": "v5-lez-telescopio",
+        "hero_image": "",
+        "title": "Come funziona un telescopio (e perché quello grande vede il passato)",
+        "hero_bytes": {
+          "hero": 69054,
+          "thumb": 26924,
+          "source": 69054
+        },
+        "hero_image_generated": "pause/hero/v5-lez-telescopio-201256b6bbb1.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-telescopio-201256b6bbb1-thumb.webp",
+        "hero_source_digest": "201256b6bbb1"
+      },
+      "reason": "Copertina #318: testata MAGAZINE e didascalia fotografica al piede. Ritaglio locale (48,185,848,1080) del master 896x1200, mantenendo lente e laboratorio, senza AI.",
+      "prompt": "LOCAL ONLY: approved crop of existing photograph removing header and footer lettering while preserving the main optical instrument. No AI call.",
+      "file": "/app/memory/cover_batches/corrections_local_01_staged/v5-lez-telescopio.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-lez-telescopio-093bb4d4aee1.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-telescopio-093bb4d4aee1-thumb.webp",
+        "hero_source_digest": "093bb4d4aee1",
+        "hero_bytes": {
+          "hero": 45678,
+          "thumb": 25880,
+          "source": 45678
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:57.543100+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:57.544885+00:00"
+    }
+  },
+  "errors": [],
+  "status": "staged"
+}

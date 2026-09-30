@@ -1,0 +1,47 @@
+[
+  {
+    "id": "bird-migration",
+    "reason": "#001: un pappagallino verde fermo su un ramo invece degli uccelli migratori; i capitoli iniziano con il viaggio della sterna artica.",
+    "prompt": "Cinematic wildlife photograph of one identifiable Arctic tern in migration over a cold ocean at dusk. White and pale grey body, black cap, slender red beak, long pointed wings and long forked tail, anatomically accurate bird in natural gliding flight. The entire bird is in frame, central lower two thirds, wings not cropped. Distant Arctic coastline softly blurred, dark blue sea, warm rim light from the low Sun and wide deep navy sky. No parrots, no tropical forest, no fantasy feathers, no flight path lines, no typography or labels."
+  },
+  {
+    "id": "bees-communicate",
+    "reason": "#003: bombo su un fiore, ma i capitoli descrivono la comunicazione e la danza delle api mellifere nell'alveare. La stessa foto è duplicata su #027.",
+    "prompt": "Scientifically accurate macro wildlife photograph of two western honeybee workers, Apis mellifera, on the wooden entrance of a real hive. They face each other with their two delicate antennae nearly touching in communication. Slim segmented amber-brown striped abdomens, modest fine fuzz on thorax, translucent veined wings and six natural jointed legs each. These are honeybees, NOT round fluffy black-and-yellow bumblebees. Shallow depth of field, tiny warm honey highlights, dark teal hive shadows, natural candid scene without diagrams, words or labels."
+  },
+  {
+    "id": "ani-bee-dance",
+    "reason": "#027: lo stesso bombo su un fiore di #003, specie e contesto errati per la danza dell'addome sul favo descritta nella storia.",
+    "prompt": "Documentary macro photograph inside a honeybee hive. An active slim amber-brown western honeybee worker, Apis mellifera, is on a vertical golden hexagonal wax comb, surrounded at a natural distance by four attentive honeybee workers with antennae oriented toward her. Central bee abdomen has a very subtle natural motion blur suggesting a waggle, but its body and six legs remain anatomically normal. Small real translucent wings, fine thorax hairs, not fluffy bumblebees. Warm side illumination, deep dark honeycomb shadows. No drawn arrows, no dance-trail lines, no cartoon faces, no labels or typography."
+  },
+  {
+    "id": "v5-pollice-alzato",
+    "reason": "#108: mano disincarnata isolata sopra una banda orizzontale artificiale e arena sottostante. Eliminare collage e mano sospesa.",
+    "prompt": "One continuous historically inspired photographic reconstruction of an ancient Roman amphitheatre at dusk. Foreground: a weathered bronze gladiator helmet and a small round gladiator shield resting together on the real sandy arena floor. Background: intact Roman seating arches softly out of focus, warm sunset entering from the side. No people or disembodied hands, no thumbs up or thumbs down, no floating objects, no split image, no horizontal bands. Detailed bronze patina, sand and stone, cinematic dark shadows and subtle warm highlights. No labels, no text, no magazine layout."
+  },
+  {
+    "id": "v8-why-do-songs-get-stuck-in-your-head",
+    "reason": "#247: donna con cornetta telefonica fissa, ma la storia riguarda le melodie che si ripetono mentalmente, non telefonate.",
+    "prompt": "Intimate cinematic photographic portrait of an adult woman absent-mindedly humming a tune in a quiet room. She has a subtle thoughtful half-smile, one index finger softly tapping a rhythm on the wooden table. A pair of simple over-ear music headphones lies clearly visible on the table beside her, not being worn, suggesting that the music continues in her mind after listening has ended. Exactly two natural arms and hands, relaxed posture. Warm window sidelight, cool navy background, shallow depth of field. No telephone or handset, no musical-note graphics, no words, no logos."
+  },
+  {
+    "id": "why-evolution",
+    "reason": "#265: albero cosmico composto da galassie e pianeti, confonde evoluzione biologica con cosmologia. Correggere il soggetto senza modificare i capitoli.",
+    "prompt": "Scientifically grounded natural history museum still life illustrating biological evolution through variation. Three realistic small Galapagos finch specimens perched naturally on separate connected twigs, each with a visibly different beak shape: one fine pointed insect-eating beak, one medium seed-eating beak and one deeper stout seed-cracking beak. Otherwise related small brown birds, anatomically natural wings, tails and feet. A softly blurred fossil slab lies in the background of the museum display, but the finches are the focus. Dramatic warm museum side light, dark navy-green background, detailed feathers. No DNA spirals, no galaxies, no planets, no cosmic tree, no labels or typography."
+  },
+  {
+    "id": "v4-guerra-piu-breve",
+    "reason": "#371: doppio orizzonte con nave apparentemente sospesa sopra la città. Serve un'unica scena coerente del porto di Zanzibar nel 1896.",
+    "prompt": "One coherent historically inspired photographic reconstruction of Zanzibar harbour in 1896. A late Victorian British Royal Navy gunboat, dark hull, one steam funnel and period masts, floats naturally IN THE WATER just offshore from the low pale stone buildings of Stone Town. View from a shore-side stone quay, boat in middle distance, buildings and boat share exactly one consistent sea level and one horizon. A thin trace of smoke from the funnel, overcast dawn, muted copper light on water and deep blue shadows. No battle gore, no modern ships, no floating vessel, no double exposure, no stacked scenes, no text."
+  },
+  {
+    "id": "sto-spices",
+    "reason": "#384: dipinto astratto multicolore totalmente estraneo al commercio storico delle spezie.",
+    "prompt": "Richly detailed historical spice-trade still life photographed in an old maritime merchant warehouse. Open small linen sacks and shallow bronze bowls of black peppercorns, cloves, cinnamon bark, nutmeg and saffron on a worn wooden table. A small antique balance scale and softly blurred rolled maritime chart in the background suggest long-distance trade. Specific recognisable real spices, warm amber sidelight, dark teal and navy warehouse shadows, central arrangement. No paintings, no abstract colored splashes, no modern branded packaging, no readable words, no title or magazine graphics."
+  },
+  {
+    "id": "v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not",
+    "reason": "#422: caricatore impossibile con due coppie di spinotti che sporgono da lati opposti del blocco.",
+    "prompt": "Close realistic photograph of one ordinary small unbranded USB wall charger plugged normally into a European wall socket. The single pair of metal power pins is inside the socket and NOT visible. The single USB port faces the viewer and is EMPTY. A disconnected USB cable lies on the nearby dark wooden tabletop, clearly not connected to the charger. Warm side light gently illuminates the plastic housing, cooler shadows around the wall, realistic product dimensions. No hands, no heat glow, no extra pins, no second plug, no impossible double-ended adapter, no lettering or graphics."
+  }
+]

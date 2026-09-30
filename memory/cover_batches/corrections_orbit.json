@@ -1,0 +1,7 @@
+[
+  {
+    "id": "lez-orbite-gravita",
+    "reason": "Revisione visiva del master generato: la traiettoria ellittica passa sul Sole anziché racchiuderlo chiaramente, un'ambiguità da evitare in una lezione sulle orbite. Conservare l'originale e pubblicare solo dopo nuova verifica.",
+    "prompt": "Accurate, simple editorial space illustration explaining a planet orbiting a star. Portrait frame. Composition: a small golden Sun at the CENTER of a large projected nearly circular orbital ring, at approximately 48 percent image width and 57 percent image height. The WHOLE orbital ring SURROUNDS the Sun with a very wide empty dark gap in every direction between Sun and ring. The ring is a thin soft white ellipse in perspective, NOT an eccentric comet orbit. One blue Earth is ON THE RING at its lower right edge. Earth's sunward side is lit. IMPORTANT: the Sun must NOT touch, overlap or sit on the ring; it sits well INSIDE it. The planet stays on its orbit, not detached below it. Only one Sun, one Earth and one faint orbit line. Beautiful physically credible sphere surfaces, black space background, cinematic restrained golden sunlight and cool Earth tones, empty upper third. This is a conceptual perspective rendering, not a scale diagram. No arrows, no grids, no labels, no title, no typography."
+  }
+]

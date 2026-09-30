@@ -1,0 +1,265 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-30T09:28:14.849467+00:00",
+  "candidates": {
+    "bird-migration": {
+      "before": {
+        "id": "bird-migration",
+        "hero_image": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=1200&q=80&auto=format&fit=crop",
+        "title": "Come fanno gli uccelli migratori a non perdersi?",
+        "hero_bytes": {
+          "hero": 113138,
+          "thumb": 35834,
+          "source": 294805
+        },
+        "hero_image_generated": "pause/hero/bird-migration-dcb1ff849bf1.webp",
+        "hero_image_thumb": "pause/hero/bird-migration-dcb1ff849bf1-thumb.webp",
+        "hero_source_digest": "dcb1ff849bf1"
+      },
+      "reason": "#001: un pappagallino verde fermo su un ramo invece degli uccelli migratori; i capitoli iniziano con il viaggio della sterna artica.",
+      "prompt": "Cinematic wildlife photograph of one identifiable Arctic tern in migration over a cold ocean at dusk. White and pale grey body, black cap, slender red beak, long pointed wings and long forked tail, anatomically accurate bird in natural gliding flight. The entire bird is in frame, central lower two thirds, wings not cropped. Distant Arctic coastline softly blurred, dark blue sea, warm rim light from the low Sun and wide deep navy sky. No parrots, no tropical forest, no fantasy feathers, no flight path lines, no typography or labels.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/bird-migration.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/bird-migration-dd7446a2f179.webp",
+        "hero_image_thumb": "pause/hero/bird-migration-dd7446a2f179-thumb.webp",
+        "hero_source_digest": "dd7446a2f179",
+        "hero_bytes": {
+          "hero": 30654,
+          "thumb": 11912,
+          "source": 30654
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:33.537594+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:33.539343+00:00"
+    },
+    "bees-communicate": {
+      "before": {
+        "id": "bees-communicate",
+        "hero_image": "https://images.unsplash.com/photo-1568526381923-caf3fd520382?w=1200&q=80&auto=format&fit=crop",
+        "title": "Come fanno le api a parlarsi?",
+        "hero_bytes": {
+          "hero": 52988,
+          "thumb": 20254,
+          "source": 161680
+        },
+        "hero_image_generated": "pause/hero/bees-communicate-7598bc19d86b.webp",
+        "hero_image_thumb": "pause/hero/bees-communicate-7598bc19d86b-thumb.webp",
+        "hero_source_digest": "7598bc19d86b"
+      },
+      "reason": "#003: bombo su un fiore, ma i capitoli descrivono la comunicazione e la danza delle api mellifere nell'alveare. La stessa foto è duplicata su #027.",
+      "prompt": "Scientifically accurate macro wildlife photograph of two western honeybee workers, Apis mellifera, on the wooden entrance of a real hive. They face each other with their two delicate antennae nearly touching in communication. Slim segmented amber-brown striped abdomens, modest fine fuzz on thorax, translucent veined wings and six natural jointed legs each. These are honeybees, NOT round fluffy black-and-yellow bumblebees. Shallow depth of field, tiny warm honey highlights, dark teal hive shadows, natural candid scene without diagrams, words or labels.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/bees-communicate.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/bees-communicate-fbd63aa5ea29.webp",
+        "hero_image_thumb": "pause/hero/bees-communicate-fbd63aa5ea29-thumb.webp",
+        "hero_source_digest": "fbd63aa5ea29",
+        "hero_bytes": {
+          "hero": 78756,
+          "thumb": 27828,
+          "source": 78756
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:34.302618+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:34.304340+00:00"
+    },
+    "v5-pollice-alzato": {
+      "before": {
+        "id": "v5-pollice-alzato",
+        "hero_image": "",
+        "title": "Il pollice alzato non salvava i gladiatori",
+        "hero_bytes": {
+          "hero": 131968,
+          "thumb": 44848,
+          "source": 880916
+        },
+        "hero_image_generated": "pause/hero/v5-pollice-alzato-f08678d89f9f.webp",
+        "hero_image_thumb": "pause/hero/v5-pollice-alzato-f08678d89f9f-thumb.webp",
+        "hero_source_digest": "f08678d89f9f"
+      },
+      "reason": "#108: mano disincarnata isolata sopra una banda orizzontale artificiale e arena sottostante. Eliminare collage e mano sospesa.",
+      "prompt": "One continuous historically inspired photographic reconstruction of an ancient Roman amphitheatre at dusk. Foreground: a weathered bronze gladiator helmet and a small round gladiator shield resting together on the real sandy arena floor. Background: intact Roman seating arches softly out of focus, warm sunset entering from the side. No people or disembodied hands, no thumbs up or thumbs down, no floating objects, no split image, no horizontal bands. Detailed bronze patina, sand and stone, cinematic dark shadows and subtle warm highlights. No labels, no text, no magazine layout.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/v5-pollice-alzato.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-pollice-alzato-da95c02f27b5.webp",
+        "hero_image_thumb": "pause/hero/v5-pollice-alzato-da95c02f27b5-thumb.webp",
+        "hero_source_digest": "da95c02f27b5",
+        "hero_bytes": {
+          "hero": 87734,
+          "thumb": 32962,
+          "source": 87734
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:34.907718+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:34.909543+00:00"
+    },
+    "v8-why-do-songs-get-stuck-in-your-head": {
+      "before": {
+        "id": "v8-why-do-songs-get-stuck-in-your-head",
+        "hero_image": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché le canzoni ti restano in testa?",
+        "hero_bytes": {
+          "hero": 49538,
+          "thumb": 16806,
+          "source": 49538
+        },
+        "hero_image_generated": "pause/hero/v8-why-do-songs-get-stuck-in-your-head-2fff58d25365.webp",
+        "hero_image_thumb": "pause/hero/v8-why-do-songs-get-stuck-in-your-head-2fff58d25365-thumb.webp",
+        "hero_source_digest": "2fff58d25365"
+      },
+      "reason": "#247: donna con cornetta telefonica fissa, ma la storia riguarda le melodie che si ripetono mentalmente, non telefonate.",
+      "prompt": "Intimate cinematic photographic portrait of an adult woman absent-mindedly humming a tune in a quiet room. She has a subtle thoughtful half-smile, one index finger softly tapping a rhythm on the wooden table. A pair of simple over-ear music headphones lies clearly visible on the table beside her, not being worn, suggesting that the music continues in her mind after listening has ended. Exactly two natural arms and hands, relaxed posture. Warm window sidelight, cool navy background, shallow depth of field. No telephone or handset, no musical-note graphics, no words, no logos.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/v8-why-do-songs-get-stuck-in-your-head.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v8-why-do-songs-get-stuck-in-your-head-f3e77076a87b.webp",
+        "hero_image_thumb": "pause/hero/v8-why-do-songs-get-stuck-in-your-head-f3e77076a87b-thumb.webp",
+        "hero_source_digest": "f3e77076a87b",
+        "hero_bytes": {
+          "hero": 54674,
+          "thumb": 19024,
+          "source": 54674
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:35.535799+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:35.537932+00:00"
+    },
+    "why-evolution": {
+      "before": {
+        "id": "why-evolution",
+        "hero_image": "https://images.unsplash.com/photo-1471520201477-47a62a269a87?w=1200&q=80&auto=format&fit=crop",
+        "title": "Come funziona l'evoluzione (davvero)?",
+        "hero_bytes": {
+          "hero": 176404,
+          "thumb": 58794,
+          "source": 176404
+        },
+        "hero_image_generated": "pause/hero/why-evolution-ef087734a967.webp",
+        "hero_image_thumb": "pause/hero/why-evolution-ef087734a967-thumb.webp",
+        "hero_source_digest": "ef087734a967"
+      },
+      "reason": "#265: albero cosmico composto da galassie e pianeti, confonde evoluzione biologica con cosmologia. Correggere il soggetto senza modificare i capitoli.",
+      "prompt": "Scientifically grounded natural history museum still life illustrating biological evolution through variation. Three realistic small Galapagos finch specimens perched naturally on separate connected twigs, each with a visibly different beak shape: one fine pointed insect-eating beak, one medium seed-eating beak and one deeper stout seed-cracking beak. Otherwise related small brown birds, anatomically natural wings, tails and feet. A softly blurred fossil slab lies in the background of the museum display, but the finches are the focus. Dramatic warm museum side light, dark navy-green background, detailed feathers. No DNA spirals, no galaxies, no planets, no cosmic tree, no labels or typography.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/why-evolution.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/why-evolution-839308fecd7d.webp",
+        "hero_image_thumb": "pause/hero/why-evolution-839308fecd7d-thumb.webp",
+        "hero_source_digest": "839308fecd7d",
+        "hero_bytes": {
+          "hero": 57056,
+          "thumb": 18812,
+          "source": 57056
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:36.965990+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:36.967679+00:00"
+    },
+    "v4-guerra-piu-breve": {
+      "before": {
+        "id": "v4-guerra-piu-breve",
+        "hero_image": "",
+        "title": "La guerra più breve della storia durò 38 minuti",
+        "hero_bytes": {
+          "hero": 117684,
+          "thumb": 32628,
+          "source": 851121
+        },
+        "hero_image_generated": "pause/hero/v4-guerra-piu-breve-0b6226e14f61.webp",
+        "hero_image_thumb": "pause/hero/v4-guerra-piu-breve-0b6226e14f61-thumb.webp",
+        "hero_source_digest": "0b6226e14f61"
+      },
+      "reason": "#371: doppio orizzonte con nave apparentemente sospesa sopra la città. Serve un'unica scena coerente del porto di Zanzibar nel 1896.",
+      "prompt": "One coherent historically inspired photographic reconstruction of Zanzibar harbour in 1896. A late Victorian British Royal Navy gunboat, dark hull, one steam funnel and period masts, floats naturally IN THE WATER just offshore from the low pale stone buildings of Stone Town. View from a shore-side stone quay, boat in middle distance, buildings and boat share exactly one consistent sea level and one horizon. A thin trace of smoke from the funnel, overcast dawn, muted copper light on water and deep blue shadows. No battle gore, no modern ships, no floating vessel, no double exposure, no stacked scenes, no text.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/v4-guerra-piu-breve.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v4-guerra-piu-breve-004578311b83.webp",
+        "hero_image_thumb": "pause/hero/v4-guerra-piu-breve-004578311b83-thumb.webp",
+        "hero_source_digest": "004578311b83",
+        "hero_bytes": {
+          "hero": 197374,
+          "thumb": 47150,
+          "source": 197374
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:37.723786+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:37.725681+00:00"
+    },
+    "sto-spices": {
+      "before": {
+        "id": "sto-spices",
+        "hero_image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché le spezie hanno cambiato la storia del mondo?",
+        "hero_bytes": {
+          "hero": 304486,
+          "thumb": 88640,
+          "source": 583881
+        },
+        "hero_image_generated": "pause/hero/sto-spices-92a634280a7d.webp",
+        "hero_image_thumb": "pause/hero/sto-spices-92a634280a7d-thumb.webp",
+        "hero_source_digest": "92a634280a7d"
+      },
+      "reason": "#384: dipinto astratto multicolore totalmente estraneo al commercio storico delle spezie.",
+      "prompt": "Richly detailed historical spice-trade still life photographed in an old maritime merchant warehouse. Open small linen sacks and shallow bronze bowls of black peppercorns, cloves, cinnamon bark, nutmeg and saffron on a worn wooden table. A small antique balance scale and softly blurred rolled maritime chart in the background suggest long-distance trade. Specific recognisable real spices, warm amber sidelight, dark teal and navy warehouse shadows, central arrangement. No paintings, no abstract colored splashes, no modern branded packaging, no readable words, no title or magazine graphics.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/sto-spices.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/sto-spices-1d12a7d3669f.webp",
+        "hero_image_thumb": "pause/hero/sto-spices-1d12a7d3669f-thumb.webp",
+        "hero_source_digest": "1d12a7d3669f",
+        "hero_bytes": {
+          "hero": 97628,
+          "thumb": 35534,
+          "source": 97628
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:38.411842+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:38.413588+00:00"
+    },
+    "v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not": {
+      "before": {
+        "id": "v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not",
+        "hero_image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché il caricatore rimane caldo anche quando non carica nulla?",
+        "hero_bytes": {
+          "hero": 58680,
+          "thumb": 19014,
+          "source": 58680
+        },
+        "hero_image_generated": "pause/hero/v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not-3addee007b60.webp",
+        "hero_image_thumb": "pause/hero/v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not-3addee007b60-thumb.webp",
+        "hero_source_digest": "3addee007b60"
+      },
+      "reason": "#422: caricatore impossibile con due coppie di spinotti che sporgono da lati opposti del blocco.",
+      "prompt": "Close realistic photograph of one ordinary small unbranded USB wall charger plugged normally into a European wall socket. The single pair of metal power pins is inside the socket and NOT visible. The single USB port faces the viewer and is EMPTY. A disconnected USB cable lies on the nearby dark wooden tabletop, clearly not connected to the charger. Warm side light gently illuminates the plastic housing, cooler shadows around the wall, realistic product dimensions. No hands, no heat glow, no extra pins, no second plug, no impossible double-ended adapter, no lettering or graphics.",
+      "file": "/app/memory/cover_batches/corrections_editorial_03_staged/v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not-a8476d6a87bf.webp",
+        "hero_image_thumb": "pause/hero/v8-why-does-a-charger-stay-warm-even-when-it-s-charging-not-a8476d6a87bf-thumb.webp",
+        "hero_source_digest": "a8476d6a87bf",
+        "hero_bytes": {
+          "hero": 30422,
+          "thumb": 8906,
+          "source": 30422
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-30T09:31:41.505807+00:00"
+      },
+      "approved_at": "2026-09-30T09:31:41.507912+00:00"
+    }
+  },
+  "errors": [],
+  "status": "staged"
+}

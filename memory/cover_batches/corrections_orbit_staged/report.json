@@ -1,0 +1,41 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-25T00:31:08.279183+00:00",
+  "candidates": {
+    "lez-orbite-gravita": {
+      "before": {
+        "id": "lez-orbite-gravita",
+        "hero_image": "",
+        "title": "Perché i pianeti non cadono nel Sole: le orbite spiegate",
+        "hero_bytes": {
+          "hero": 79656,
+          "thumb": 18602,
+          "source": 79656
+        },
+        "hero_image_generated": "pause/hero/lez-orbite-gravita-bc585916d7b1.webp",
+        "hero_image_thumb": "pause/hero/lez-orbite-gravita-bc585916d7b1-thumb.webp",
+        "hero_source_digest": "bc585916d7b1"
+      },
+      "reason": "Revisione visiva del master generato: la traiettoria ellittica passa sul Sole anziché racchiuderlo chiaramente, un'ambiguità da evitare in una lezione sulle orbite. Conservare l'originale e pubblicare solo dopo nuova verifica.",
+      "prompt": "Accurate, simple editorial space illustration explaining a planet orbiting a star. Portrait frame. Composition: a small golden Sun at the CENTER of a large projected nearly circular orbital ring, at approximately 48 percent image width and 57 percent image height. The WHOLE orbital ring SURROUNDS the Sun with a very wide empty dark gap in every direction between Sun and ring. The ring is a thin soft white ellipse in perspective, NOT an eccentric comet orbit. One blue Earth is ON THE RING at its lower right edge. Earth's sunward side is lit. IMPORTANT: the Sun must NOT touch, overlap or sit on the ring; it sits well INSIDE it. The planet stays on its orbit, not detached below it. Only one Sun, one Earth and one faint orbit line. Beautiful physically credible sphere surfaces, black space background, cinematic restrained golden sunlight and cool Earth tones, empty upper third. This is a conceptual perspective rendering, not a scale diagram. No arrows, no grids, no labels, no title, no typography.",
+      "file": "/app/memory/cover_batches/corrections_orbit_staged/lez-orbite-gravita.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/lez-orbite-gravita-a76bf265ab0f.webp",
+        "hero_image_thumb": "pause/hero/lez-orbite-gravita-a76bf265ab0f-thumb.webp",
+        "hero_source_digest": "a76bf265ab0f",
+        "hero_bytes": {
+          "hero": 14952,
+          "thumb": 5700,
+          "source": 14952
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:31:29.335654+00:00"
+      },
+      "approved_at": "2026-09-25T00:31:29.337499+00:00"
+    }
+  },
+  "errors": [],
+  "status": "staged"
+}

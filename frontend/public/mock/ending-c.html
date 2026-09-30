@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.bg { position: absolute; inset: 0; background: linear-gradient(180deg, #060A16 0%, #0B1630 45%, #143B68 100%); }
+.orb { position: absolute; border-radius: 50%; }
+.o1 { width: 380px; height: 380px; left: 50%; top: 150px; transform: translateX(-50%); background: radial-gradient(circle, rgba(63,224,255,0.30), rgba(63,224,255,0) 68%); }
+.o2 { width: 300px; height: 300px; right: -120px; bottom: 40px; background: radial-gradient(circle, rgba(155,77,255,0.32), rgba(155,77,255,0) 70%); }
+.star { position: absolute; width: 2px; height: 2px; border-radius: 1px; background: #fff; opacity: 0.7; box-shadow: 0 0 4px #fff; }
+.content { position: absolute; top: 96px; left: 24px; right: 24px; bottom: 0; display: flex; flex-direction: column; align-items: center; }
+.cardWrap { margin-top: 46px; position: relative; width: 100%; }
+.card { padding: 46px 22px 22px; border-radius: 26px; background: rgba(20,26,40,0.72); border: 1px solid rgba(63,224,255,0.35); box-shadow: 0 0 40px rgba(63,224,255,0.16), 0 18px 40px rgba(0,0,0,0.5); text-align: center; }
+.bulb { position: absolute; top: -52px; left: 50%; transform: translateX(-50%); width: 92px; height: 92px; filter: drop-shadow(0 8px 20px rgba(63,224,255,0.45)); }
+.card .eyebrow { color: #FF9100; }
+.card p { margin-top: 12px; font: 500 18px/29px Manrope; color: #F7F3EB; }
+.orbs { margin-top: 30px; display: flex; gap: 40px; }
+.big { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.big .orbBtn { width: 72px; height: 72px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 10px 26px rgba(0,0,0,0.45); }
+.big.on .orbBtn { border-color: rgba(255,0,106,0.7); box-shadow: 0 0 22px rgba(255,0,106,0.35), inset 0 1px 0 rgba(255,255,255,0.25); }
+.big span { font: 600 12px Manrope; color: #E0E2E8; }
+.share { margin-top: 16px; font: 600 13px Manrope; color: #3FE0FF; display: flex; align-items: center; gap: 6px; }
+.pause { margin-top: 26px; width: 100%; border-radius: 18px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; }
+.pause .eyebrow { color: #C3C6D1; font-size: 10px; }
+.pause .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.pause img { width: 22px; height: 22px; }
+.pause b { font: 700 15px Sora; color: #3FE0FF; }
+.dots { display: flex; gap: 3px; }
+.dots i { width: 7px; height: 7px; border-radius: 2.5px; border: 1px solid #3FE0FF; }
+.dots i.on { background: #3FE0FF; box-shadow: 0 0 6px #3FE0FF; }
+.pause small { font: 600 11px Manrope; color: #C3C6D1; }
+.pause .sep { width: 1px; height: 34px; background: rgba(255,255,255,0.12); }
+.pause .m b { color: #F7F3EB; }
+.cta { margin-top: auto; margin-bottom: 30px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.btn { width: 100%; height: 60px; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: 10px; font: 700 16px Sora; color: #fff; box-shadow: 0 10px 30px rgba(63,224,255,0.35); }
+.home { font: 600 13px Manrope; color: #C3C6D1; }
+</style></head><body><div class="phone">
+<div class="bg"></div><div class="orb o1"></div><div class="orb o2"></div>
+<div class="star" style="left:40px;top:120px"></div><div class="star" style="left:300px;top:150px;opacity:.5"></div><div class="star" style="left:120px;top:300px;opacity:.4"></div><div class="star" style="left:350px;top:420px"></div><div class="star" style="left:60px;top:560px;opacity:.5"></div><div class="star" style="left:250px;top:640px;opacity:.6"></div><div class="star" style="left:330px;top:720px;opacity:.4"></div><div class="star" style="left:180px;top:110px;opacity:.5"></div>
+<div class="header"><div class="back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4F5F8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></div><div class="title">Perché il <b>cielo</b> è <b>blu</b> e il tramonto è arancione?</div><div class="count">06 / 06</div></div>
+<div class="segs"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="content">
+  <div class="cardWrap"><img class="bulb" src="kind-bulb.png"><div class="card"><div class="eyebrow">★ Da ricordare</div><p>Il cielo è blu di giorno per la diffusione della luce, arancione al tramonto perché i raggi rossi viaggiano più lontano nell'atmosfera.</p></div></div>
+  <div class="orbs">
+    <div class="big on"><div class="orbBtn"><svg width="30" height="30" viewBox="0 0 24 24" fill="#FF006A" stroke="#FF006A" stroke-width="1.8"><path d="M12 21s-7-4.6-9.3-9A5.3 5.3 0 0 1 12 6.6 5.3 5.3 0 0 1 21.3 12C19 16.4 12 21 12 21z"/></svg></div><span>Mi piace</span></div>
+    <div class="big"><div class="orbBtn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3FE0FF" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg></div><span>Salva</span></div>
+  </div>
+  <div class="share"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3FE0FF" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v13M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Condividi la storia</div>
+  <div class="pause glass">
+    <div style="flex:1"><div class="eyebrow">La tua pausa</div><div class="row"><img src="kind-book.png"><b>3</b><div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><small>⏱ 1:42:10</small></div></div>
+    <div class="sep"></div>
+    <div class="m"><div class="eyebrow">Oggi</div><div class="row"><b>12 min</b><small>letti</small></div></div>
+  </div>
+  <div class="cta"><div class="btn grad">Continua <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div class="home">Torna alla Home</div></div>
+</div>
+<div class="frame"></div>
+</div></body></html>

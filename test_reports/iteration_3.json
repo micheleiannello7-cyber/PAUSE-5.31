@@ -1,0 +1,44 @@
+{
+  "summary": "Full backend + frontend regression on the new credits/topics/history features. Backend: 10/10 pytest cases PASS in /app/backend/tests/test_iter_credits_topics_history.py (limit-check on fresh user; consume 5 → 0 credits with blocked=true and next_credit_in~3600; re-post same story_id does NOT consume; token bucket recharge at 1h and 2.5h; premium capacity 6 + downgrade clamp to 5; topics_limit 402 for 5 specific / 200 for 4 / premium unlimited with 12; history newest-first, free 10-day window with hidden_count, q/category/since ignored for free; premium q/category_id/since all filter correctly; stats ignores reread entries). Frontend at 390x844: onboarding guest→profile→topics reaches Home; Home header shows [data-testid=home-credits] with count=5 and 5 slots-on (no timer, as expected when full); explore tab shows [data-testid=topics-limit-toast] with 'Up to 4 active topics' (EN) when tapping a 5th chip and the 5th remains unselected; profile shows history-row that navigates to /history with subtitle 'The stories you've discovered · Last 10 days', history-empty state for a fresh user, NO history-search / history-filters-toggle for free (correct); premium screen (/premium) compare table lists 'Stories available' 5/6 with sub 'They recharge: +1 every 60 minutes' and 'Reading history' 10 days / Full. Note: current app locale is English so the toast body reads 'Up to 4 active topics' rather than the Italian 'Massimo 4 argomenti attivi' cited in the spec — both come from the same i18n key (t.topics_limit_t). One minor deviation from the spec fixed inline: onboarding.tsx was rendering <OnboardingToast/> without an explicit testID (defaulted to 'onboarding-toast'), so the required testID 'topics-limit-toast' was missing on the onboarding step; passed testID='topics-limit-toast' explicitly and re-verified — toast now exposes the correct testID on both onboarding and Argomenti. One backend spec deviation surfaced (non-blocking, non-critical): POST /api/user/interests with 5 specific ids + 'all' currently returns 200 because normalize_category_ids collapses to ['all'] whenever 'all' is present; spec says 402 topics_limit for this variant. 5 specific ids without 'all' correctly returns 402. Pause-limit screen (/pause-limit) redirects fresh users with credits back to /discover — expected route-guard behavior; UI verification of [data-testid=limit-timer] mm:ss countdown was not visually exercised in this run (see next-agent context below). Deprecated packages detected: none. SafeAreaView issues detected: none. Console noise unchanged from iterations 1-2 (textShadow*, props.pointerEvents, Reanimated easing on web) — cosmetic.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/user/interests", "issue": "When payload combines 'all' with >4 specific category ids, backend returns 200 (normalize_category_ids collapses to ['all']). Spec expected 402 topics_limit. In practice the client UI never sends this combination (selecting 'all' deselects specifics), so this is low-impact, but tightening backend to still count `specific` before normalization would match the spec."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "global", "issues": ["Repeating web console warnings: textShadow* deprecated, props.pointerEvents deprecated, Reanimated easing not supported on web (uses linear). Same as prior iterations, non-blocking."]}
+    ],
+    "react_native_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iter_credits_topics_history.py",
+    "/app/test_reports/pytest/iter_credits_topics_history.xml"
+  ],
+  "action_items": [
+    "(Optional) Backend: in POST /api/user/interests, count `specific` (ids != 'all') BEFORE normalize_category_ids, so 'all' + 5 specifics still returns 402 topics_limit per spec — currently returns 200.",
+    "(Verified) Frontend onboarding.tsx line 212 previously had <OnboardingToast/> without explicit testID; already fixed inline to testID='topics-limit-toast' so the topic-limit toast is discoverable by tests on both onboarding and Argomenti.",
+    "(Nice-to-have) The pause-limit screen was not visually exercised because a fresh test user has 5 credits and the route guard redirects to /discover. If you want a self-test, POST /api/user/complete 5x with distinct story ids for the same user_id, then navigate to /pause-limit — the [data-testid=limit-timer] pill should render mm:ss and body copy should mention 'ricarica' / 'recharge'."
+  ],
+  "critical_code_review_comments": [
+    "server.py:_credit_state correctly implements a token-bucket read with anchor advance and clamps credits above capacity (premium→free downgrade). Persist path in _refresh_credits keeps credits_at / session_count in sync.",
+    "server.py:complete_story consumes 1 credit only when the story is new (was_new). Reread entries are marked {reread:true} in completions[] so /history keeps them and /stats can ignore them (build_stats appears to filter reread — confirmed via /stats returning stories=2, minutes=6 after a reread).",
+    "server.py:user_history correctly builds a latest-per-story map and applies HISTORY_FREE_DAYS windowing + hidden_count for free users; premium branch applies q/category_id/since. Free branch ignores q/category_id/since as specified.",
+    "server.py:set_interests only checks len(specific) > FREE_TOPICS_LIMIT after normalize_category_ids; combined with normalize's 'all' short-circuit this creates the minor 200-vs-402 deviation noted above.",
+    "limit-badge.tsx exposes count/slots/timer testIDs correctly; on Home badge is stamped with testID='home-credits' via <LimitBadge testID=... /> in (tabs)/discover.tsx.",
+    "history.tsx correctly branches on q.data.is_premium for search + filters visibility; empty state and premium footer card carry the required testIDs."
+  ],
+  "updated_files": [
+    "/app/frontend/app/onboarding.tsx (added testID='topics-limit-toast' to <OnboardingToast/>)",
+    "/app/backend/tests/test_iter_credits_topics_history.py (new pytest suite, 10 tests)"
+  ],
+  "success_rate": {"backend": "100% (10/10)", "frontend": "100% on tested flows (onboarding topics limit, home credits, explore topics toast, profile→history, premium compare table). Pause-limit visual timer not tested — see action items."},
+  "seed_data_creation": "Ephemeral test users prefixed with TEST_<uuid> created per pytest; each fixture teardown deletes its user_state doc. No production data touched.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Web preview: https://wave-chat-174.preview.emergentagent.com. App locale defaults to English on the web preview — the topic-limit toast body is 'Up to 4 active topics / Turn one topic off to pick another. Premium has no limit', not the Italian phrasing in the spec (same i18n key). Chip testIDs are 'chip-<category_id>' (e.g. chip-scienza, chip-animali), NOT 'topic-*' or 'onboarding-topic-*'. To reach Home from a fresh browser: clear localStorage → onboarding-guest → onboarding-profile-continue → onboarding-topics step (must pick ≥1 chip or 'chip-all') → onboarding-continue. The route (tabs)/discover.tsx renders <LimitBadge testID='home-credits' /> in the header. To exercise pause-limit visually, first consume credits via API: `POST /api/user/complete` 5× with distinct story_ids from `GET /api/stories?limit=6`, using the same user_id AsyncStorage assigns to the browser session; then navigate to /pause-limit — timer pill has testID='limit-timer'.",
+  "rca_of_issue": "Missing testID on onboarding toast (spec required 'topics-limit-toast'): OnboardingToast component defaults testID='onboarding-toast' when the caller omits it; onboarding.tsx omitted it while Argomenti passed it. Fix: explicit prop on the onboarding usage. Backend 'all + 5 specifics' returning 200: normalize_category_ids returns ['all'] whenever the list contains 'all', erasing the specifics before the length check. Fix (optional, low impact): count `specific` ids from the raw payload before normalization, or after normalization when 'all' is present treat any excess specifics as a limit hit."
+}

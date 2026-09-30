@@ -1,0 +1,9 @@
+[
+  {"id":"v4-lez-catena-alimentare","reason":"#026: testata PAUSE e didascalia LESSON. Ritaglio locale (64,220,832,1010), falco interamente preservato; nessuna generazione AI.","prompt":"LOCAL ONLY: remove magazine header/footer by reviewed crop; no AI call."},
+  {"id":"arte-why-modern-art","reason":"#060: grande testata EDITORIAL. Ritaglio locale (64,180,832,1200), soggetto e opera conservati; nessuna generazione AI.","prompt":"LOCAL ONLY: remove editorial header by reviewed crop; no AI call."},
+  {"id":"why-we-cry","reason":"#122: piccolo marchio PAUSE in alto. Ritaglio locale (0,90,896,1200), volto intatto; nessuna generazione AI.","prompt":"LOCAL ONLY: remove top logo by reviewed crop; no AI call."},
+  {"id":"v5-lez-distorsioni","reason":"#234: testata Mentiali, EDITORIAL MAGAZINE e metadati stampati. Ritaglio locale (64,185,832,1200), metafora originale preservata; nessuna generazione AI.","prompt":"LOCAL ONLY: remove magazine header by reviewed crop; no AI call."},
+  {"id":"v5-lez-hotel-hilbert","reason":"#280: grande testata 3:4 EDITORIAL/MAGAZINE COVER. Ritaglio locale (64,195,832,1200); nessuna generazione AI.","prompt":"LOCAL ONLY: remove magazine header by reviewed crop; no AI call."},
+  {"id":"cur-why-mirrors-reverse","reason":"#306: testata VITORIAL MAGAZINE. Ritaglio locale (64,250,832,1200), persona e specchio conservati; nessuna generazione AI.","prompt":"LOCAL ONLY: remove magazine header by reviewed crop; no AI call."},
+  {"id":"v5-lez-datare-reperti","reason":"#358: marchio PAUSE in alto. Ritaglio locale (64,145,832,1200), reperto preservato; nessuna generazione AI.","prompt":"LOCAL ONLY: remove top logo by reviewed crop; no AI call."}
+]

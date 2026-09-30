@@ -1,0 +1,28 @@
+{
+ "version": "glossy-3d-v5",
+ "sheet_url": "https://static.prod-images.emergentagent.com/jobs/ada14c06-d271-41f2-9ac3-d7e7abff60b6/images/b2b99bbe84232915619bc164a74f92b1f23297d1eeca8158f594229528bd26c1.jpeg",
+ "all_url": "https://static.prod-images.emergentagent.com/jobs/ada14c06-d271-41f2-9ac3-d7e7abff60b6/images/9de40d28393d810bcf6d6b5ef9dcbd32e91ce88d3ad40d39f9b2212e95fbb91d.jpeg",
+ "overrides": {
+  "animali": "https://static.prod-images.emergentagent.com/jobs/ada14c06-d271-41f2-9ac3-d7e7abff60b6/images/d7ae31ddbfacdefd8831314e13657922a4b205e8c62074ea221bc58d98591487.jpeg"
+ },
+ "columns": 4,
+ "rows": 3,
+ "order": [
+  "scienza",
+  "spazio",
+  "tecnologia",
+  "natura",
+  "animali",
+  "storia",
+  "psicologia",
+  "corpo-umano",
+  "cultura",
+  "economia",
+  "arte",
+  "geografia"
+ ],
+ "local_overrides": {
+  "animali": "category_art/animali.webp",
+  "all": "category_art/all.webp"
+ }
+}

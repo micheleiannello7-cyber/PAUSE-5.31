@@ -1,0 +1,73 @@
+{
+  "project_title": "PAUSE App - Category Cards & 3D Icons Implementation Blueprint",
+  "version": "1.0.0",
+  "app_type": "mobile_web_app (Expo React Native)",
+  "scope": "Concise implementation blueprint for updating existing PAUSE category cards and 3D icons style according to reference attachment.",
+  "blueprint_summary": {
+    "objective": "Redesign existing 12 category tiles plus 'Qualsiasi' (All) card to match reference 3D icon style with dark rounded tiles and colored bottom glow light.",
+    "key_behavior": "Bottom colored light activates when tile is selected. Selecting 'Qualsiasi' (All) activates bottom lights across all category cards simultaneously.",
+    "target_files": [
+      "/app/frontend/src/components/category-grid.js",
+      "/app/frontend/src/components/category-artwork.js",
+      "/app/frontend/src/theme.js"
+    ]
+  },
+  "category_entities": [
+    { "id": "all", "name": "Qualsiasi", "color": "#3FE0FF", "glow_hex": "#3FE0FF", "icon_3d": "3D celestial / compass hybrid" },
+    { "id": "scienza", "name": "Scienza", "color": "#00E5FF", "glow_hex": "#00E5FF", "icon_3d": "3D atom with glossy orbiting electrons" },
+    { "id": "spazio", "name": "Spazio", "color": "#B200FF", "glow_hex": "#B200FF", "icon_3d": "3D ringed planet with atmospheric shine" },
+    { "id": "tecnologia", "name": "Tecnologia", "color": "#3FD9FF", "glow_hex": "#3FD9FF", "icon_3d": "3D sleek microchip / circuit module" },
+    { "id": "natura", "name": "Natura", "color": "#00E676", "glow_hex": "#00E676", "icon_3d": "3D vibrant leaf with dew drops" },
+    { "id": "animali", "name": "Animali", "color": "#FF9100", "glow_hex": "#FF9100", "icon_3d": "3D stylized paws / creature element" },
+    { "id": "storia", "name": "Storia", "color": "#FFD700", "glow_hex": "#FFD700", "icon_3d": "3D ancient marble column / scroll" },
+    { "id": "psicologia", "name": "Psicologia", "color": "#FF3D8A", "glow_hex": "#FF3D8A", "icon_3d": "3D glowing brain / neural node" },
+    { "id": "corpo-umano", "name": "Corpo Umano", "color": "#FF006A", "glow_hex": "#FF006A", "icon_3d": "3D anatomical heart / pulse wave" },
+    { "id": "cultura", "name": "Cultura", "color": "#9B4DFF", "glow_hex": "#9B4DFF", "icon_3d": "3D theatrical mask / quill" },
+    { "id": "economia", "name": "Economia", "color": "#00A86B", "glow_hex": "#00A86B", "icon_3d": "3D gold coin / upward growth graph" },
+    { "id": "arte", "name": "Arte", "color": "#FF4D9D", "glow_hex": "#FF4D9D", "icon_3d": "3D artist palette with liquid paint drops" },
+    { "id": "geografia", "name": "Geografia", "color": "#2E5BFF", "glow_hex": "#2E5BFF", "icon_3d": "3D floating Earth globe with topography" }
+  ],
+  "visual_enhancers": {
+    "tile_style": { "borderRadius": 20, "backgroundColor": "#05070C", "borderWidth": 1, "borderColor": "rgba(255, 255, 255, 0.12)" },
+    "bottom_light_effect": {
+      "active_rule": "Glow container at tile bottom with radial/linear gradient in category color",
+      "glow_unselected": "Opacity 0, pointerEvents: 'none'",
+      "glow_selected": "Opacity 1, boxShadow or gradient reflection at bottom edge",
+      "qualsiasi_rule": "When 'all' is in selected Set, all category tiles trigger glow_selected state"
+    }
+  },
+  "typography": {
+    "display": "Sora_600SemiBold",
+    "displayBold": "Sora_700Bold",
+    "body": "Manrope_400Regular",
+    "bodyMedium": "Manrope_500Medium",
+    "bodyBold": "Manrope_600SemiBold"
+  },
+  "testing_and_accessibility": {
+    "required_test_ids": [
+      "category-grid",
+      "chip-all",
+      "category-all-name",
+      "category-all-subtitle",
+      "chip-{category_id}",
+      "category-art-{category_id}",
+      "category-name-{category_id}",
+      "category-count-{category_id}",
+      "category-selected-{category_id}"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Do NOT add new category entities. Stick strictly to the 12 existing categories plus 'all'.",
+    "Update CategoryGrid in /app/frontend/src/components/category-grid.js to check if selected.has('all') when rendering individual tile lights.",
+    "Preserve story and lesson dynamic count display logic in countFor(category).",
+    "Maintain full dark rounded tile layout with 3 columns, adhering to theme tokens.",
+    "Ensure all interactive Pressable and Text elements retain data-testid attributes."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic centered layouts or plain gradients without depth.",
+    "Use glass-morphism effects and soft translucent borders for interactive elements.",
+    "Always provide micro-interactions for hover/pressed states.",
+    "Maintain high APCA text contrast ratios for readability against dark surfaces.",
+    "Ensure data-testid attributes are preserved on all interactive elements."
+  ]
+}

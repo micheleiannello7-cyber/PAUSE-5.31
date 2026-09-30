@@ -1,0 +1,17 @@
+[
+  {
+    "id": "why-lefties",
+    "reason": "Copertina #087: la donna scrive con la destra in una storia sul mancinismo. Correzione locale mediante specchiatura orizzontale; nessuna generazione AI.",
+    "prompt": "LOCAL ONLY: approved horizontal mirror of existing photo, preserving the scene and making the writing hand the left hand. No AI call."
+  },
+  {
+    "id": "time-zones",
+    "reason": "Copertina #169: testata EDITORIAL in alto. Ritaglio locale (64,195,832,1200) del master 896x1200 per mantenere orologio e bussola ed eliminare la scritta, senza AI.",
+    "prompt": "LOCAL ONLY: approved crop of existing photograph to remove editorial header, preserving clock and compass. No AI call."
+  },
+  {
+    "id": "v5-lez-telescopio",
+    "reason": "Copertina #318: testata MAGAZINE e didascalia fotografica al piede. Ritaglio locale (48,185,848,1080) del master 896x1200, mantenendo lente e laboratorio, senza AI.",
+    "prompt": "LOCAL ONLY: approved crop of existing photograph removing header and footer lettering while preserving the main optical instrument. No AI call."
+  }
+]

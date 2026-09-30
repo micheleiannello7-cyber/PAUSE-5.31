@@ -1,0 +1,20 @@
+{
+  "version": "glass-2026-09-v1",
+  "base_url": "https://static.prod-images.emergentagent.com/jobs/52555a81-2975-4e93-b6d9-486eee38ffaf/images/",
+  "sources": {
+    "scienza": "18bd2418b67ac420c7351eaf2d43fbb1e44e6e04030a1d60e919a2895bbfa4a3.jpeg",
+    "spazio": "b407729e8dbf3cfe46ce9c44eefcfdbf5a6cfd3da2fd7c73a276bb2e9d34e0fb.jpeg",
+    "tecnologia": "a22435e6a032d80b9f30baa52263a02ad3edd018d963c0e6c2796ea75ec42e34.jpeg",
+    "natura": "e01f76620f962e5d5e2baa81267de0f8569f7186dd8feda4e0849b92006b47a8.jpeg",
+    "animali": "756b620485e5ab331a4e8841864b3ac8c979e7b4b154c2fd5ad78f51d07f7808.jpeg",
+    "storia": "3725c097147ef718f7c6f3c1ef20ad95f52283d4bb9e6928edda3ba3d349ffdf.jpeg",
+    "psicologia": "fc7d366082c9c32a7048482b2879f9af924a5d5b0dd7b44f52d918d8f4953ea4.jpeg",
+    "corpo-umano": "49d62b4dc248dacfb6c16578f9d5fcd54a2ae2dcb5b002f17c5ace28e64f98ca.jpeg",
+    "cultura": "55769998a0bc4d7f07aaaee789c60e24acc74f16cf53f6d0592aa7ede14c21a3.jpeg",
+    "curiosita": "1947c6e3faede6e8506b18e343b7ab439f95641f79538d55e463069432fda136.jpeg",
+    "economia": "892fab6c5490ad54680aeb00a9b0f9d130715c509fc739fbaf103444d45bdc4f.jpeg",
+    "arte": "c32e98b10a6b3b2d51f4e4f4d17538bba04b0f8d52a0dd66936f68bf8937a126.jpeg",
+    "geografia": "379261f9fceb9367111fbbec3a0f9c986b9a0fcc2c42566857d32f9093d41dc0.jpeg",
+    "all": "c00f4567df7cc7d3abc3c761f86c6ed09dfc0e4b93cab569f9804bc43dae3e0e.jpeg"
+  }
+}

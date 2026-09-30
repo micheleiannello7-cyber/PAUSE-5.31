@@ -1,0 +1,621 @@
+23:51:57 [start] todo=52 testi_presenti=23
+23:51:57 DB    v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe: inserito ({'it': 4, 'en': 4})
+[92m23:51:58 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:51:58,839 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:52:10 COVER v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe: ok (pause/hero/v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe-38f55cec2791.webp)
+23:52:10 [1/52] DONE economia/v9-why-has-gold-been-precious-for-5-000-years-and-not-coppe
+[92m23:52:10 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:52:10,156 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:52:38 TEXT  arte/v9-why-do-gothic-cathedrals-have-monsters-on-their-roofs (3019 it / 2950 en chars)
+23:52:38 DB    v9-why-do-gothic-cathedrals-have-monsters-on-their-roofs: inserito ({'it': 5, 'en': 5})
+[92m23:52:38 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:52:38,231 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:52:47 COVER v9-why-do-gothic-cathedrals-have-monsters-on-their-roofs: ok (pause/hero/v9-why-do-gothic-cathedrals-have-monsters-on-their-roofs-76df2be1cac8.webp)
+23:52:47 [2/52] DONE arte/v9-why-do-gothic-cathedrals-have-monsters-on-their-roofs
+[92m23:52:47 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:52:47,131 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:53:11 TEXT  geografia/v9-why-can-t-you-sink-in-the-dead-sea (2630 it / 2623 en chars)
+23:53:11 DB    v9-why-can-t-you-sink-in-the-dead-sea: inserito ({'it': 4, 'en': 4})
+[92m23:53:11 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:53:11,826 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:53:20 COVER v9-why-can-t-you-sink-in-the-dead-sea: ok (pause/hero/v9-why-can-t-you-sink-in-the-dead-sea-a6bb09745ae4.webp)
+23:53:20 [3/52] DONE geografia/v9-why-can-t-you-sink-in-the-dead-sea
+[92m23:53:20 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:53:20,725 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:53:47 TEXT  geografia/v9-the-amazon-river-has-not-a-single-bridge-why (3003 it / 2830 en chars)
+23:53:47 DB    v9-the-amazon-river-has-not-a-single-bridge-why: inserito ({'it': 5, 'en': 4})
+[92m23:53:47 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:53:47,617 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:53:56 COVER v9-the-amazon-river-has-not-a-single-bridge-why: ok (pause/hero/v9-the-amazon-river-has-not-a-single-bridge-why-938a035ab928.webp)
+23:53:56 [4/52] DONE geografia/v9-the-amazon-river-has-not-a-single-bridge-why
+[92m23:53:56 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:53:56,835 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:54:26 TEXT  arte/v9-why-is-the-venus-de-milo-missing-her-arms-and-why-no-one (2885 it / 2838 en chars)
+23:54:26 DB    v9-why-is-the-venus-de-milo-missing-her-arms-and-why-no-one: inserito ({'it': 5, 'en': 4})
+[92m23:54:26 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:54:26,176 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:54:33 COVER v9-why-is-the-venus-de-milo-missing-her-arms-and-why-no-one: ok (pause/hero/v9-why-is-the-venus-de-milo-missing-her-arms-and-why-no-one-5b98db930f4a.webp)
+23:54:33 [5/52] DONE arte/v9-why-is-the-venus-de-milo-missing-her-arms-and-why-no-one
+[92m23:54:33 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:54:33,814 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:54:59 TEXT  economia/v9-why-the-lottery-only-pays-whoever-sells-it-the-maths-of- (2861 it / 2794 en chars)
+23:54:59 DB    v9-why-the-lottery-only-pays-whoever-sells-it-the-maths-of-: inserito ({'it': 4, 'en': 4})
+[92m23:54:59 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:54:59,059 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:55:08 COVER v9-why-the-lottery-only-pays-whoever-sells-it-the-maths-of-: ok (pause/hero/v9-why-the-lottery-only-pays-whoever-sells-it-the-maths-of--24a171a22df6.webp)
+23:55:08 [6/52] DONE economia/v9-why-the-lottery-only-pays-whoever-sells-it-the-maths-of-
+[92m23:55:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:55:08,113 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:55:33 TEXT  cultura/v9-why-does-punctuation-exist-writing-once-had-no-spaces-at (2766 it / 2790 en chars)
+23:55:33 DB    v9-why-does-punctuation-exist-writing-once-had-no-spaces-at: inserito ({'it': 4, 'en': 4})
+[92m23:55:33 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:55:33,125 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:55:42 COVER v9-why-does-punctuation-exist-writing-once-had-no-spaces-at: ok (pause/hero/v9-why-does-punctuation-exist-writing-once-had-no-spaces-at-3bd5adf5e6d7.webp)
+23:55:42 [7/52] DONE cultura/v9-why-does-punctuation-exist-writing-once-had-no-spaces-at
+[92m23:55:42 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:55:42,005 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:56:04 TEXT  corpo-umano/v9-why-does-our-recorded-voice-sound-different-to-us (2641 it / 2645 en chars)
+23:56:04 DB    v9-why-does-our-recorded-voice-sound-different-to-us: inserito ({'it': 4, 'en': 4})
+[92m23:56:04 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:56:04,085 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:56:12 COVER v9-why-does-our-recorded-voice-sound-different-to-us: ok (pause/hero/v9-why-does-our-recorded-voice-sound-different-to-us-92cc52f5d9b3.webp)
+23:56:12 [8/52] DONE corpo-umano/v9-why-does-our-recorded-voice-sound-different-to-us
+[92m23:56:12 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:56:12,241 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:56:35 TEXT  corpo-umano/v9-why-does-your-arm-fall-asleep-and-what-are-pins-and-need (2586 it / 2520 en chars)
+23:56:35 DB    v9-why-does-your-arm-fall-asleep-and-what-are-pins-and-need: inserito ({'it': 4, 'en': 4})
+[92m23:56:35 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:56:35,477 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:56:43 COVER v9-why-does-your-arm-fall-asleep-and-what-are-pins-and-need: ok (pause/hero/v9-why-does-your-arm-fall-asleep-and-what-are-pins-and-need-833937588bed.webp)
+23:56:43 [9/52] DONE corpo-umano/v9-why-does-your-arm-fall-asleep-and-what-are-pins-and-need
+[92m23:56:43 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:56:43,964 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:57:06 TEXT  cultura/v9-why-does-an-hour-have-60-minutes-not-100-the-babylonian- (2797 it / 2792 en chars)
+23:57:06 DB    v9-why-does-an-hour-have-60-minutes-not-100-the-babylonian-: inserito ({'it': 4, 'en': 4})
+[92m23:57:06 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:57:06,957 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:57:15 COVER v9-why-does-an-hour-have-60-minutes-not-100-the-babylonian-: ok (pause/hero/v9-why-does-an-hour-have-60-minutes-not-100-the-babylonian--5334a41d22ed.webp)
+23:57:15 [10/52] DONE cultura/v9-why-does-an-hour-have-60-minutes-not-100-the-babylonian-
+[92m23:57:15 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:57:15,598 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:57:37 TEXT  economia/v9-the-box-that-changed-the-world-how-the-shipping-containe (2855 it / 2736 en chars)
+23:57:37 DB    v9-the-box-that-changed-the-world-how-the-shipping-containe: inserito ({'it': 4, 'en': 4})
+[92m23:57:37 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:57:37,791 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:57:46 COVER v9-the-box-that-changed-the-world-how-the-shipping-containe: ok (pause/hero/v9-the-box-that-changed-the-world-how-the-shipping-containe-87eb30c59121.webp)
+23:57:46 [11/52] DONE economia/v9-the-box-that-changed-the-world-how-the-shipping-containe
+[92m23:57:46 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:57:46,738 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:58:10 TEXT  arte/v9-why-do-stradivarius-violins-sound-so-good-and-why-can-t- (3047 it / 3019 en chars)
+23:58:10 DB    v9-why-do-stradivarius-violins-sound-so-good-and-why-can-t-: inserito ({'it': 5, 'en': 5})
+[92m23:58:10 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:58:10,825 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:58:20 COVER v9-why-do-stradivarius-violins-sound-so-good-and-why-can-t-: ok (pause/hero/v9-why-do-stradivarius-violins-sound-so-good-and-why-can-t--17bb70af3db0.webp)
+23:58:20 [12/52] DONE arte/v9-why-do-stradivarius-violins-sound-so-good-and-why-can-t-
+[92m23:58:20 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:58:20,749 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:58:44 TEXT  geografia/v9-the-sea-that-vanished-in-30-years-the-story-of-the-aral- (2727 it / 2743 en chars)
+23:58:44 DB    v9-the-sea-that-vanished-in-30-years-the-story-of-the-aral-: inserito ({'it': 4, 'en': 4})
+[92m23:58:44 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:58:44,350 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:58:55 COVER v9-the-sea-that-vanished-in-30-years-the-story-of-the-aral-: ok (pause/hero/v9-the-sea-that-vanished-in-30-years-the-story-of-the-aral--53b1863a5fdc.webp)
+23:58:55 [13/52] DONE geografia/v9-the-sea-that-vanished-in-30-years-the-story-of-the-aral-
+[92m23:58:55 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:58:55,624 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:59:24 TEXT  geografia/v9-lez-reading-a-weather-forecast-the-6-numbers-that-really-mat (2822 it / 2785 en chars)
+23:59:24 DB    v9-lez-reading-a-weather-forecast-the-6-numbers-that-really-mat: inserito ({'it': 4, 'en': 4})
+[92m23:59:24 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:59:24,389 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+23:59:34 COVER v9-lez-reading-a-weather-forecast-the-6-numbers-that-really-mat: ok (pause/hero/v9-lez-reading-a-weather-forecast-the-6-numbers-that-really-mat-f86cb1e9a6b0.webp)
+23:59:34 [14/52] DONE geografia/v9-lez-reading-a-weather-forecast-the-6-numbers-that-really-mat
+[92m23:59:34 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-29 23:59:34,673 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+23:59:58 TEXT  arte/v9-the-red-sky-in-munch-s-scream-was-real-a-volcano-behind- (2837 it / 2786 en chars)
+23:59:58 DB    v9-the-red-sky-in-munch-s-scream-was-real-a-volcano-behind-: inserito ({'it': 4, 'en': 4})
+[92m23:59:58 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-29 23:59:58,192 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:00:08 COVER v9-the-red-sky-in-munch-s-scream-was-real-a-volcano-behind-: ok (pause/hero/v9-the-red-sky-in-munch-s-scream-was-real-a-volcano-behind--e0909befc7d5.webp)
+00:00:08 [15/52] DONE arte/v9-the-red-sky-in-munch-s-scream-was-real-a-volcano-behind-
+[92m00:00:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:00:08,140 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:00:30 TEXT  economia/v9-who-sets-the-price-of-oil-and-why-it-rises-because-of-a- (2775 it / 2769 en chars)
+00:00:30 DB    v9-who-sets-the-price-of-oil-and-why-it-rises-because-of-a-: inserito ({'it': 4, 'en': 4})
+[92m00:00:30 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:00:30,520 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:00:39 COVER v9-who-sets-the-price-of-oil-and-why-it-rises-because-of-a-: ok (pause/hero/v9-who-sets-the-price-of-oil-and-why-it-rises-because-of-a--7c6e46439d59.webp)
+00:00:39 [16/52] DONE economia/v9-who-sets-the-price-of-oil-and-why-it-rises-because-of-a-
+[92m00:00:39 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:00:39,986 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:01:04 TEXT  cultura/v9-why-do-the-british-queue-while-others-don-t-the-culture- (2949 it / 2910 en chars)
+00:01:04 DB    v9-why-do-the-british-queue-while-others-don-t-the-culture-: inserito ({'it': 5, 'en': 5})
+[92m00:01:04 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:01:04,317 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:01:13 COVER v9-why-do-the-british-queue-while-others-don-t-the-culture-: ok (pause/hero/v9-why-do-the-british-queue-while-others-don-t-the-culture--521c40a43282.webp)
+00:01:13 [17/52] DONE cultura/v9-why-do-the-british-queue-while-others-don-t-the-culture-
+[92m00:01:13 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:01:13,421 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:01:40 TEXT  corpo-umano/v9-why-do-scars-last-forever-while-a-foetus-heals-without-a (3142 it / 2948 en chars)
+00:01:40 DB    v9-why-do-scars-last-forever-while-a-foetus-heals-without-a: inserito ({'it': 5, 'en': 5})
+[92m00:01:40 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:01:40,387 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:01:47 COVER v9-why-do-scars-last-forever-while-a-foetus-heals-without-a: ok (pause/hero/v9-why-do-scars-last-forever-while-a-foetus-heals-without-a-f8f73d7db590.webp)
+00:01:47 [18/52] DONE corpo-umano/v9-why-do-scars-last-forever-while-a-foetus-heals-without-a
+[92m00:01:47 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:01:47,069 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:02:13 TEXT  natura/v9-why-does-hail-fall-in-summer-not-winter (2792 it / 2580 en chars)
+00:02:13 DB    v9-why-does-hail-fall-in-summer-not-winter: inserito ({'it': 4, 'en': 4})
+[92m00:02:13 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:02:13,339 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:02:22 COVER v9-why-does-hail-fall-in-summer-not-winter: ok (pause/hero/v9-why-does-hail-fall-in-summer-not-winter-54785aa297bf.webp)
+00:02:22 [19/52] DONE natura/v9-why-does-hail-fall-in-summer-not-winter
+[92m00:02:22 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:02:22,167 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:02:48 TEXT  natura/v9-why-do-waves-always-arrive-parallel-to-the-beach (2832 it / 2715 en chars)
+00:02:48 DB    v9-why-do-waves-always-arrive-parallel-to-the-beach: inserito ({'it': 4, 'en': 4})
+[92m00:02:48 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:02:48,820 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:02:57 COVER v9-why-do-waves-always-arrive-parallel-to-the-beach: ok (pause/hero/v9-why-do-waves-always-arrive-parallel-to-the-beach-e09df5f4b527.webp)
+00:02:57 [20/52] DONE natura/v9-why-do-waves-always-arrive-parallel-to-the-beach
+[92m00:02:57 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:02:57,731 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:03:18 TEXT  corpo-umano/v9-lez-reading-a-blood-test-6-values-worth-understanding (2608 it / 2508 en chars)
+00:03:18 DB    v9-lez-reading-a-blood-test-6-values-worth-understanding: inserito ({'it': 4, 'en': 4})
+[92m00:03:18 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:03:18,971 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:03:27 COVER v9-lez-reading-a-blood-test-6-values-worth-understanding: ok (pause/hero/v9-lez-reading-a-blood-test-6-values-worth-understanding-c97790b01590.webp)
+00:03:27 [21/52] DONE corpo-umano/v9-lez-reading-a-blood-test-6-values-worth-understanding
+[92m00:03:27 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:03:27,990 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:03:50 TEXT  cultura/v9-lez-how-a-sign-language-works-6-things-almost-everyone-gets- (2652 it / 2592 en chars)
+00:03:50 DB    v9-lez-how-a-sign-language-works-6-things-almost-everyone-gets-: inserito ({'it': 4, 'en': 4})
+[92m00:03:50 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:03:50,258 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:03:57 COVER v9-lez-how-a-sign-language-works-6-things-almost-everyone-gets-: ok (pause/hero/v9-lez-how-a-sign-language-works-6-things-almost-everyone-gets--1fb1a7ed9f96.webp)
+00:03:57 [22/52] DONE cultura/v9-lez-how-a-sign-language-works-6-things-almost-everyone-gets-
+[92m00:03:57 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:03:57,164 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:04:19 TEXT  economia/v9-lez-understanding-an-insurance-policy-premium-deductible-and (2650 it / 2598 en chars)
+00:04:19 DB    v9-lez-understanding-an-insurance-policy-premium-deductible-and: inserito ({'it': 4, 'en': 4})
+[92m00:04:19 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:04:19,125 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:04:27 COVER v9-lez-understanding-an-insurance-policy-premium-deductible-and: ok (pause/hero/v9-lez-understanding-an-insurance-policy-premium-deductible-and-f05c3ee826cf.webp)
+00:04:27 [23/52] DONE economia/v9-lez-understanding-an-insurance-policy-premium-deductible-and
+[92m00:04:27 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:04:27,218 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:04:52 TEXT  arte/v9-lez-recognising-techniques-fresco-oil-tempera-and-watercolou (2884 it / 2693 en chars)
+00:04:52 DB    v9-lez-recognising-techniques-fresco-oil-tempera-and-watercolou: inserito ({'it': 5, 'en': 4})
+[92m00:04:52 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:04:52,201 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:05:01 COVER v9-lez-recognising-techniques-fresco-oil-tempera-and-watercolou: ok (pause/hero/v9-lez-recognising-techniques-fresco-oil-tempera-and-watercolou-f8c28f83d14c.webp)
+00:05:01 [24/52] DONE arte/v9-lez-recognising-techniques-fresco-oil-tempera-and-watercolou
+[92m00:05:01 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:05:01,068 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:05:28 TEXT  geografia/v9-lez-recognising-coastlines-6-shapes-and-what-they-reveal (2793 it / 2739 en chars)
+00:05:28 DB    v9-lez-recognising-coastlines-6-shapes-and-what-they-reveal: inserito ({'it': 4, 'en': 4})
+[92m00:05:28 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:05:28,456 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:05:36 COVER v9-lez-recognising-coastlines-6-shapes-and-what-they-reveal: ok (pause/hero/v9-lez-recognising-coastlines-6-shapes-and-what-they-reveal-33d53fe87c48.webp)
+00:05:36 [25/52] DONE geografia/v9-lez-recognising-coastlines-6-shapes-and-what-they-reveal
+[92m00:05:36 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:05:36,767 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:06:01 TEXT  geografia/v9-lez-winds-and-currents-why-ship-and-plane-routes-aren-t-stra (2780 it / 2771 en chars)
+00:06:01 DB    v9-lez-winds-and-currents-why-ship-and-plane-routes-aren-t-stra: inserito ({'it': 4, 'en': 4})
+[92m00:06:01 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:06:01,555 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:06:09 COVER v9-lez-winds-and-currents-why-ship-and-plane-routes-aren-t-stra: ok (pause/hero/v9-lez-winds-and-currents-why-ship-and-plane-routes-aren-t-stra-aa453f7de856.webp)
+00:06:09 [26/52] DONE geografia/v9-lez-winds-and-currents-why-ship-and-plane-routes-aren-t-stra
+[92m00:06:09 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:06:09,484 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:06:32 TEXT  arte/v9-lez-understanding-jazz-in-6-steps-what-to-listen-for-when-it (2647 it / 2624 en chars)
+00:06:32 DB    v9-lez-understanding-jazz-in-6-steps-what-to-listen-for-when-it: inserito ({'it': 4, 'en': 4})
+[92m00:06:32 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:06:32,033 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:06:41 COVER v9-lez-understanding-jazz-in-6-steps-what-to-listen-for-when-it: ok (pause/hero/v9-lez-understanding-jazz-in-6-steps-what-to-listen-for-when-it-e8d67f1ee94d.webp)
+00:06:41 [27/52] DONE arte/v9-lez-understanding-jazz-in-6-steps-what-to-listen-for-when-it
+[92m00:06:41 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:06:41,378 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:07:03 TEXT  economia/v9-lez-reading-a-utility-bill-6-line-items-to-understand-what-y (2496 it / 2574 en chars)
+00:07:03 DB    v9-lez-reading-a-utility-bill-6-line-items-to-understand-what-y: inserito ({'it': 4, 'en': 4})
+[92m00:07:03 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:07:03,426 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:07:19 COVER v9-lez-reading-a-utility-bill-6-line-items-to-understand-what-y: ok (pause/hero/v9-lez-reading-a-utility-bill-6-line-items-to-understand-what-y-6b6b3cb3a1ab.webp)
+00:07:19 [28/52] DONE economia/v9-lez-reading-a-utility-bill-6-line-items-to-understand-what-y
+[92m00:07:19 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:07:19,624 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:07:43 TEXT  cultura/v9-lez-watching-a-film-with-new-eyes-6-director-s-choices-to-no (2605 it / 2511 en chars)
+00:07:43 DB    v9-lez-watching-a-film-with-new-eyes-6-director-s-choices-to-no: inserito ({'it': 4, 'en': 4})
+[92m00:07:43 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:07:43,235 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:07:52 COVER v9-lez-watching-a-film-with-new-eyes-6-director-s-choices-to-no: ok (pause/hero/v9-lez-watching-a-film-with-new-eyes-6-director-s-choices-to-no-ca1f9f5032f5.webp)
+00:07:52 [29/52] DONE cultura/v9-lez-watching-a-film-with-new-eyes-6-director-s-choices-to-no
+[92m00:07:52 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:07:52,076 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:08:16 TEXT  corpo-umano/v9-lez-protecting-your-eyes-in-front-of-screens-6-steps (2720 it / 2536 en chars)
+00:08:16 DB    v9-lez-protecting-your-eyes-in-front-of-screens-6-steps: inserito ({'it': 4, 'en': 4})
+[92m00:08:16 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:08:16,465 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:08:25 COVER v9-lez-protecting-your-eyes-in-front-of-screens-6-steps: ok (pause/hero/v9-lez-protecting-your-eyes-in-front-of-screens-6-steps-14c67d0d635f.webp)
+00:08:25 [30/52] DONE corpo-umano/v9-lez-protecting-your-eyes-in-front-of-screens-6-steps
+[92m00:08:25 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:08:25,509 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:08:50 TEXT  natura/v9-why-can-t-trees-grow-beyond-a-certain-height (2692 it / 2700 en chars)
+00:08:50 DB    v9-why-can-t-trees-grow-beyond-a-certain-height: inserito ({'it': 4, 'en': 4})
+[92m00:08:50 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:08:50,931 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:08:59 COVER v9-why-can-t-trees-grow-beyond-a-certain-height: ok (pause/hero/v9-why-can-t-trees-grow-beyond-a-certain-height-414187316676.webp)
+00:08:59 [31/52] DONE natura/v9-why-can-t-trees-grow-beyond-a-certain-height
+[92m00:08:59 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:08:59,115 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:09:27 TEXT  storia/v9-the-romans-knew-about-steam-power-why-didn-t-they-start- (2880 it / 2754 en chars)
+00:09:27 DB    v9-the-romans-knew-about-steam-power-why-didn-t-they-start-: inserito ({'it': 5, 'en': 4})
+[92m00:09:27 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:09:27,412 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:09:36 COVER v9-the-romans-knew-about-steam-power-why-didn-t-they-start-: ok (pause/hero/v9-the-romans-knew-about-steam-power-why-didn-t-they-start--03abd1731133.webp)
+00:09:36 [32/52] DONE storia/v9-the-romans-knew-about-steam-power-why-didn-t-they-start-
+[92m00:09:36 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:09:36,781 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:10:04 TEXT  storia/v9-tomatoes-only-reached-italy-in-the-1500s-the-history-of- (2796 it / 2707 en chars)
+00:10:04 DB    v9-tomatoes-only-reached-italy-in-the-1500s-the-history-of-: inserito ({'it': 4, 'en': 4})
+[92m00:10:04 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:10:04,525 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:10:12 COVER v9-tomatoes-only-reached-italy-in-the-1500s-the-history-of-: ok (pause/hero/v9-tomatoes-only-reached-italy-in-the-1500s-the-history-of--836e753da748.webp)
+00:10:12 [33/52] DONE storia/v9-tomatoes-only-reached-italy-in-the-1500s-the-history-of-
+[92m00:10:12 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:10:12,896 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:10:38 TEXT  natura/v9-why-does-the-wind-always-pick-up-at-the-seaside-in-the-a (2795 it / 2692 en chars)
+00:10:38 DB    v9-why-does-the-wind-always-pick-up-at-the-seaside-in-the-a: inserito ({'it': 4, 'en': 4})
+[92m00:10:38 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:10:38,012 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:10:45 DB    v9-why-does-the-wind-always-pick-up-at-the-seaside-in-the-a: rimosso in attesa della copertina
+00:10:45 [34/52] FAIL natura/v9-why-does-the-wind-always-pick-up-at-the-seaside-in-the-a: No image returned for pause-cover-v9-v9-why-does-the-wind-always-pick-up-at-the-seaside-in-the-a
+[92m00:10:45 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:10:45,672 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:11:12 TEXT  corpo-umano/v9-lez-how-a-vaccine-works-6-steps-from-the-shot-to-immune-memo (2758 it / 2600 en chars)
+00:11:12 DB    v9-lez-how-a-vaccine-works-6-steps-from-the-shot-to-immune-memo: inserito ({'it': 4, 'en': 4})
+[92m00:11:12 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:11:12,619 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:11:21 COVER v9-lez-how-a-vaccine-works-6-steps-from-the-shot-to-immune-memo: ok (pause/hero/v9-lez-how-a-vaccine-works-6-steps-from-the-shot-to-immune-memo-c75b4fb745ce.webp)
+00:11:21 [35/52] DONE corpo-umano/v9-lez-how-a-vaccine-works-6-steps-from-the-shot-to-immune-memo
+[92m00:11:21 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:11:21,775 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:11:49 TEXT  cultura/v9-lez-dialects-aren-t-bad-italian-6-things-to-know-about-the-l (2946 it / 3003 en chars)
+00:11:49 DB    v9-lez-dialects-aren-t-bad-italian-6-things-to-know-about-the-l: inserito ({'it': 5, 'en': 5})
+[92m00:11:49 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:11:49,614 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:11:58 COVER v9-lez-dialects-aren-t-bad-italian-6-things-to-know-about-the-l: ok (pause/hero/v9-lez-dialects-aren-t-bad-italian-6-things-to-know-about-the-l-e34a80e4c026.webp)
+00:11:58 [36/52] DONE cultura/v9-lez-dialects-aren-t-bad-italian-6-things-to-know-about-the-l
+[92m00:11:58 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:11:58,650 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:12:24 TEXT  economia/v9-lez-negotiating-a-salary-or-a-price-the-6-step-method (2803 it / 2877 en chars)
+00:12:24 DB    v9-lez-negotiating-a-salary-or-a-price-the-6-step-method: inserito ({'it': 4, 'en': 5})
+[92m00:12:24 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:12:24,624 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:12:32 COVER v9-lez-negotiating-a-salary-or-a-price-the-6-step-method: ok (pause/hero/v9-lez-negotiating-a-salary-or-a-price-the-6-step-method-8a73a1246024.webp)
+00:12:32 [37/52] DONE economia/v9-lez-negotiating-a-salary-or-a-price-the-6-step-method
+[92m00:12:32 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:12:32,550 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:12:58 TEXT  arte/v9-lez-reading-a-music-score-without-playing-6-symbols-to-under (2454 it / 2439 en chars)
+00:12:58 DB    v9-lez-reading-a-music-score-without-playing-6-symbols-to-under: inserito ({'it': 4, 'en': 4})
+[92m00:12:58 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:12:58,979 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:13:08 COVER v9-lez-reading-a-music-score-without-playing-6-symbols-to-under: ok (pause/hero/v9-lez-reading-a-music-score-without-playing-6-symbols-to-under-c719a5e62843.webp)
+00:13:08 [38/52] DONE arte/v9-lez-reading-a-music-score-without-playing-6-symbols-to-under
+[92m00:13:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:13:08,045 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:13:34 TEXT  geografia/v9-lez-why-people-migrate-6-factors-behind-every-great-movement (2828 it / 2724 en chars)
+00:13:34 DB    v9-lez-why-people-migrate-6-factors-behind-every-great-movement: inserito ({'it': 4, 'en': 4})
+[92m00:13:34 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:13:34,507 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:13:43 COVER v9-lez-why-people-migrate-6-factors-behind-every-great-movement: ok (pause/hero/v9-lez-why-people-migrate-6-factors-behind-every-great-movement-d86eb761f500.webp)
+00:13:43 [39/52] DONE geografia/v9-lez-why-people-migrate-6-factors-behind-every-great-movement
+[92m00:13:43 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:13:43,256 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:14:08 TEXT  animali/v9-why-do-mosquitoes-bite-you-in-particular (2623 it / 2631 en chars)
+00:14:08 DB    v9-why-do-mosquitoes-bite-you-in-particular: inserito ({'it': 4, 'en': 4})
+[92m00:14:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:14:08,390 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:14:16 COVER v9-why-do-mosquitoes-bite-you-in-particular: ok (pause/hero/v9-why-do-mosquitoes-bite-you-in-particular-31690cfd16e7.webp)
+00:14:16 [40/52] DONE animali/v9-why-do-mosquitoes-bite-you-in-particular
+[92m00:14:16 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:14:16,858 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:14:39 TEXT  spazio/v9-why-does-the-moon-look-bigger-on-the-horizon (2753 it / 2565 en chars)
+00:14:39 DB    v9-why-does-the-moon-look-bigger-on-the-horizon: inserito ({'it': 4, 'en': 4})
+[92m00:14:39 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:14:39,533 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:14:48 COVER v9-why-does-the-moon-look-bigger-on-the-horizon: ok (pause/hero/v9-why-does-the-moon-look-bigger-on-the-horizon-f1e0949803cd.webp)
+00:14:48 [41/52] DONE spazio/v9-why-does-the-moon-look-bigger-on-the-horizon
+[92m00:14:48 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:14:48,189 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:15:11 TEXT  psicologia/v9-why-do-we-forget-what-we-came-for-when-we-walk-through-a (2870 it / 2680 en chars)
+00:15:11 DB    v9-why-do-we-forget-what-we-came-for-when-we-walk-through-a: inserito ({'it': 5, 'en': 4})
+[92m00:15:11 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:15:11,447 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:15:19 COVER v9-why-do-we-forget-what-we-came-for-when-we-walk-through-a: ok (pause/hero/v9-why-do-we-forget-what-we-came-for-when-we-walk-through-a-c65e7ffc13a3.webp)
+00:15:19 [42/52] DONE psicologia/v9-why-do-we-forget-what-we-came-for-when-we-walk-through-a
+[92m00:15:19 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:15:19,995 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:15:46 TEXT  psicologia/v9-why-does-it-feel-like-everyone-is-watching-you-the-spotl (2831 it / 2704 en chars)
+00:15:46 DB    v9-why-does-it-feel-like-everyone-is-watching-you-the-spotl: inserito ({'it': 4, 'en': 4})
+[92m00:15:46 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:15:46,237 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:15:55 COVER v9-why-does-it-feel-like-everyone-is-watching-you-the-spotl: ok (pause/hero/v9-why-does-it-feel-like-everyone-is-watching-you-the-spotl-d96e8d963177.webp)
+00:15:55 [43/52] DONE psicologia/v9-why-does-it-feel-like-everyone-is-watching-you-the-spotl
+[92m00:15:55 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:15:55,566 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:16:23 TEXT  spazio/v9-why-do-stars-twinkle-but-planets-don-t (2906 it / 2791 en chars)
+00:16:23 DB    v9-why-do-stars-twinkle-but-planets-don-t: inserito ({'it': 5, 'en': 4})
+[92m00:16:23 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:16:23,343 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:16:32 COVER v9-why-do-stars-twinkle-but-planets-don-t: ok (pause/hero/v9-why-do-stars-twinkle-but-planets-don-t-a066914670e2.webp)
+00:16:32 [44/52] DONE spazio/v9-why-do-stars-twinkle-but-planets-don-t
+[92m00:16:32 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:16:32,564 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:17:00 TEXT  animali/v9-lez-understanding-your-dog-reading-body-language-in-6-signal (2756 it / 2620 en chars)
+00:17:00 DB    v9-lez-understanding-your-dog-reading-body-language-in-6-signal: inserito ({'it': 4, 'en': 4})
+[92m00:17:00 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:17:00,020 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:17:10 COVER v9-lez-understanding-your-dog-reading-body-language-in-6-signal: ok (pause/hero/v9-lez-understanding-your-dog-reading-body-language-in-6-signal-069760723e03.webp)
+00:17:10 [45/52] DONE animali/v9-lez-understanding-your-dog-reading-body-language-in-6-signal
+[92m00:17:10 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:17:10,430 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:17:43 TEXT  geografia/v9-lez-reading-a-landscape-for-risk-6-signs-of-landslides-and-f (2783 it / 2701 en chars)
+00:17:43 DB    v9-lez-reading-a-landscape-for-risk-6-signs-of-landslides-and-f: inserito ({'it': 4, 'en': 4})
+[92m00:17:43 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:17:43,352 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:17:51 COVER v9-lez-reading-a-landscape-for-risk-6-signs-of-landslides-and-f: ok (pause/hero/v9-lez-reading-a-landscape-for-risk-6-signs-of-landslides-and-f-2da162e72673.webp)
+00:17:51 [46/52] DONE geografia/v9-lez-reading-a-landscape-for-risk-6-signs-of-landslides-and-f
+[92m00:17:51 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:17:51,855 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:18:18 TEXT  arte/v9-lez-visiting-a-museum-without-burning-out-the-6-step-method (2636 it / 2698 en chars)
+00:18:18 DB    v9-lez-visiting-a-museum-without-burning-out-the-6-step-method: inserito ({'it': 4, 'en': 4})
+[92m00:18:18 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:18:18,048 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:18:25 COVER v9-lez-visiting-a-museum-without-burning-out-the-6-step-method: ok (pause/hero/v9-lez-visiting-a-museum-without-burning-out-the-6-step-method-f57a9e47500e.webp)
+00:18:25 [47/52] DONE arte/v9-lez-visiting-a-museum-without-burning-out-the-6-step-method
+[92m00:18:25 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:18:25,983 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:18:52 TEXT  economia/v9-lez-spotting-a-financial-scam-6-warning-signs-that-repeat (2943 it / 2917 en chars)
+00:18:52 DB    v9-lez-spotting-a-financial-scam-6-warning-signs-that-repeat: inserito ({'it': 5, 'en': 5})
+[92m00:18:52 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:18:52,687 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:19:00 COVER v9-lez-spotting-a-financial-scam-6-warning-signs-that-repeat: ok (pause/hero/v9-lez-spotting-a-financial-scam-6-warning-signs-that-repeat-1b24e50a7626.webp)
+00:19:00 [48/52] DONE economia/v9-lez-spotting-a-financial-scam-6-warning-signs-that-repeat
+[92m00:19:00 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:19:00,620 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:19:31 TEXT  cultura/v9-lez-how-translation-works-6-steps-to-understand-why-it-s-nev (2654 it / 2618 en chars)
+00:19:31 DB    v9-lez-how-translation-works-6-steps-to-understand-why-it-s-nev: inserito ({'it': 4, 'en': 4})
+[92m00:19:31 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:19:31,310 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:19:40 COVER v9-lez-how-translation-works-6-steps-to-understand-why-it-s-nev: ok (pause/hero/v9-lez-how-translation-works-6-steps-to-understand-why-it-s-nev-531440e01f26.webp)
+00:19:40 [49/52] DONE cultura/v9-lez-how-translation-works-6-steps-to-understand-why-it-s-nev
+[92m00:19:40 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:19:40,930 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:20:05 TEXT  corpo-umano/v9-lez-measuring-blood-pressure-at-home-6-steps-to-read-it-righ (2603 it / 2545 en chars)
+00:20:05 DB    v9-lez-measuring-blood-pressure-at-home-6-steps-to-read-it-righ: inserito ({'it': 4, 'en': 4})
+[92m00:20:05 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:20:05,722 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:20:14 COVER v9-lez-measuring-blood-pressure-at-home-6-steps-to-read-it-righ: ok (pause/hero/v9-lez-measuring-blood-pressure-at-home-6-steps-to-read-it-righ-73fcbc8b8eed.webp)
+00:20:14 [50/52] DONE corpo-umano/v9-lez-measuring-blood-pressure-at-home-6-steps-to-read-it-righ
+[92m00:20:14 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:20:14,120 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:20:40 TEXT  natura/v9-lez-what-to-do-in-a-thunderstorm-6-rules-that-save-lives (2760 it / 2628 en chars)
+00:20:40 DB    v9-lez-what-to-do-in-a-thunderstorm-6-rules-that-save-lives: inserito ({'it': 4, 'en': 4})
+[92m00:20:40 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:20:40,529 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:20:48 COVER v9-lez-what-to-do-in-a-thunderstorm-6-rules-that-save-lives: ok (pause/hero/v9-lez-what-to-do-in-a-thunderstorm-6-rules-that-save-lives-d345dc4899af.webp)
+00:20:48 [51/52] DONE natura/v9-lez-what-to-do-in-a-thunderstorm-6-rules-that-save-lives
+[92m00:20:48 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+2026-09-30 00:20:48,664 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-5.4; provider = openai
+00:21:17 TEXT  storia/v9-lez-reading-an-ancient-city-6-roman-traces-you-can-still-see (2851 it / 2803 en chars)
+00:21:17 DB    v9-lez-reading-an-ancient-city-6-roman-traces-you-can-still-see: inserito ({'it': 4, 'en': 4})
+[92m00:21:17 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+2026-09-30 00:21:17,667 - LiteLLM - INFO - 
+LiteLLM completion() model= gemini/gemini-3.1-flash-image-preview; provider = openai
+00:21:25 COVER v9-lez-reading-an-ancient-city-6-roman-traces-you-can-still-see: ok (pause/hero/v9-lez-reading-an-ancient-city-6-roman-traces-you-can-still-see-63ded758710d.webp)
+00:21:25 [52/52] DONE storia/v9-lez-reading-an-ancient-city-6-roman-traces-you-can-still-see
+00:21:25 [done] ok=51 fail=1

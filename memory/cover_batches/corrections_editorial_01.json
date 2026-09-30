@@ -1,0 +1,37 @@
+[
+  {
+    "id": "v5-lez-etichetta-nutrizionale",
+    "reason": "Copertina #078: grande scritta EDITORIAL incorporata in alto; la confezione raffigura inoltre il titolo della lezione invece di una normale etichetta alimentare.",
+    "prompt": "A single candid photographic scene, NOT a magazine layout. Close view of an adult shopper's two natural hands holding one ordinary unbranded oat cereal package sideways in a softly blurred grocery aisle. Show a small realistic nutrition grid on the side of the package with fine rows and columns, all tiny printed details deliberately optically defocused and unreadable. The person is examining the nutritional label. No readable words anywhere, no editorial header, no magazine title, no book, no captions, no brand, no logo. Focus on package texture and the act of checking information, cool shadows and warm supermarket side light, uncluttered central subject."
+  },
+  {
+    "id": "v5-giramento-testa",
+    "reason": "Copertina #084: marchio PAUSE in alto e intero titolo in basso impressi nell'immagine, con cornice artificiale.",
+    "prompt": "One cinematic candid photograph of an adult woman standing still in a quiet park just after spinning around. Medium-wide view, both feet planted safely on the ground, one hand lightly touching a stationary wooden park railing, the other hand relaxed at her side. Her thoughtful slightly dizzy expression is calm, not illness or distress. Very gentle circular background bokeh suggests a recently perceived spin while her face and body remain naturally sharp. Exactly two anatomically natural arms and hands. Soft blue-hour park light, dark green background and warm rim light. This is ONLY a full-bleed photograph, absolutely no words, no title, no lettering, no logo, no page border, no poster layout."
+  },
+  {
+    "id": "v8-why-does-coffee-make-some-people-sleepy",
+    "reason": "Copertina #088: l'uomo ha tre mani visibili, una alla testa e due attorno alla tazzina. Anomalia anatomica confermata sul master.",
+    "prompt": "Full-bleed realistic cafe portrait photograph of a tired adult man yawning softly at a dark wooden table. Exactly TWO arms and TWO hands visible: his RIGHT elbow rests on the table and his RIGHT hand supports his right cheek; his LEFT forearm lies flat on the table and his LEFT hand rests OPEN beside a small espresso cup. The cup sits untouched on its saucer: NO hand holds the cup or its handle. Sleeves are rolled up, both continuous arms are clearly traceable from shoulder to hand, natural anatomy. Espresso machine softly blurred behind, warm amber light and subtle cool shadows. No lettering, no title, no watermark, no duplicated limbs, no graphic layout."
+  },
+  {
+    "id": "geo-why-deserts",
+    "reason": "Copertina #172: fotografia di spiaggia tropicale con mare, riutilizzata dalla storia sui viaggi, non un deserto.",
+    "prompt": "Realistic landscape photograph of a vast arid inland desert basin: sculpted orange sand dunes in the foreground, dry cracked playa farther away and a bare mountain rain-shadow ridge on the horizon. Late afternoon raking light reveals wind-carved ripples and severe dryness, dark dramatic cloudless blue sky. No ocean, no beach, no water, no palm trees, no people. One coherent desert landscape with strong sense of scale, vertical framing and central dunes. Only a photograph, no words, no labels, no diagram."
+  },
+  {
+    "id": "v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys",
+    "reason": "Copertina #313: fotografia della galassia Andromeda, senza sonda, estranea al viaggio delle Voyager nello spazio interstellare.",
+    "prompt": "Scientifically grounded cinematic illustration of the Voyager 1 spacecraft alone in deep interstellar space. Clearly identifiable structure: one large white parabolic high-gain dish facing diagonally toward the viewer, compact silver and gold thermal-blanketed instrument bus behind it, long thin magnetometer boom extending to one side and the distinctive RTG assembly on a short separate boom. No solar panels, no astronaut, no giant nearby galaxy or planet. Small distant Sun is merely a faint star in the background. Three-quarter photographic documentary view, physical spacecraft materials, restrained cool starlight and warm highlights. Entire main dish safely inside the frame, dark negative space above. No NASA lettering, no labels, no title, no typography."
+  },
+  {
+    "id": "how-skin-works",
+    "reason": "Copertina #090: fotografia di manicure/smalto; il soggetto estetico non rappresenta la pelle e le sue funzioni biologiche.",
+    "prompt": "Photorealistic close-up of a healthy adult forearm and the back of a relaxed hand, showing detailed natural skin pores, fine tiny hairs and a few clear water droplets. Soft grazing studio light reveals the skin's tactile protective surface, diverse natural medium-brown skin tone, realistic anatomy. A small section of dark sleeve at the wrist provides context; fingers can remain out of frame. Dark navy seamless background, subtle cyan reflected light, photographic and non-clinical, no wounds, no manicure, no nail polish, no jewelry, no written labels or text."
+  },
+  {
+    "id": "v7-lez-leggere-clima",
+    "reason": "Copertina #173: sfera armillare/strumento astronomico invece di elementi climatici della città. Il tema della lezione è interpretare fattori locali del clima.",
+    "prompt": "Cinematic documentary photograph from an elevated city park overlooking a real-looking coastal city backed by distant mountains. In the foreground a modest unbranded outdoor weather station with recognisable small cup anemometer and louvered white thermometer shelter. Sea breeze suggested by gently bent grasses, a low bank of maritime clouds approaching the coast, sunlit warm buildings farther inland. A single coherent believable urban landscape showing sea, terrain and local weather, not a collage. Natural golden late afternoon light and blue-green shadows. No armillary spheres, no celestial globes, no text, no weather icons, no numbers, no labels."
+  }
+]

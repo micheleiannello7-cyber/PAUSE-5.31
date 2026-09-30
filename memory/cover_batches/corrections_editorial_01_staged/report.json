@@ -1,0 +1,209 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "quality": 84,
+  "started_at": "2026-09-25T00:34:59.825179+00:00",
+  "candidates": {
+    "v5-lez-etichetta-nutrizionale": {
+      "before": {
+        "id": "v5-lez-etichetta-nutrizionale",
+        "hero_image": "",
+        "title": "Leggere un'etichetta alimentare in 4 mosse",
+        "hero_bytes": {
+          "hero": 71644,
+          "thumb": 26906,
+          "source": 71644
+        },
+        "hero_image_generated": "pause/hero/v5-lez-etichetta-nutrizionale-d72a97d9b279.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-etichetta-nutrizionale-d72a97d9b279-thumb.webp",
+        "hero_source_digest": "d72a97d9b279"
+      },
+      "reason": "Copertina #078: grande scritta EDITORIAL incorporata in alto; la confezione raffigura inoltre il titolo della lezione invece di una normale etichetta alimentare.",
+      "prompt": "A single candid photographic scene, NOT a magazine layout. Close view of an adult shopper's two natural hands holding one ordinary unbranded oat cereal package sideways in a softly blurred grocery aisle. Show a small realistic nutrition grid on the side of the package with fine rows and columns, all tiny printed details deliberately optically defocused and unreadable. The person is examining the nutritional label. No readable words anywhere, no editorial header, no magazine title, no book, no captions, no brand, no logo. Focus on package texture and the act of checking information, cool shadows and warm supermarket side light, uncluttered central subject.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/v5-lez-etichetta-nutrizionale.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-lez-etichetta-nutrizionale-fda003195bc9.webp",
+        "hero_image_thumb": "pause/hero/v5-lez-etichetta-nutrizionale-fda003195bc9-thumb.webp",
+        "hero_source_digest": "fda003195bc9",
+        "hero_bytes": {
+          "hero": 47120,
+          "thumb": 17436,
+          "source": 47120
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:58.418659+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:58.420531+00:00"
+    },
+    "v5-giramento-testa": {
+      "before": {
+        "id": "v5-giramento-testa",
+        "hero_image": "",
+        "title": "Perché gira la testa dopo aver girato su te stesso?",
+        "hero_bytes": {
+          "hero": 53362,
+          "thumb": 21094,
+          "source": 53362
+        },
+        "hero_image_generated": "pause/hero/v5-giramento-testa-e62db324e974.webp",
+        "hero_image_thumb": "pause/hero/v5-giramento-testa-e62db324e974-thumb.webp",
+        "hero_source_digest": "e62db324e974"
+      },
+      "reason": "Copertina #084: marchio PAUSE in alto e intero titolo in basso impressi nell'immagine, con cornice artificiale.",
+      "prompt": "One cinematic candid photograph of an adult woman standing still in a quiet park just after spinning around. Medium-wide view, both feet planted safely on the ground, one hand lightly touching a stationary wooden park railing, the other hand relaxed at her side. Her thoughtful slightly dizzy expression is calm, not illness or distress. Very gentle circular background bokeh suggests a recently perceived spin while her face and body remain naturally sharp. Exactly two anatomically natural arms and hands. Soft blue-hour park light, dark green background and warm rim light. This is ONLY a full-bleed photograph, absolutely no words, no title, no lettering, no logo, no page border, no poster layout.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/v5-giramento-testa.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v5-giramento-testa-0f1f3f216a67.webp",
+        "hero_image_thumb": "pause/hero/v5-giramento-testa-0f1f3f216a67-thumb.webp",
+        "hero_source_digest": "0f1f3f216a67",
+        "hero_bytes": {
+          "hero": 73034,
+          "thumb": 24768,
+          "source": 73034
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:58.887589+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:58.889395+00:00"
+    },
+    "v8-why-does-coffee-make-some-people-sleepy": {
+      "before": {
+        "id": "v8-why-does-coffee-make-some-people-sleepy",
+        "hero_image": "https://images.unsplash.com/photo-1552057426-c4dbcae005b9?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché il caffè fa venire sonno a qualcuno?",
+        "hero_bytes": {
+          "hero": 54716,
+          "thumb": 18266,
+          "source": 54716
+        },
+        "hero_image_generated": "pause/hero/v8-why-does-coffee-make-some-people-sleepy-a35fd2831931.webp",
+        "hero_image_thumb": "pause/hero/v8-why-does-coffee-make-some-people-sleepy-a35fd2831931-thumb.webp",
+        "hero_source_digest": "a35fd2831931"
+      },
+      "reason": "Copertina #088: l'uomo ha tre mani visibili, una alla testa e due attorno alla tazzina. Anomalia anatomica confermata sul master.",
+      "prompt": "Full-bleed realistic cafe portrait photograph of a tired adult man yawning softly at a dark wooden table. Exactly TWO arms and TWO hands visible: his RIGHT elbow rests on the table and his RIGHT hand supports his right cheek; his LEFT forearm lies flat on the table and his LEFT hand rests OPEN beside a small espresso cup. The cup sits untouched on its saucer: NO hand holds the cup or its handle. Sleeves are rolled up, both continuous arms are clearly traceable from shoulder to hand, natural anatomy. Espresso machine softly blurred behind, warm amber light and subtle cool shadows. No lettering, no title, no watermark, no duplicated limbs, no graphic layout.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/v8-why-does-coffee-make-some-people-sleepy.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v8-why-does-coffee-make-some-people-sleepy-840bac21c6e6.webp",
+        "hero_image_thumb": "pause/hero/v8-why-does-coffee-make-some-people-sleepy-840bac21c6e6-thumb.webp",
+        "hero_source_digest": "840bac21c6e6",
+        "hero_bytes": {
+          "hero": 74520,
+          "thumb": 26696,
+          "source": 74520
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:59.300573+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:59.302548+00:00"
+    },
+    "geo-why-deserts": {
+      "before": {
+        "id": "geo-why-deserts",
+        "hero_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché i deserti si formano dove si formano?"
+      },
+      "reason": "Copertina #172: fotografia di spiaggia tropicale con mare, riutilizzata dalla storia sui viaggi, non un deserto.",
+      "prompt": "Realistic landscape photograph of a vast arid inland desert basin: sculpted orange sand dunes in the foreground, dry cracked playa farther away and a bare mountain rain-shadow ridge on the horizon. Late afternoon raking light reveals wind-carved ripples and severe dryness, dark dramatic cloudless blue sky. No ocean, no beach, no water, no palm trees, no people. One coherent desert landscape with strong sense of scale, vertical framing and central dunes. Only a photograph, no words, no labels, no diagram.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/geo-why-deserts.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/geo-why-deserts-6da826a80572.webp",
+        "hero_image_thumb": "pause/hero/geo-why-deserts-6da826a80572-thumb.webp",
+        "hero_source_digest": "6da826a80572",
+        "hero_bytes": {
+          "hero": 125832,
+          "thumb": 37986,
+          "source": 125832
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:36:59.742499+00:00"
+      },
+      "approved_at": "2026-09-25T00:36:59.744215+00:00"
+    },
+    "v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys": {
+      "before": {
+        "id": "v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys",
+        "hero_image": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1200&q=80&auto=format&fit=crop",
+        "title": "Che cosa è successo alle sonde Voyager, oltre il Sistema Solare"
+      },
+      "reason": "Copertina #313: fotografia della galassia Andromeda, senza sonda, estranea al viaggio delle Voyager nello spazio interstellare.",
+      "prompt": "Scientifically grounded cinematic illustration of the Voyager 1 spacecraft alone in deep interstellar space. Clearly identifiable structure: one large white parabolic high-gain dish facing diagonally toward the viewer, compact silver and gold thermal-blanketed instrument bus behind it, long thin magnetometer boom extending to one side and the distinctive RTG assembly on a short separate boom. No solar panels, no astronaut, no giant nearby galaxy or planet. Small distant Sun is merely a faint star in the background. Three-quarter photographic documentary view, physical spacecraft materials, restrained cool starlight and warm highlights. Entire main dish safely inside the frame, dark negative space above. No NASA lettering, no labels, no title, no typography.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys-f9cc427df4e2.webp",
+        "hero_image_thumb": "pause/hero/v8-what-happened-to-the-voyager-probes-beyond-the-solar-sys-f9cc427df4e2-thumb.webp",
+        "hero_source_digest": "f9cc427df4e2",
+        "hero_bytes": {
+          "hero": 64392,
+          "thumb": 21594,
+          "source": 64392
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:37:00.407180+00:00"
+      },
+      "approved_at": "2026-09-25T00:37:00.409047+00:00"
+    },
+    "how-skin-works": {
+      "before": {
+        "id": "how-skin-works",
+        "hero_image": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80&auto=format&fit=crop",
+        "title": "Perché la pelle è l'organo più straordinario?"
+      },
+      "reason": "Copertina #090: fotografia di manicure/smalto; il soggetto estetico non rappresenta la pelle e le sue funzioni biologiche.",
+      "prompt": "Photorealistic close-up of a healthy adult forearm and the back of a relaxed hand, showing detailed natural skin pores, fine tiny hairs and a few clear water droplets. Soft grazing studio light reveals the skin's tactile protective surface, diverse natural medium-brown skin tone, realistic anatomy. A small section of dark sleeve at the wrist provides context; fingers can remain out of frame. Dark navy seamless background, subtle cyan reflected light, photographic and non-clinical, no wounds, no manicure, no nail polish, no jewelry, no written labels or text.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/how-skin-works.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/how-skin-works-9bccf67f622e.webp",
+        "hero_image_thumb": "pause/hero/how-skin-works-9bccf67f622e-thumb.webp",
+        "hero_source_digest": "9bccf67f622e",
+        "hero_bytes": {
+          "hero": 91932,
+          "thumb": 22580,
+          "source": 91932
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:37:00.751335+00:00"
+      },
+      "approved_at": "2026-09-25T00:37:00.753020+00:00"
+    },
+    "v7-lez-leggere-clima": {
+      "before": {
+        "id": "v7-lez-leggere-clima",
+        "hero_image": "",
+        "title": "Perché il clima è così: leggere una città in 6 passi",
+        "hero_bytes": {
+          "hero": 59910,
+          "thumb": 19736,
+          "source": 59910
+        },
+        "hero_image_generated": "pause/hero/v7-lez-leggere-clima-954c151726af.webp",
+        "hero_image_thumb": "pause/hero/v7-lez-leggere-clima-954c151726af-thumb.webp",
+        "hero_source_digest": "954c151726af"
+      },
+      "reason": "Copertina #173: sfera armillare/strumento astronomico invece di elementi climatici della città. Il tema della lezione è interpretare fattori locali del clima.",
+      "prompt": "Cinematic documentary photograph from an elevated city park overlooking a real-looking coastal city backed by distant mountains. In the foreground a modest unbranded outdoor weather station with recognisable small cup anemometer and louvered white thermometer shelter. Sea breeze suggested by gently bent grasses, a low bank of maritime clouds approaching the coast, sunlit warm buildings farther inland. A single coherent believable urban landscape showing sea, terrain and local weather, not a collage. Natural golden late afternoon light and blue-green shadows. No armillary spheres, no celestial globes, no text, no weather icons, no numbers, no labels.",
+      "file": "/app/memory/cover_batches/corrections_editorial_01_staged/v7-lez-leggere-clima.webp",
+      "status": "published",
+      "after": {
+        "hero_image_generated": "pause/hero/v7-lez-leggere-clima-280cdfdaad68.webp",
+        "hero_image_thumb": "pause/hero/v7-lez-leggere-clima-280cdfdaad68-thumb.webp",
+        "hero_source_digest": "280cdfdaad68",
+        "hero_bytes": {
+          "hero": 141798,
+          "thumb": 46736,
+          "source": 141798
+        },
+        "hero_image": "",
+        "hero_generated_at": "2026-09-25T00:37:01.254311+00:00"
+      },
+      "approved_at": "2026-09-25T00:37:01.256016+00:00"
+    }
+  },
+  "errors": [],
+  "status": "staged"
+}
